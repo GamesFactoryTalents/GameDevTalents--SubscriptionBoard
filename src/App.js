@@ -86,8 +86,6 @@ const App = () => {
   const [selectedSpecialities, setSelectedSpecialities] = useState([]);
   const [selectedSkills, setSelectedSkills] = useState([]);
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
-  const [isExp, setIsExp] = useState(false);
-  const [isRelocate, setIsRelocate] = useState(false);
   const gridWrapperRef = React.useRef();
 
   useEffect(() => {
@@ -167,34 +165,7 @@ const App = () => {
     gridApi.onFilterChanged();
   }
 
-  function onExpSelected(e) {
-    setIsExp(!isExp);
-    const isExpFilter = isExp ? "" : "Yes";
-    const wholeTableFilterModel = gridApi.getFilterModel();
-
-    wholeTableFilterModel.hasExperienceInGameIndustry = {
-      type: "equals",
-      filter: isExpFilter,
-    };
-
-    gridApi.setFilterModel(wholeTableFilterModel);
-  }
-
-  function onRelocateSelected(e) {
-    setIsRelocate(!isRelocate);
-    const isRelocateFilter = isRelocate ? "" : "Yes";
-    const wholeTableFilterModel = gridApi.getFilterModel();
-
-    wholeTableFilterModel.readyToRelocate = {
-      type: "equals",
-      filter: isRelocateFilter,
-    };
-
-    gridApi.setFilterModel(wholeTableFilterModel);
-  }
-
   function onPaginationChange(e) {
-    console.log("pagination changed", e);
     if (e.newPage) {
       gridWrapperRef.current.scrollIntoView(true);
     }
@@ -225,20 +196,6 @@ const App = () => {
     // console.log("in specialitiesChanged, selectedSpecialities is ", selectedSpecialities);
     setSelectedSkills(value);
     selectedSkillsRef.current = value;
-    gridApi.onFilterChanged();
-  }
-
-  function countryChanged(e, value, reason) {
-    if (value.includes("Europe")) {
-      var countriesArr = countries
-        .filter((value, key) => value.region === "Europe")
-        .map((value, key) => Object.values(value)[0]);
-      setSelectedCountry(countriesArr);
-      selectedCountryRef.current = countriesArr;
-    } else {
-      setSelectedCountry(value);
-      selectedCountryRef.current = value;
-    }
     gridApi.onFilterChanged();
   }
 
