@@ -81,7 +81,6 @@ const App = () => {
   const [gridApi, setGridApi] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSeniority, setSelectedSeniority] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState([]);
   const [chosenSearch, setChosenSearch] = useState("");
   const [selectedSpecialities, setSelectedSpecialities] = useState([]);
   const [selectedSkills, setSelectedSkills] = useState([]);
@@ -98,7 +97,6 @@ const App = () => {
     selectedSeniority,
     selectedSkills,
     selectedPlatforms,
-    selectedCountry,
     chosenSearch,
     selectedSpecialities,
   ]);
@@ -109,8 +107,6 @@ const App = () => {
   selectedSpecialitiesRef.current = selectedSpecialities;
   const selectedSkillsRef = useRef();
   selectedSkillsRef.current = selectedSkills;
-  const selectedCountryRef = useRef();
-  selectedCountryRef.current = selectedCountry;
   const selectedSeniorityRef = useRef();
   selectedSeniorityRef.current = selectedSeniority;
   const selectedPlatformsRef = useRef();
@@ -208,7 +204,6 @@ const App = () => {
     const selSpecs = selectedSpecialitiesRef.current;
     const selSkills = selectedSkillsRef.current;
     const selPlatforms = selectedPlatformsRef.current;
-    const selCountries = selectedCountryRef.current;
     const selSeniority = selectedSeniorityRef.current;
     let testTarget = node.data.specialities;
     let testTargetSkills = node.data.skills;
@@ -219,9 +214,6 @@ const App = () => {
     let chosenCountry = 1;
     let chosenSeniority = 1;
 
-    if (selCountries.length === 0) {
-      chosenCountry = 0;
-    }
     if (selSeniority.length === 0) {
       chosenSeniority = 0;
     }
@@ -251,9 +243,6 @@ const App = () => {
       ),
       ...selPlatforms.filter(
         (s) => testTargetPlatfroms.toLowerCase().indexOf(s.toLowerCase()) !== -1
-      ),
-      ...selCountries.filter(
-        (s) => testTargetCountries.toLowerCase().indexOf(s.toLowerCase()) !== -1
       ),
       ...selSeniority.filter(
         (s) =>
