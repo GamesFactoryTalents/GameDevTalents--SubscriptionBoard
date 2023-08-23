@@ -16,7 +16,7 @@ import "./App.css";
 import CandidateCellRenderer from "./CandidateCellRenderer";
 import { zohoMultiStringToArray } from "./Utils";
 
-import * as subscribersData from "./generated/subscribers.json";
+import subscribersData from "./generated/subscribers.json";
 
 const countries = require("./commonSettings/countries");
 const skillTree = require("./commonSettings/skillTree");
