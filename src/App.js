@@ -22,10 +22,10 @@ const countries = require("./commonSettings/countries");
 const skillTree = require("./commonSettings/skillTree");
 const employmentOptions = require("./commonSettings/employmentOptions");
 const countriesList = [
-  ...new Set(countries.map((value, key) => Object.values(value)[0])),
+  ...new Set(countries.map((value) => Object.values(value)[0])),
 ];
 
-const possibleCategories = skillTree.map((value, key) => Object.keys(value)[0]);
+const possibleCategories = skillTree.map((value) => Object.keys(value)[0]);
 const platformList = employmentOptions.platforms;
 const skillList = employmentOptions.skills;
 
