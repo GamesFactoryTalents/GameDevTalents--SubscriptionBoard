@@ -20,7 +20,6 @@ import * as subscribers from "./generated/subscribers.json";
 
 const countries = require("./commonSettings/countries");
 const skillTree = require("./commonSettings/skillTree");
-const employmentOptions = require("./commonSettings/employmentOptions");
 const countriesList = [
   ...new Set(countries.map((value, key) => Object.values(value)[0])),
 ];
@@ -202,31 +201,6 @@ const App = () => {
     // gridApi.setFilterModel(wholeTableFilterModel);
   }
 
-  function onExpSelected(e) {
-    setIsExp(!isExp);
-    const isExpFilter = isExp ? "" : "Yes";
-    const wholeTableFilterModel = gridApi.getFilterModel();
-
-    wholeTableFilterModel.hasExperienceInGameIndustry = {
-      type: "equals",
-      filter: isExpFilter,
-    };
-
-    gridApi.setFilterModel(wholeTableFilterModel);
-  }
-
-  function onRelocateSelected(e) {
-    setIsRelocate(!isRelocate);
-    const isRelocateFilter = isRelocate ? "" : "Yes";
-    const wholeTableFilterModel = gridApi.getFilterModel();
-
-    wholeTableFilterModel.readyToRelocate = {
-      type: "equals",
-      filter: isRelocateFilter,
-    };
-
-    gridApi.setFilterModel(wholeTableFilterModel);
-  }
 
   function onPaginationChange(e) {
     console.log("pagination changed", e);
