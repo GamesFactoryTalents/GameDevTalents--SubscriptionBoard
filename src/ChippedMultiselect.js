@@ -22,7 +22,7 @@ function ChippedMultiselect(props) {
     <Autocomplete
         multiple
         name={props.name}
-        options={props.options}
+        options={props.options || []}
         forcePopupIcon={true}
         onChange={props.onChange}
         value={props.value}

@@ -3,12 +3,10 @@ const countries = [
     "label": "Afghanistan"
   },
   {
-    "label": "Åland Islands",
-    "region": "Europe"
+    "label": "Åland Islands"
   },
   {
-    "label": "Albania",
-    "region": "Europe"
+    "label": "Albania"
   },
   {
     "label": "Algeria"
@@ -17,8 +15,7 @@ const countries = [
     "label": "American Samoa"
   },
   {
-    "label": "Andorra",
-    "region": "Europe"
+    "label": "Andorra"
   },
   {
     "label": "Angola"
@@ -45,8 +42,7 @@ const countries = [
     "label": "Australia"
   },
   {
-    "label": "Austria",
-    "region": "Europe"
+    "label": "Austria"
   },
   {
     "label": "Azerbaijan"
@@ -64,12 +60,10 @@ const countries = [
     "label": "Barbados"
   },
   {
-    "label": "Belarus",
-    "region": "Europe"
+    "label": "Belarus"
   },
   {
-    "label": "Belgium",
-    "region": "Europe"
+    "label": "Belgium"
   },
   {
     "label": "Belize"
@@ -90,8 +84,7 @@ const countries = [
     "label": "Bonaire, Sint Eustatius and Saba"
   },
   {
-    "label": "Bosnia and Herzegovina",
-    "region": "Europe"
+    "label": "Bosnia and Herzegovina"
   },
   {
     "label": "Botswana"
@@ -109,8 +102,7 @@ const countries = [
     "label": "Brunei Darussalam"
   },
   {
-    "label": "Bulgaria",
-    "region": "Europe"
+    "label": "Bulgaria"
   },
   {
     "label": "Burkina Faso"
@@ -167,8 +159,7 @@ const countries = [
     "label": "Costa Rica"
   },
   {
-    "label": "Croatia",
-    "region": "Europe"
+    "label": "Croatia"
   },
   {
     "label": "Cuba"
@@ -177,19 +168,16 @@ const countries = [
     "label": "Curaçao"
   },
   {
-    "label": "Cyprus",
-    "region": "Europe"
+    "label": "Cyprus"
   },
   {
-    "label": "Czech Republic",
-    "region": "Europe"
+    "label": "Czech Republic"
   },
   {
     "label": "Côte d'Ivoire"
   },
   {
-    "label": "Denmark",
-    "region": "Europe"
+    "label": "Denmark"
   },
   {
     "label": "Djibouti"
@@ -216,8 +204,7 @@ const countries = [
     "label": "Eritrea"
   },
   {
-    "label": "Estonia",
-    "region": "Europe"
+    "label": "Estonia"
   },
   {
     "label": "Eswatini"
@@ -229,19 +216,16 @@ const countries = [
     "label": "Falkland Islands (Malvinas)"
   },
   {
-    "label": "Faroe Islands",
-    "region": "Europe"
+    "label": "Faroe Islands"
   },
   {
     "label": "Fiji"
   },
   {
-    "label": "Finland",
-    "region": "Europe"
+    "label": "Finland"
   },
   {
-    "label": "France",
-    "region": "Europe"
+    "label": "France"
   },
   {
     "label": "French Guiana"
@@ -262,19 +246,16 @@ const countries = [
     "label": "Georgia"
   },
   {
-    "label": "Germany",
-    "region": "Europe"
+    "label": "Germany"
   },
   {
     "label": "Ghana"
   },
   {
-    "label": "Gibraltar",
-    "region": "Europe"
+    "label": "Gibraltar"
   },
   {
-    "label": "Greece",
-    "region": "Europe"
+    "label": "Greece"
   },
   {
     "label": "Greenland"
@@ -292,8 +273,7 @@ const countries = [
     "label": "Guatemala"
   },
   {
-    "label": "Guernsey",
-    "region": "Europe"
+    "label": "Guernsey"
   },
   {
     "label": "Guinea"
@@ -320,12 +300,10 @@ const countries = [
     "label": "Hong Kong"
   },
   {
-    "label": "Hungary",
-    "region": "Europe"
+    "label": "Hungary"
   },
   {
-    "label": "Iceland",
-    "region": "Europe"
+    "label": "Iceland"
   },
   {
     "label": "India"
@@ -340,8 +318,7 @@ const countries = [
     "label": "Iraq"
   },
   {
-    "label": "Ireland",
-    "region": "Europe"
+    "label": "Ireland"
   },
   {
     "label": "Isle of Man"
@@ -350,8 +327,7 @@ const countries = [
     "label": "Israel"
   },
   {
-    "label": "Italy",
-    "region": "Europe"
+    "label": "Italy"
   },
   {
     "label": "Jamaica"
@@ -360,8 +336,7 @@ const countries = [
     "label": "Japan"
   },
   {
-    "label": "Jersey",
-    "region": "Europe"
+    "label": "Jersey"
   },
   {
     "label": "Jordan"
@@ -385,8 +360,7 @@ const countries = [
     "label": "Lao Democratic Republic"
   },
   {
-    "label": "Latvia",
-    "region": "Europe"
+    "label": "Latvia"
   },
   {
     "label": "Lebanon"
@@ -401,16 +375,13 @@ const countries = [
     "label": "Libya"
   },
   {
-    "label": "Liechtenstein",
-    "region": "Europe"
+    "label": "Liechtenstein"
   },
   {
-    "label": "Lithuania",
-    "region": "Europe"
+    "label": "Lithuania"
   },
   {
-    "label": "Luxembourg",
-    "region": "Europe"
+    "label": "Luxembourg"
   },
   {
     "label": "Macao"
@@ -431,8 +402,7 @@ const countries = [
     "label": "Mali"
   },
   {
-    "label": "Malta",
-    "region": "Europe"
+    "label": "Malta"
   },
   {
     "label": "Marshall Islands"
@@ -456,19 +426,16 @@ const countries = [
     "label": "Micronesia, Federated States of"
   },
   {
-    "label": "Moldova",
-    "region": "Europe"
+    "label": "Moldova"
   },
   {
-    "label": "Monaco",
-    "region": "Europe"
+    "label": "Monaco"
   },
   {
     "label": "Mongolia"
   },
   {
-    "label": "Montenegro",
-    "region": "Europe"
+    "label": "Montenegro"
   },
   {
     "label": "Montserrat"
@@ -492,8 +459,7 @@ const countries = [
     "label": "Nepal"
   },
   {
-    "label": "Netherlands",
-    "region": "Europe"
+    "label": "Netherlands"
   },
   {
     "label": "New Caledonia"
@@ -517,15 +483,13 @@ const countries = [
     "label": "Norfolk Island"
   },
   {
-    "label": "North Macedonia",
-    "region": "Europe"
+    "label": "North Macedonia"
   },
   {
     "label": "Northern Mariana Islands"
   },
   {
-    "label": "Norway",
-    "region": "Europe"
+    "label": "Norway"
   },
   {
     "label": "Oman"
@@ -558,12 +522,10 @@ const countries = [
     "label": "Pitcairn"
   },
   {
-    "label": "Poland",
-    "region": "Europe"
+    "label": "Poland"
   },
   {
-    "label": "Portugal",
-    "region": "Europe"
+    "label": "Portugal"
   },
   {
     "label": "Puerto Rico"
@@ -572,12 +534,10 @@ const countries = [
     "label": "Qatar"
   },
   {
-    "label": "Romania",
-    "region": "Europe"
+    "label": "Romania"
   },
   {
-    "label": "Russian Federation",
-    "region": "Europe"
+    "label": "Russian Federation"
   },
   {
     "label": "Rwanda"
@@ -610,8 +570,7 @@ const countries = [
     "label": "Samoa"
   },
   {
-    "label": "San Marino",
-    "region": "Europe"
+    "label": "San Marino"
   },
   {
     "label": "Sao Tome and Principe"
@@ -623,8 +582,7 @@ const countries = [
     "label": "Senegal"
   },
   {
-    "label": "Serbia",
-    "region": "Europe"
+    "label": "Serbia"
   },
   {
     "label": "Seychelles"
@@ -639,12 +597,10 @@ const countries = [
     "label": "Sint Maarten (Dutch part)"
   },
   {
-    "label": "Slovakia",
-    "region": "Europe"
+    "label": "Slovakia"
   },
   {
-    "label": "Slovenia",
-    "region": "Europe"
+    "label": "Slovenia"
   },
   {
     "label": "Solomon Islands"
@@ -665,8 +621,7 @@ const countries = [
     "label": "South Sudan"
   },
   {
-    "label": "Spain",
-    "region": "Europe"
+    "label": "Spain"
   },
   {
     "label": "Sri Lanka"
@@ -678,16 +633,13 @@ const countries = [
     "label": "Suriname"
   },
   {
-    "label": "Svalbard and Jan Mayen",
-    "region": "Europe"
+    "label": "Svalbard and Jan Mayen"
   },
   {
-    "label": "Sweden",
-    "region": "Europe"
+    "label": "Sweden"
   },
   {
-    "label": "Switzerland",
-    "region": "Europe"
+    "label": "Switzerland"
   },
   {
     "label": "Syria"
@@ -738,15 +690,13 @@ const countries = [
     "label": "Uganda"
   },
   {
-    "label": "Ukraine",
-    "region": "Europe"
+    "label": "Ukraine"
   },
   {
     "label": "United Arab Emirates"
   },
   {
-    "label": "United Kingdom",
-    "region": "Europe"
+    "label": "United Kingdom"
   },
   {
     "label": "United States Minor Outlying Islands"
