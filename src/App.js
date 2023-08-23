@@ -96,8 +96,6 @@ const App = () => {
   const [selectedGanres, setSelectedGanres] = useState([]);
   const [selectedEngines, setSelectedEngines] = useState([]);
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
-  const [isExp, setIsExp] = useState(false);
-  const [isRelocate, setIsRelocate] = useState(false);
   const gridWrapperRef = React.useRef();
 
   useEffect(() => {
