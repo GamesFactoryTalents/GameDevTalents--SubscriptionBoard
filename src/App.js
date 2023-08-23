@@ -16,7 +16,6 @@ import "./App.css";
 import CandidateCellRenderer from "./CandidateCellRenderer";
 import { zohoMultiStringToArray } from "./Utils";
 
-import candidates from "./generated/candidates";
 import * as subscribersData from "./generated/subscribers.json";
 
 const countries = require("./commonSettings/countries");
@@ -32,7 +31,7 @@ const skillList = employmentOptions.skills;
 
 const platformsSet = [...new Set(platformList)];
 
-const candidateCategories = candidates.map((c) => c.category);
+const candidateCategories = subscribersData.map((c) => c.category);
 const uniqCandidateCategories = [...new Set(candidateCategories)];
 const presentCategories = possibleCategories.filter(
   (cat) => uniqCandidateCategories.indexOf(cat) !== -1
@@ -43,11 +42,11 @@ const catSpecsMap = {};
 presentCategories.forEach((cat) => (catSpecsMap[cat] = []));
 for (const cat in catSpecsMap) {
   // console.log(`gathering specs for category [${cat}]`);
-  // const rawCandSpecsForCat = candidates.filter(c => c.category === cat)
+  // const rawCandSpecsForCat = subscribersData.filter(c => c.category === cat)
   //                             .map(c => c.specialities)
   //                             .filter(c => typeof(c) === "string")
   //                             .flatMap(s => zohoMultiStringToArray(s));
-  const rawCandSpecsForCat = candidates
+  const rawCandSpecsForCat = subscribersData
     .filter((c) => c.category === cat)
     .map((c) => c.specialities)
     .filter((c) => typeof c === "string")
@@ -60,7 +59,7 @@ for (const cat in catSpecsMap) {
 // presentCategories.forEach(cat => catSkillsMap[cat] = []);
 // for (const cat in catSkillsMap) {
 //   // console.log(`gathering specs for category [${cat}]`);
-//   const rawCandSkillsForCat = candidates.filter(c => c.category === cat)
+//   const rawCandSkillsForCat = subscribersData.filter(c => c.category === cat)
 //                               .map(c => c.skills)
 //                               .filter(c => typeof(c) === "string")
 //                               .flatMap(s => zohoMultiStringToArray(s));
@@ -69,8 +68,8 @@ for (const cat in catSpecsMap) {
 //}
 // console.log("catSpecsMap:", catSpecsMap);
 
-// const candidateSpecEntries = candidates.map(c => c.specialities).filter(c => typeof(c) === "string");
-// const presentSpecialities = candidateSpecEntries.flatMap(s => zohoMultiStringToArray(s));
+// const subscribersDatapecEntries = subscribersData.map(c => c.specialities).filter(c => typeof(c) === "string");
+// const presentSpecialities = subscribersDatapecEntries.flatMap(s => zohoMultiStringToArray(s));
 // const uniqSpecialities = [...new Set(presentSpecialities)].sort();
 
 const useQuery = () => {
@@ -384,7 +383,7 @@ const App = () => {
           <AgGridColumn
             wrapText={true}
             field="customRendered"
-            headerName="Candidates"
+            headerName="subscribersData"
             cellRendererFramework={CandidateCellRenderer}
           ></AgGridColumn>
           <AgGridColumn
