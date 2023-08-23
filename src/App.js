@@ -111,7 +111,7 @@ const App = () => {
   const selectedPlatformsRef = useRef();
   selectedPlatformsRef.current = selectedPlatforms;
 
-  const [rowData] = useState(subscribersData.default);
+  const [rowData] = useState(subscribersData);
   const query = useQuery();
 
   function onGridReady(params) {
