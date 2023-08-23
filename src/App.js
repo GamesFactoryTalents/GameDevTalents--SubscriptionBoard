@@ -111,7 +111,7 @@ const App = () => {
   const selectedPlatformsRef = useRef();
   selectedPlatformsRef.current = selectedPlatforms;
 
-  const rowData = useState(subscribersData);
+  const rowData = useState(subscribersData[0]);
   console.log(rowData);
   const query = useQuery();
 
