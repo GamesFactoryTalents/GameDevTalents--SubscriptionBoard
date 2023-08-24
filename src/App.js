@@ -379,33 +379,23 @@ const App = () => {
         <div className="filter-control">
           <FormControl variant="outlined">
             <ChippedMultiselect
-              id="engineMultiselect"
-              labelText="Engines"
-              options={engines}
-              onChange={onEnginesSelected}
-              value={selectedEngines}
-            />
-          </FormControl>
-        </div>
-        <div className="filter-control">
-          <FormControl variant="outlined">
-            <ChippedMultiselect
-              id="ganreMultiselect"
-              labelText="Ganres"
-              options={ganres}
-              onChange={onGanresSelected}
-              value={selectedGanres}
-            />
-          </FormControl>
-        </div>
-        <div className="filter-control">
-          <FormControl variant="outlined">
-            <ChippedMultiselect
               id="seniorotyMultiselect"
               labelText="Seniority level"
               options={seniorityLevels}
               onChange={onSenioritySelected}
               value={selectedSeniority}
+            />
+          </FormControl>
+        </div>
+        <div className="filter-control">
+          <FormControl variant="outlined">
+            <ChippedMultiselect
+              id="specialitiesMultiselect"
+              disabled={!selectedCategory}
+              labelText="Specialisations"
+              options={specOptions}
+              onChange={specialitiesChanged}
+              value={selectedSpecialities}
             />
           </FormControl>
         </div>
@@ -446,23 +436,33 @@ const App = () => {
         <div className="filter-control">
           <FormControl variant="outlined">
             <ChippedMultiselect
-              id="specialitiesMultiselect"
-              disabled={!selectedCategory}
-              labelText="Specialities"
-              options={specOptions}
-              onChange={specialitiesChanged}
-              value={selectedSpecialities}
+              id="ganreMultiselect"
+              labelText="Game Genres"
+              options={ganres}
+              onChange={onGanresSelected}
+              value={selectedGanres}
             />
           </FormControl>
         </div>
         <div className="filter-control">
+          <FormControl variant="outlined">
+            <ChippedMultiselect
+              id="engineMultiselect"
+              labelText="Game Engines"
+              options={engines}
+              onChange={onEnginesSelected}
+              value={selectedEngines}
+            />
+          </FormControl>
+        </div>
+        <div className="filter-control wide">
           <FormControl>
             <TextField
               id="keywordsInput"
               className="filter-select-box"
               variant="outlined"
               value={chosenSearch}
-              label="Search"
+              label="Keywords Search"
               type="search"
               onChange={onFilterTextBoxChanged}
             />

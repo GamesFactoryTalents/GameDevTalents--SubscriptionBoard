@@ -36,6 +36,7 @@ function CandidateCellRenderer(params) {
   const gamePlatformsLine = filteredGamePlatforms.map((spec, idx) => (
     <Chip key={`sp-${idx}-${spec}`} label={spec} />
   ));
+  const salaryRangeLine = '';
 
   const employmentOptions = params.data.employmentOptions;
   const linkJob = params.data.linkJob;
@@ -54,25 +55,13 @@ function CandidateCellRenderer(params) {
   const skillsArray = params.data.skills
     ? zohoMultiStringToArray(params.data.skills)
     : [];
-  const platformsArray = params.data.platforms
-    ? zohoMultiStringToArray(params.data.platforms)
-    : [];
   const filteredSkillsArray = skillsArray.filter((s) => s.length > 0);
-  const filteredPlatformsArray = platformsArray.filter((p) => p.length > 0);
   const skillsLine = filteredSkillsArray.map((spec, idx) => (
     <Chip
       key={`sk-${idx}-${spec}`}
       className="value-chip"
       color="primary"
       label={spec}
-    />
-  ));
-  const platformsLine = filteredPlatformsArray.map((pl, idx) => (
-    <Chip
-      key={`sk-${idx}-${pl}`}
-      className="value-chip"
-      color="primary"
-      label={pl}
     />
   ));
 
@@ -92,7 +81,6 @@ function CandidateCellRenderer(params) {
       <div className="cand-detail-row">
         <div className="cand-detail-block">
           <div className="elem top">
-            <div className="country light">{countryString}</div>
             <Box style={{ display: "flex", flexDirection: "column" }}>
               <a href={linkCompany}>
                 <div style={{ fontWeight: "600" }} className="id light">
@@ -106,33 +94,13 @@ function CandidateCellRenderer(params) {
           <div className="elem">
             <div className="title">{jobTitleLine}</div>
             <div class="seniority light">{seniorityString}</div>
-          </div>
-
-          <div className="elem info">
             <div className="relocate light">{employmentOptions}</div>
+            <div className="country light">{countryString}</div>
           </div>
           {specialitiesLine.length > 0 && (
             <div className="elem">
-              <div className="sm-title light">Specialities:</div>
+              <div className="sm-title light">Specialisations:</div>
               <div className="elem-values">{specialitiesLine}</div>
-            </div>
-          )}
-          {gameGenresLine.length > 0 && (
-            <div className="elem">
-              <div className="sm-title light">Ganres:</div>
-              <div className="elem-values">{gameGenresLine}</div>
-            </div>
-          )}
-          {gameEnginesLine.length > 0 && (
-            <div className="elem">
-              <div className="sm-title light">Engines:</div>
-              <div className="elem-values">{gameEnginesLine}</div>
-            </div>
-          )}
-          {gamePlatformsLine.length > 0 && (
-            <div className="elem">
-              <div className="sm-title light">Platforms:</div>
-              <div className="elem-values">{gamePlatformsLine}</div>
             </div>
           )}
           {skillsLine.length > 0 && (
@@ -141,18 +109,35 @@ function CandidateCellRenderer(params) {
               <div className="elem-values">{skillsLine}</div>
             </div>
           )}
-
-          {platformsLine.length > 0 && (
+          {gameGenresLine.length > 0 && (
             <div className="elem">
-              <div className="sm-title light">Platforms:</div>
-              <div className="elem-values">{platformsLine}</div>
+              <div className="sm-title light">Game Genres:</div>
+              <div className="elem-values">{gameGenresLine}</div>
+            </div>
+          )}
+          {gameEnginesLine.length > 0 && (
+            <div className="elem">
+              <div className="sm-title light">Game Engines:</div>
+              <div className="elem-values">{gameEnginesLine}</div>
+            </div>
+          )}
+          {gamePlatformsLine.length > 0 && (
+            <div className="elem">
+              <div className="sm-title light">Game Platforms:</div>
+              <div className="elem-values">{gamePlatformsLine}</div>
+            </div>
+          )}
+          {salaryRangeLine.length > 0 && (
+            <div className="elem">
+              <div className="sm-title light">Salary Range:</div>
+              <div className="elem-values">{salaryRangeLine}</div>
             </div>
           )}
 
           {
             <div className="elem buttons">
               <Button variant="contained" href={linkJob}>
-                Link to Job
+                Read More
               </Button>
             </div>
           }
