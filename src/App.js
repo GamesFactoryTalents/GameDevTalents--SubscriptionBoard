@@ -504,7 +504,7 @@ const App = () => {
           <AgGridColumn
             flex={4}
             field="specialities"
-            headerName="Speciality"
+            headerName="Specialisations"
             hide={!query.get("debug")}
           ></AgGridColumn>
           <AgGridColumn
