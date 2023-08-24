@@ -25,10 +25,11 @@ const countriesList = [
 ];
 
 const possibleCategories = skillTree.map((value) => Object.keys(value)[0]);
-const platformsSet =
+let platformsSet =
   subscribers.default
     .map((c) => c.gamePlatforms.split(","))
     .flatMap((array) => array) || [];
+platformsSet = [...new Set(platformsSet)].filter((e) => e !== "");
 const seniorityLevels =
   subscribers.default
     .map((c) => c.seniorityLevel.split(","))
@@ -37,8 +38,11 @@ const ganres =
   subscribers.default
     .map((c) => c.gameGenres.split(","))
     .flatMap((array) => array) || [];
-let engines = subscribers.default.map((c) => c.gameEngines.split(",")).flatMap((array) => array) || [];
-engines = [...new Set(engines)].filter(e => e !== "");
+let engines =
+  subscribers.default
+    .map((c) => c.gameEngines.split(","))
+    .flatMap((array) => array) || [];
+engines = [...new Set(engines)].filter((e) => e !== "");
 
 const candidateCategories = subscribers.default.map((c) => c.category);
 const uniqCandidateCategories = [...new Set(candidateCategories)];
@@ -184,21 +188,10 @@ const App = () => {
   }
 
   function platformsChanged(e, value, reason) {
-    // console.log("in specialitiesChanged, selectedSpecialities is ", selectedSpecialities);
-
     setSelectedPlatforms(value);
     selectedPlatformsRef.current = value;
     gridApi.onFilterChanged();
-    // const wholeTableFilterModel = gridApi.getFilterModel();
-    //
-    // wholeTableFilterModel.platforms = {
-    //   type: 'contains',
-    //   filter: value[0]
-    // }
-    //
-    // gridApi.setFilterModel(wholeTableFilterModel);
   }
-
 
   function onPaginationChange(e) {
     console.log("pagination changed", e);
@@ -264,7 +257,7 @@ const App = () => {
     const selEngines = selectedEnginesRef.current;
     let testTarget = node.data.specialities;
     let testTargetSkills = node.data.skills;
-    let testTargetPlatfroms = node.data.platforms;
+    let testTargetPlatfroms = node.data.gamePlatforms;
     let testTargetCountries = node.data.country;
     let testTargetSeniorities = node.data.seniorityLevel;
     let testTargetGanres = node.data.gameGenres;
@@ -438,27 +431,7 @@ const App = () => {
             />
           </FormControl>
         </div>
-        {/* <div className="filter-control checkbox">
-                <FormControl className="filter-control" variant="outlined">
-                <label className="container">
-                  <input type="checkbox"
-                       onChange={onExpSelected} />
-                  <p>Experience in Games industry</p>
-                  <span className="checkmark"></span>
-                  </label>
-                </FormControl>
-                </div> */}
 
-        {/* <div className="filter-control checkbox">
-                    <FormControl className="filter-control" variant="outlined">
-                    <label className="container">
-                      <input type="checkbox"
-                           onChange={onRelocateSelected} />
-                      <p>Ready to Relocate</p>
-                      <span className="checkmark"></span>
-                      </label>
-                    </FormControl>
-                    </div> */}
         <div className="filter-control">
           <FormControl variant="outlined">
             <ChippedMultiselect
