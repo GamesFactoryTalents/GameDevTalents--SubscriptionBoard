@@ -2,6 +2,7 @@ import Chip from "@material-ui/core/Chip";
 import Button from "@material-ui/core/Button";
 import { zohoMultiStringToArray } from "./Utils";
 import { Box } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
 
 function CandidateCellRenderer(params) {
   const jobTitleLine = params.data.jobTitle ? (
@@ -12,7 +13,9 @@ function CandidateCellRenderer(params) {
   const specialitiesArray = params.data.specialities
     ? zohoMultiStringToArray(params.data.specialities)
     : [];
+    
 
+    console.log('params', params);
   const gameGenres = params.data.gameGenres
     ? params.data.gameGenres.split(",")
     : [];
@@ -76,8 +79,14 @@ function CandidateCellRenderer(params) {
     <span>&nbsp;</span>
   );
 
+  const navigate = useNavigate();
+
+  function openSingleSubscription(id) {
+    navigate(`/details/${id}`)
+  }
+
   return (
-    <div className="candidateRowCell">
+    <div onClick={() => openSingleSubscription(params.data.ip)} className="candidateRowCell">
       <div className="cand-detail-row">
         <div className="cand-detail-block">
           <div className="elem top">
