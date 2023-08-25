@@ -4,6 +4,7 @@ import { Box, ListItem, ListItemText, Typography } from "@material-ui/core";
 import logo from "./logo.png";
 import ChipSelected from "./ChipSelected";
 import CommonBtn from "./commonBtn";
+import GoBack from "./GoBack";
 
 const SingleSubscription = () => {
   const { id } = useParams();
@@ -397,6 +398,8 @@ colaborative minoset`}</Typography>
           recipient={currentSubscriber.emailAddress}
         />
       </Box>
+
+      <GoBack />
     </Box>
   );
 };
