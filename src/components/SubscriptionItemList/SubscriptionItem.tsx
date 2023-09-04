@@ -5,6 +5,7 @@ import getSubscriberData from "../../utils/getSubscriberData";
 import ChipStyled from "../ChipStyled/ChipStyled";
 import ChipStyledEnum from "../../interfaces/ChipStyledEnum";
 import { useRouter } from "next/navigation";
+import CommonBtn from "../CommonBtn/CommonBtn";
 
 export default function SubscriptionItem({
   subscriber,
@@ -39,6 +40,7 @@ export default function SubscriptionItem({
     theirCulture,
     reasonsToWork,
     logoFile,
+    created_at,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
 
@@ -48,6 +50,7 @@ export default function SubscriptionItem({
         borderBottom: `1px solid ${theme.palette.gray.strong}`,
         padding: "40px 16px 40px 0",
         cursor: "pointer",
+        position: "relative",
       }}
       onClick={() => push(`/info/${id}`)}
     >
@@ -157,6 +160,19 @@ export default function SubscriptionItem({
             ))}
           </Box>
         )}
+        <Box position="absolute" top="20px" right="10px" maxWidth="250px">
+          <img src={logoFile.url}  style={{maxWidth: '70px', maxHeight: '70px', position: 'absolute', left: '-90px'}}/>
+          <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
+          <Typography variant="subtitle2">{`Job Posted: ${new Date(
+            created_at
+          ).getUTCFullYear()}-${(new Date(created_at).getUTCMonth() + 1)
+            .toString()
+            .padStart(2, "0")}-${new Date(created_at)
+            .getUTCDate()
+            .toString()
+            .padStart(2, "0")}`}</Typography>
+          <Typography variant="subtitle2">{`Category: ${category}`}</Typography>
+        </Box>
       </Stack>
       {/* The comment below is about disabling MUI and TS discord */}
       {/* @ts-ignore comment */}

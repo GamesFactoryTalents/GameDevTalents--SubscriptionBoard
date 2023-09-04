@@ -308,6 +308,15 @@ const InfoPage = ({ id, info }: Props) => {
         </Box>
 
         <Box position="absolute" top="20px" right="10px" maxWidth="250px">
+          <img
+            src={logoFile.url}
+            style={{
+              maxWidth: "70px",
+              maxHeight: "70px",
+              position: "absolute",
+              left: "-90px",
+            }}
+          />
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at
