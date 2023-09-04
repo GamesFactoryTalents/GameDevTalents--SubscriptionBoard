@@ -179,9 +179,7 @@ const FilterMenu = () => {
         );
         break;
       case "category":
-        setSelectedCategory((prevSelected) =>
-          prevSelected.filter((item) => item !== value)
-        );
+        setSelectedCategory(value);
         break;
       case "specialisations":
         setSelectedSpecialisations((prevSelected) =>
