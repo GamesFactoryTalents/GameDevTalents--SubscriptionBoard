@@ -54,7 +54,7 @@ export default function SubscriptionItem({
       }}
       onClick={() => push(`/info/${id}`)}
     >
-      <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: "8px", maxWidth: '60%' }}>
         {/* The comment below is about disabling MUI and TS discord */}
         {/* @ts-ignore comment */}
         <Typography variant="candidateTitle">{jobTitle}</Typography>
