@@ -42,7 +42,7 @@ const customTheme = createTheme({
       lineHeight: "17px",
       marginRight: "4px",
       color: "#1a1a1c",
-      minWidth: "110px",
+      minWidth: "120px",
     },
     chipCornerText: {
       fontSize: 10,
