@@ -9,7 +9,6 @@ class AppState {
   }
 
   candidatesDispatch = (value: any) => {
-    console.log('newCandidates', JSON.parse(JSON.stringify([...value])));
     this.subscribers = JSON.parse(JSON.stringify([...value]));
   }
 

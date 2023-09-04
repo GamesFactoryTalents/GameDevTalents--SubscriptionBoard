@@ -43,7 +43,6 @@ export default function SubscriptionItem({
     created_at,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
-  console.log("logoFile", logoFile);
   return (
     <Box
       sx={{

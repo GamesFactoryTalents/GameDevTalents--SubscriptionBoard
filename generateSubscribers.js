@@ -11,7 +11,6 @@ async function main() {
     })
     .on('end', () => {
       const subscribersString = JSON.stringify(subscribers, null, 2);
-      console.log(subscribersString);
       fs.writeFileSync('./src/generated/subscribers.json', subscribersString);
     });
 }
