@@ -182,13 +182,14 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Specialisations:
               </Typography>
-              {specialities.map((speciality: any) => (
-                <ChipStyled
-                  key={speciality}
-                  text={speciality}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(specialities) &&
+                specialities.map((speciality: any) => (
+                  <ChipStyled
+                    key={speciality}
+                    text={speciality}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
           {skills.toString() !== "" && (
@@ -196,13 +197,14 @@ const InfoPage = ({ id, info }: Props) => {
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">Skills:</Typography>
-              {skills.map((skill: any) => (
-                <ChipStyled
-                  key={skill}
-                  text={skill}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(skills) &&
+                skills.map((skill: any) => (
+                  <ChipStyled
+                    key={skill}
+                    text={skill}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
 
@@ -213,13 +215,14 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Game Ganres:
               </Typography>
-              {gameGenres.map((ganre: any) => (
-                <ChipStyled
-                  key={ganre}
-                  text={ganre}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(gameGenres) &&
+                gameGenres.map((ganre: any) => (
+                  <ChipStyled
+                    key={ganre}
+                    text={ganre}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
           {gameEngines.toString() !== "" && (
@@ -229,13 +232,14 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Game Engines:
               </Typography>
-              {gameEngines.map((engine: any) => (
-                <ChipStyled
-                  key={engine}
-                  text={engine}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(gameEngines) &&
+                gameEngines.map((engine: any) => (
+                  <ChipStyled
+                    key={engine}
+                    text={engine}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
           {gamePlatforms.toString() !== "" && (
@@ -245,13 +249,14 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Game Platforms:
               </Typography>
-              {gamePlatforms.map((platform: any) => (
-                <ChipStyled
-                  key={platform}
-                  text={platform}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(gamePlatforms) &&
+                gamePlatforms.map((platform: any) => (
+                  <ChipStyled
+                    key={platform}
+                    text={platform}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
           {salaryRange.toString() !== "[0, 100000]" && (
@@ -261,13 +266,14 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Game Platforms:
               </Typography>
-              {gamePlatforms.map((platform: any) => (
-                <ChipStyled
-                  key={platform}
-                  text={`€ ${salaryRange[0]} - ${salaryRange[1]}`}
-                  type={ChipStyledEnum.round}
-                />
-              ))}
+              {Array.isArray(gamePlatforms) &&
+                gamePlatforms.map((platform: any) => (
+                  <ChipStyled
+                    key={platform}
+                    text={`€ ${salaryRange[0]} - ${salaryRange[1]}`}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
             </Box>
           )}
         </Stack>
