@@ -64,12 +64,15 @@ const InfoPage = ({ id, info }: Props) => {
           <Typography variant="singleSubscriptionTitle">
             {info.jobTitle}
           </Typography>
-          {info.employmentOptions && (
-            <ChipStyled
-              text={info.employmentOptions}
-              type={ChipStyledEnum.corner}
-            />
-          )}
+          {info.employmentOptions &&
+            Array.isArray(info.employmentOptions) &&
+            info.employmentOptions.map((option: any) => (
+              option &&
+              <ChipStyled
+                text={info.employmentOptions}
+                type={ChipStyledEnum.corner}
+              />
+            ))}
 
           {info.country && (
             <ChipStyled text={info.country} type={ChipStyledEnum.corner} />
@@ -284,18 +287,24 @@ const InfoPage = ({ id, info }: Props) => {
               {"Employment Preferences:"}
             </Typography>
             <Box sx={{ display: "flex", gap: 1 }}>
-              {employmentOptions !== "" && (
-                <ChipStyled
-                  text={employmentOptions}
-                  type={ChipStyledEnum.employmentOptions}
-                />
-              )}
-              {workPreferences !== "" && (
-                <ChipStyled
-                  text={workPreferences || "123"}
-                  type={ChipStyledEnum.workPreferences}
-                />
-              )}
+              {employmentOptions !== "" &&
+                Array.isArray(employmentOptions) &&
+                employmentOptions.map((option: any) => (
+                  option &&
+                  <ChipStyled
+                    text={option}
+                    type={ChipStyledEnum.employmentOptions}
+                  />
+                ))}
+              {(workPreferences !== "" &&
+                Array.isArray(workPreferences)) &&
+                workPreferences.map((option: any) => (
+                  option &&
+                  <ChipStyled
+                    text={option}
+                    type={ChipStyledEnum.workPreferences}
+                  />
+                ))}
             </Box>
           </Box>
         )}

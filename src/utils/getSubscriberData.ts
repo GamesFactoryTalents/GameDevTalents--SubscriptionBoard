@@ -31,7 +31,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     aboutStudio: subscriber.aboutStudio,
     theirCulture: subscriber.theirCulture,
     reasonsToWork: subscriber.reasonsToWork,
-    logoFile: JSON.parse(subscriber.logoFile),
+    logoFile: (subscriber.logoFile),
     workPreferences: subscriber.workPreferences.includes(',') ? subscriber.workPreferences.split(',') : [subscriber.workPreferences],
   };
 }
