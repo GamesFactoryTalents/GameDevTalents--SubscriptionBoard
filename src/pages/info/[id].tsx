@@ -106,8 +106,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              • Empower the team for success by removing obstacles, managing
-              risks, and may be even making coffee
+              {requirements}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
@@ -117,8 +116,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              • Empower the team for success by removing obstacles, managing
-              risks, and may be even making coffee
+              {idealAdditions}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
@@ -128,15 +126,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              The hiring studio is a multinational team of over 70 individuals
-              representing more than 20 nationalities, including a mix of
-              experienced industry professionals and up-and-coming talents. It
-              is a rapidly expanding studio that offers opportunities to work on
-              some of the most renowned game IPs worldwide. The studio aspires
-              to become the favored partner for AAA developers and publishers on
-              a global scale. To realize this ambition, the team plans to
-              continue growing until it can rightfully claim the distinction of
-              being Europe most exciting co-development employer.
+             {aboutStudio}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
@@ -146,10 +136,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              Every member contributes to shaping the company culture and
-              crafting distinctive, appealing games. When seeking new team
-              members, they highl • Quanties such as passion, integrity, and c
-              colaborative minoset
+             {theirCulture}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
@@ -159,8 +146,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              • Empower the team for success by removing obstacles, managing
-              risks, and may be even making coffee
+              {reasonsToWork}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
@@ -170,8 +156,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              • Empower the team for success by removing obstacles, managing
-              risks, and may be even making coffee
+              {benefits}
             </Typography>
           </Box>
         </Stack>
