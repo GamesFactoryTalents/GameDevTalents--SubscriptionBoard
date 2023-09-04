@@ -261,7 +261,6 @@ const FilterMenu = () => {
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
-          multiple
           disabled={!selectedCategory.length}
           value={selectedSpecialisations}
           onChange={changeSelectedSpecialisations}
