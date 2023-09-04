@@ -43,7 +43,7 @@ export default function SubscriptionItem({
     created_at,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
-console.log('logoFile', logoFile);
+  console.log("logoFile", logoFile);
   return (
     <Box
       sx={{
@@ -58,12 +58,16 @@ console.log('logoFile', logoFile);
         {/* The comment below is about disabling MUI and TS discord */}
         {/* @ts-ignore comment */}
         <Typography variant="candidateTitle">{jobTitle}</Typography>
-        {seniorityLevel && (
-          <ChipStyled text={seniorityLevel} type={ChipStyledEnum.corner} />
-        )}
-        {employmentOptions && (
-          <ChipStyled text={employmentOptions} type={ChipStyledEnum.corner} />
-        )}
+        {seniorityLevel &&
+          seniorityLevel.map((seniority: any) => (
+            seniority &&
+            <ChipStyled text={seniority} type={ChipStyledEnum.corner} />
+          ))}
+        {employmentOptions &&
+          employmentOptions.map((employmentOption: any) => (
+            employmentOption &&
+            <ChipStyled text={employmentOption} type={ChipStyledEnum.corner} />
+          ))}
         {country && <ChipStyled text={country} type={ChipStyledEnum.corner} />}
       </Box>
 
@@ -148,9 +152,7 @@ console.log('logoFile', logoFile);
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
-            <Typography variant="candidateOptionText">
-              Salary Range:
-            </Typography>
+            <Typography variant="candidateOptionText">Salary Range:</Typography>
             {gamePlatforms.map((platform: any) => (
               <ChipStyled
                 key={platform}
@@ -161,7 +163,15 @@ console.log('logoFile', logoFile);
           </Box>
         )}
         <Box position="absolute" top="20px" right="10px" maxWidth="250px">
-          <img src={logoFile.url} style={{maxWidth: '70px', maxHeight: '70px', position: 'absolute', left: '-90px'}}/>
+          <img
+            src={logoFile.url}
+            style={{
+              maxWidth: "70px",
+              maxHeight: "70px",
+              position: "absolute",
+              left: "-90px",
+            }}
+          />
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at

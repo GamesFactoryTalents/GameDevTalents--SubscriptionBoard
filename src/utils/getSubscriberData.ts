@@ -15,8 +15,8 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     gameGenres: Array.isArray(subscriber.gameGenres) ? [] : subscriber.gameGenres.split(','),
     gameEngines: Array.isArray(subscriber.gameEngines) ? [] : subscriber.gameEngines.split(','),
     gamePlatforms: Array.isArray(subscriber.gamePlatforms) ? [] : subscriber.gamePlatforms.split(','),
-    seniorityLevel: subscriber.seniorityLevel,
-    employmentOptions: subscriber.employmentOptions,
+    seniorityLevel: subscriber.seniorityLevel.split(','),
+    employmentOptions: subscriber.employmentOptions.includes(',') ? subscriber.employmentOptions.split(',') : [subscriber.employmentOptions],
     country: subscriber.country,
     ip: subscriber.ip,
     user_agent: subscriber.user_agent,
@@ -32,6 +32,6 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     theirCulture: subscriber.theirCulture,
     reasonsToWork: subscriber.reasonsToWork,
     logoFile: JSON.parse(subscriber.logoFile),
-    workPreferences: subscriber.workPreferences,
+    workPreferences: subscriber.workPreferences.includes(',') ? subscriber.workPreferences.split(',') : [subscriber.workPreferences],
   };
 }
