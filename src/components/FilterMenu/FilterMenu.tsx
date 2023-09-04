@@ -74,36 +74,38 @@ const FilterMenu = () => {
       return;
     }
 
-    const currentCandidates = subscribers.filter((subscriber: ISubscriptionItem) => {
-      const subscriberData = getSubscriberData(subscriber);
+    const currentCandidates = subscribers.filter(
+      (subscriber: ISubscriptionItem) => {
+        const subscriberData = getSubscriberData(subscriber);
 
-      return (
-        allFilters.selectedSkills.every((skill) =>
-          subscriberData.skills.includes(skill)
-        ) &&
-        allFilters.selectedSpecialisations.every((specialisation) =>
-          subscriberData.specialities.includes(specialisation)
-        ) &&
-        allFilters.selectedGanres.every((ganre) =>
-          subscriberData.gameGenres.includes(ganre)
-        ) &&
-        allFilters.selectedEngines.every((engine) =>
-          subscriberData.gameEngines.includes(engine)
-        ) &&
-        allFilters.selectedPlatforms.every((platform) =>
-          subscriberData.gamePlatforms.includes(platform)
-        ) &&
-        allFilters.selectedCountries.every((country) =>
-          subscriberData.country.includes(country)
-        ) &&
-        allFilters.selectedSeniorityLevel.every((seniorityLevel) =>
-          subscriberData.seniorityLevel.includes(seniorityLevel)
-        ) &&
-        subscriberData.category.every((category) =>
-          subscriberData.category.includes(category)
-        )
-      );
-    });
+        return (
+          allFilters.selectedSkills.every((skill) =>
+            subscriberData.skills.includes(skill)
+          ) &&
+          allFilters.selectedSpecialisations.every((specialisation) =>
+            subscriberData.specialities.includes(specialisation)
+          ) &&
+          allFilters.selectedGanres.every((ganre) =>
+            subscriberData.gameGenres.includes(ganre)
+          ) &&
+          allFilters.selectedEngines.every((engine) =>
+            subscriberData.gameEngines.includes(engine)
+          ) &&
+          allFilters.selectedPlatforms.every((platform) =>
+            subscriberData.gamePlatforms.includes(platform)
+          ) &&
+          allFilters.selectedCountries.every((country) =>
+            subscriberData.country.includes(country)
+          ) &&
+          allFilters.selectedSeniorityLevel.every((seniorityLevel) =>
+            subscriberData.seniorityLevel.includes(seniorityLevel)
+          ) &&
+          subscriberData.category.every((category) =>
+            subscriberData.category.includes(category)
+          )
+        );
+      }
+    );
 
     candidatesDispatch(currentCandidates);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -304,14 +306,11 @@ const FilterMenu = () => {
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
             >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "category")}
-                />
-              ))}
+              <Chip
+                label={selected}
+                onMouseDown={(e) => e.stopPropagation()}
+                onDelete={() => handleDelete(selected, "category")}
+              />
             </Box>
           )}
         >
