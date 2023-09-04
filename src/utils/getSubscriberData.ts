@@ -1,0 +1,37 @@
+import ISubscriptionItem from "../interfaces/SubscriptionItem";
+
+export default function getSubscriberData(subscriber: ISubscriptionItem) {
+  return {
+    firstName: subscriber.firstName,
+    lastName: subscriber.lastName,
+    companyName: subscriber.companyName,
+    linkCompany: subscriber.linkCompany,
+    linkJob: subscriber.linkJob,
+    emailAddress: subscriber.emailAddress,
+    jobTitle: subscriber.jobTitle,
+    category: subscriber.category.split(","),
+    specialities: subscriber.specialities.split(","),
+    skills: subscriber.skills.split(","),
+    gameGenres: subscriber.gameGenres.split(","),
+    gameEngines: subscriber.gameEngines.split(","),
+    gamePlatforms: subscriber.gamePlatforms.split(","),
+    seniorityLevel: subscriber.seniorityLevel,
+    employmentOptions: subscriber.employmentOptions,
+    country: subscriber.country,
+    ip: subscriber.ip,
+    user_agent: subscriber.user_agent,
+    referrer: subscriber.referrer,
+    created_at: subscriber.created_at,
+    id: subscriber.id,
+    salaryRange: [subscriber.salaryRange.split(',')[0], subscriber.salaryRange.split(',')[1]],
+    responsibilities: subscriber.responsibilities,
+    requirements: subscriber.requirements,
+    benefits: subscriber.benefits,
+    idealAdditions: subscriber.idealAdditions,
+    aboutStudio: subscriber.aboutStudio,
+    theirCulture: subscriber.theirCulture,
+    reasonsToWork: subscriber.reasonsToWork,
+    logoFile: subscriber.logoFile,
+    workPreferences: subscriber.workPreferences,
+  };
+}
