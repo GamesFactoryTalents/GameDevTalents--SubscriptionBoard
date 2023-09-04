@@ -95,8 +95,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-              • Empower the team for success by removing obstacles, managing
-              risks, and may be even making coffee
+             {responsibilities}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
