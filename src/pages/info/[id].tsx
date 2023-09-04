@@ -69,7 +69,7 @@ const InfoPage = ({ id, info }: Props) => {
             info.employmentOptions.map((option: any) => (
               option &&
               <ChipStyled
-                text={info.employmentOptions}
+                text={option}
                 type={ChipStyledEnum.corner}
               />
             ))}
