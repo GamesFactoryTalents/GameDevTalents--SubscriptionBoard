@@ -146,7 +146,7 @@ export default function SubscriptionItem({
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">
-              Game Platforms:
+              Salary Range:
             </Typography>
             {gamePlatforms.map((platform: any) => (
               <ChipStyled

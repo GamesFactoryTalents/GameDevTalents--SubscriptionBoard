@@ -264,7 +264,7 @@ const InfoPage = ({ id, info }: Props) => {
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
-                Game Platforms:
+                Salary Range:
               </Typography>
               {Array.isArray(gamePlatforms) &&
                 gamePlatforms.map((platform: any) => (
