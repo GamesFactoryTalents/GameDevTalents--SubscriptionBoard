@@ -35,7 +35,7 @@ const FilterMenu = () => {
   const _countries = countries.map((country) => country.label);
 
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedSpecialisations, setSelectedSpecialisations] = useState<
     string[]
   >([]);
@@ -62,7 +62,7 @@ const FilterMenu = () => {
 
     if (
       !selectedSkills.length &&
-      !selectedCategory.length &&
+      !selectedCategory &&
       !selectedSpecialisations.length &&
       !selectedGanres.length &&
       !selectedEngines.length &&
@@ -99,9 +99,6 @@ const FilterMenu = () => {
           ) &&
           allFilters.selectedSeniorityLevel.every((seniorityLevel) =>
             subscriberData.seniorityLevel.includes(seniorityLevel)
-          ) &&
-          subscriberData.category.every((category) =>
-            subscriberData.category.includes(category)
           )
         );
       }
@@ -143,7 +140,7 @@ const FilterMenu = () => {
   }
 
   function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
-    setSelectedCategory(event.target.value as string[]);
+    setSelectedCategory(event.target.value as string);
   }
 
   function changeSelectedSpecialisations(event: SelectChangeEvent<string[]>) {
@@ -179,7 +176,7 @@ const FilterMenu = () => {
         );
         break;
       case "category":
-        setSelectedCategory(value);
+        setSelectedCategory(null);
         break;
       case "specialisations":
         setSelectedSpecialisations((prevSelected) =>
@@ -262,7 +259,7 @@ const FilterMenu = () => {
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
           multiple
-          disabled={!selectedCategory.length}
+          disabled={!selectedCategory}
           value={selectedSpecialisations}
           onChange={changeSelectedSpecialisations}
           input={
@@ -297,7 +294,7 @@ const FilterMenu = () => {
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
-          value={selectedCategory}
+          value={selectedCategory as any}
           onChange={changeSelectedCategory}
           input={<OutlinedInput id="select-multiple-chip" label="Category" />}
           renderValue={(selected) => (
@@ -307,7 +304,7 @@ const FilterMenu = () => {
               <Chip
                 label={selected}
                 onMouseDown={(e) => e.stopPropagation()}
-                onDelete={() => handleDelete(selected, "category")}
+                onDelete={() => handleDelete(null, "category")}
               />
             </Box>
           )}

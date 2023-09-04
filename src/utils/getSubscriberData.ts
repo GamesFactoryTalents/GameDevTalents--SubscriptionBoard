@@ -9,7 +9,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     linkJob: subscriber.linkJob,
     emailAddress: subscriber.emailAddress,
     jobTitle: subscriber.jobTitle,
-    category: subscriber.category.split(","),
+    category: subscriber.category,
     specialities: Array.isArray(subscriber.specialities) ? [] : subscriber.specialities.split(','),
     skills: Array.isArray(subscriber.skills) ? [] : subscriber.skills.split(','),
     gameGenres: Array.isArray(subscriber.gameGenres) ? [] : subscriber.gameGenres.split(','),
