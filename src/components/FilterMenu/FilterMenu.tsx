@@ -17,6 +17,7 @@ import store from "../../store/store";
 import getSubscriberData from "../../utils/getSubscriberData";
 import subscribers from "../../generated/subscribers.json";
 import TextField from "@mui/material/TextField";
+import ISubscriptionItem from "../../interfaces/SubscriptionItem";
 
 const FilterMenu = () => {
   const {
@@ -73,7 +74,7 @@ const FilterMenu = () => {
       return;
     }
 
-    const currentCandidates = subscribers.filter((subscriber) => {
+    const currentCandidates = subscribers.filter((subscriber: ISubscriptionItem) => {
       const subscriberData = getSubscriberData(subscriber);
 
       return (
@@ -119,7 +120,7 @@ const FilterMenu = () => {
 
   useEffect(() => {
     if (searchField) {
-      const fromSearch = subscribers.filter((subscriber) => {
+      const fromSearch = subscribers.filter((subscriber: ISubscriptionItem) => {
         if (
           JSON.stringify(subscriber)
             .toLocaleLowerCase()
