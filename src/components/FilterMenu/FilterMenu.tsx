@@ -19,7 +19,6 @@ import subscribers from "../../generated/subscribers.json";
 import TextField from "@mui/material/TextField";
 import ISubscriptionItem from "../../interfaces/SubscriptionItem";
 
-
 import skillTree from "../../commonSettings/skillTree";
 
 const FilterMenu = () => {
@@ -38,9 +37,8 @@ const FilterMenu = () => {
   let countriesList = countries.map((country) => country.label);
   const _countries = ["Europe", ...countriesList];
 
-
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedSpecialisations, setSelectedSpecialisations] = useState<
     string[]
   >([]);
@@ -52,7 +50,6 @@ const FilterMenu = () => {
     string[]
   >([]);
   const [searchField, setSearchField] = useState<string>("");
-
 
   const [specialisationsForCategory, setSpecialisationsForCategory] = useState<
     string[]
@@ -83,14 +80,15 @@ const FilterMenu = () => {
       setDefaultCandidates();
       return;
     }
-    
 
     const currentCandidates = subscribers.filter(
       (subscriber: ISubscriptionItem) => {
         const subscriberData = getSubscriberData(subscriber);
 
         return (
-          (allFilters.selectedCategory === "" || allFilters.selectedCategory === null || allFilters.selectedCategory === subscriberData.category) &&
+          (allFilters.selectedCategory === "" ||
+            allFilters.selectedCategory === null ||
+            allFilters.selectedCategory === subscriberData.category) &&
           allFilters.selectedSkills.every((skill) =>
             subscriberData.skills.includes(skill)
           ) &&
@@ -109,9 +107,11 @@ const FilterMenu = () => {
           allFilters.selectedCountries.every((country) =>
             subscriberData.country.includes(country)
           ) &&
-          (!Array.isArray(allFilters.selectedSeniorityLevel) || allFilters.selectedSeniorityLevel.length === 0 || allFilters.selectedSeniorityLevel.some((seniorityLevel) =>
-            subscriberData.seniorityLevel.includes(seniorityLevel)
-          ))
+          (!Array.isArray(allFilters.selectedSeniorityLevel) ||
+            allFilters.selectedSeniorityLevel.length === 0 ||
+            allFilters.selectedSeniorityLevel.some((seniorityLevel) =>
+              subscriberData.seniorityLevel.includes(seniorityLevel)
+            ))
         );
       }
     );
@@ -147,46 +147,43 @@ const FilterMenu = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchField]);
 
-/* I'm too tired to think how to do it better, sorry =( */
-  function specialitiesForCategory(category: string) {
+  function specialitiesForCategory(category: string): any {
     const categoryEntry = skillTree.find((item) => {
       return Object.keys(item)[0].toString().includes(category);
     });
-    const rawSpecList = categoryEntry ? Object.values(categoryEntry)[0].specialities : [];
+    const rawSpecList = categoryEntry
+      ? Object.values(categoryEntry)[0].specialities
+      : [];
+    console.log("rawSpecList", rawSpecList);
     const uniqSpecList = [...new Set(rawSpecList)];
+    console.log("uniqSpecList", uniqSpecList.sort());
     return uniqSpecList.sort();
   }
 
   function changeSelectedSkills(event: SelectChangeEvent<string[]>) {
     setSelectedSkills(event.target.value as string[]);
-    // event.target.blur();
   }
 
   function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
     setSelectedSpecialisations([]);
     setSelectedCategory(event.target.value as string);
-    setSpecialisationsForCategory(specialitiesForCategory(selectedCategory) as string[]);
-    // event.target.blur();
+    setSpecialisationsForCategory(specialitiesForCategory(event.target.value as string));
   }
 
   function changeSelectedSpecialisations(event: SelectChangeEvent<string[]>) {
     setSelectedSpecialisations(event.target.value as string[]);
-    // event.target.blur();
   }
 
   function changeSelectedGanres(event: SelectChangeEvent<string[]>) {
     setSelecteGanres(event.target.value as string[]);
-    // event.target.blur();
   }
 
   function changeSelectedEngines(event: SelectChangeEvent<string[]>) {
     setSelectedEngines(event.target.value as string[]);
-    // event.target.blur();
   }
 
   function changeSelectedPlatforms(event: SelectChangeEvent<string[]>) {
     setSelectedPlatforms(event.target.value as string[]);
-    // event.target.blur();
   }
 
   function changeSelectedCountries(event: SelectChangeEvent<string[]>) {
@@ -215,7 +212,7 @@ const FilterMenu = () => {
         );
         break;
       case "category":
-        setSelectedCategory('');
+        setSelectedCategory("");
         break;
       case "specialisations":
         setSelectedSpecialisations((prevSelected) =>
@@ -258,10 +255,14 @@ const FilterMenu = () => {
         justifyContent: "space-between",
       }}
     >
-
       {/* Category */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Category</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Category
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -270,7 +271,7 @@ const FilterMenu = () => {
           input={<OutlinedInput id="select-multiple-chip" label="Category" />}
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => selected}
@@ -287,8 +288,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* seniorityLevel */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Seniority Level</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Seniority Level
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -300,7 +306,7 @@ const FilterMenu = () => {
           }
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -327,8 +333,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Specialisations */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Specialisations</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Specialisations
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -341,7 +352,7 @@ const FilterMenu = () => {
           }
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -359,17 +370,23 @@ const FilterMenu = () => {
             </Box>
           )}
         >
-          {selectedCategory && specialisationsForCategory.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
+          {selectedCategory &&
+            specialisationsForCategory.map((name: string) => (
+              <MenuItem key={name} value={name}>
+                {name}
+              </MenuItem>
+            ))}
         </Select>
       </FormControl>
 
       {/* Skills */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Skills</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Skills
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -379,7 +396,7 @@ const FilterMenu = () => {
           input={<OutlinedInput id="select-multiple-chip" label="Skills" />}
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -406,8 +423,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gamePlatforms */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Platforms</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Platforms
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -419,7 +441,7 @@ const FilterMenu = () => {
           }
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -446,8 +468,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameGenres */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Game Genres</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Game Genres
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -457,7 +484,7 @@ const FilterMenu = () => {
           input={<OutlinedInput id="select-multiple-chip" label="gameGenres" />}
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -484,8 +511,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameEngines */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Game Engines</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Game Engines
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -497,7 +529,7 @@ const FilterMenu = () => {
           }
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -524,8 +556,13 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Countries */}
-      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
-        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Countries</InputLabel>
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+        <InputLabel
+          id="demo-multiple-chip-label"
+          sx={{ top: "-3px", lineHeight: "1.05" }}
+        >
+          Countries
+        </InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -535,7 +572,7 @@ const FilterMenu = () => {
           input={<OutlinedInput id="select-multiple-chip" label="Countries" />}
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
           renderValue={(selected) => (
@@ -572,13 +609,13 @@ const FilterMenu = () => {
           onChange={(e) => setSearchField(e.target.value)}
           InputLabelProps={{
             sx: {
-              top: '-3px',
-              lineHeight: '1.05',
+              top: "-3px",
+              lineHeight: "1.05",
             },
           }}
           inputProps={{
             sx: {
-              padding: '10px',
+              padding: "10px",
             },
           }}
         />

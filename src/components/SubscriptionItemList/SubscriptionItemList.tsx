@@ -21,7 +21,7 @@ const SubscriptionItemList = (props: Props) => {
   return (
     <Stack sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
       {currentPageSubscribers.map((subscriber: ISubscriptionItem) => (
-        <SubscriptionItem key={subscriber.ip} subscriber={subscriber} />
+        <SubscriptionItem key={subscriber.id} subscriber={subscriber} />
       ))}
     </Stack>
   );

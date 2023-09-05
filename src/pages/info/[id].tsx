@@ -1,4 +1,11 @@
-import { Box, Container, Stack, Typography, Link, Tooltip } from "@mui/material";
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  Link,
+  Tooltip,
+} from "@mui/material";
 import ISubscriptionItem from "../../interfaces/SubscriptionItem";
 import getOneSubscriptionById from "../../utils/getOneSubscriptionById";
 import { Montserrat } from "next/font/google";
@@ -62,7 +69,7 @@ const InfoPage = ({ id, info }: Props) => {
           mt: {
             xs: "150px",
             md: "50px",
-          }
+          },
         }}
       >
         {info.showLogo && (
@@ -70,25 +77,35 @@ const InfoPage = ({ id, info }: Props) => {
             src={logoFile.url}
             style={{
               maxWidth: "70px",
-              maxHeight: "70px"
+              maxHeight: "70px",
             }}
           />
         )}
-      
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "center" }}>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 2,
+            alignItems: "center",
+          }}
+        >
           {/* @ts-ignore comment */}
           <Typography variant="singleSubscriptionTitle">
             {info.jobTitle}
           </Typography>
           {info.employmentOptions &&
             Array.isArray(info.employmentOptions) &&
-            info.employmentOptions.map((option: any) => (
-              option &&
-              <ChipStyled
-                text={option}
-                type={ChipStyledEnum.corner}
-              />
-            ))}
+            info.employmentOptions.map(
+              (option: any, index: number) =>
+                option && (
+                  <ChipStyled
+                    key={index}
+                    text={option}
+                    type={ChipStyledEnum.corner}
+                  />
+                )
+            )}
 
           {info.country && (
             <ChipStyled text={info.country} type={ChipStyledEnum.corner} />
@@ -115,7 +132,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-             {responsibilities}
+              {responsibilities}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
@@ -145,7 +162,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-             {aboutStudio}
+              {aboutStudio}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
@@ -155,7 +172,7 @@ const InfoPage = ({ id, info }: Props) => {
             </Typography>
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionText">
-             {theirCulture}
+              {theirCulture}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
@@ -174,16 +191,21 @@ const InfoPage = ({ id, info }: Props) => {
               {"Benefits:"}
             </Typography>
             {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {benefits}
-            </Typography>
+            <Typography variant="singleSubscriptionText">{benefits}</Typography>
           </Box>
         </Stack>
 
         {/* TODO: Make the component */}
         <Stack sx={{ gap: 2 }}>
           {specialities.toString() !== "" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
@@ -200,7 +222,14 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
           {skills.toString() !== "" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">Skills:</Typography>
@@ -216,7 +245,14 @@ const InfoPage = ({ id, info }: Props) => {
           )}
 
           {gameGenres.toString() !== "" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
@@ -233,7 +269,14 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
           {gameEngines.toString() !== "" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
@@ -250,7 +293,14 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
           {gamePlatforms.toString() !== "" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
@@ -267,30 +317,44 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
           {salaryRange.toString() !== "[0, 100000]" && (
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
               {/* The comment below is about disabling MUI and TS discord */}
               {/* @ts-ignore comment */}
               <Typography variant="candidateOptionText">
                 Salary Range:
               </Typography>
-              {(salaryRange[0] === '0' && salaryRange[1] === '100000') ? (
-              <ChipStyled
-              key={'Negotiable'}
-              text={'Negotiable'}
-              type={ChipStyledEnum.round}
-            />
-            ) : (
-              <ChipStyled
-                key={`${salaryRange[0]} - ${salaryRange[1]}`}
-                text={`€ ${salaryRange[0]} - ${salaryRange[1]}`}
-                type={ChipStyledEnum.round}
-              />
-            )}
+              {salaryRange[0] === "0" && salaryRange[1] === "100000" ? (
+                <ChipStyled
+                  key={"Negotiable"}
+                  text={"Negotiable"}
+                  type={ChipStyledEnum.round}
+                />
+              ) : (
+                <ChipStyled
+                  key={`${salaryRange[0]} - ${salaryRange[1]}`}
+                  text={`€ ${salaryRange[0]} - ${salaryRange[1]}`}
+                  type={ChipStyledEnum.round}
+                />
+              )}
             </Box>
           )}
         </Stack>
         {(workPreferences || employmentOptions) && (
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, flexDirection: "column" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 2,
+              flexDirection: "column",
+            }}
+          >
             {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionSubtitle">
               {"Employment Preferences:"}
@@ -298,22 +362,28 @@ const InfoPage = ({ id, info }: Props) => {
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
               {employmentOptions !== "" &&
                 Array.isArray(employmentOptions) &&
-                employmentOptions.map((option: any) => (
-                  option &&
-                  <ChipStyled
-                    text={option}
-                    type={ChipStyledEnum.employmentOptions}
-                  />
-                ))}
-              {(workPreferences !== "" &&
-                Array.isArray(workPreferences)) &&
-                workPreferences.map((option: any) => (
-                  option &&
-                  <ChipStyled
-                    text={option}
-                    type={ChipStyledEnum.workPreferences}
-                  />
-                ))}
+                employmentOptions.map(
+                  (option: any, index: number) =>
+                    option && (
+                      <ChipStyled
+                        key={index}
+                        text={option}
+                        type={ChipStyledEnum.employmentOptions}
+                      />
+                    )
+                )}
+              {workPreferences !== "" &&
+                Array.isArray(workPreferences) &&
+                workPreferences.map(
+                  (option: any, index: number) =>
+                    option && (
+                      <ChipStyled
+                        key={index}
+                        text={option}
+                        type={ChipStyledEnum.workPreferences}
+                      />
+                    )
+                )}
             </Box>
           </Box>
         )}
@@ -324,14 +394,39 @@ const InfoPage = ({ id, info }: Props) => {
             recipient={emailAddress}
           />
           <Link
-            href='/'
-            sx={{ display: 'flex', justifyContent: 'end', alignItems: "center", gap: 1, margin: '10px 0', fontSize: '12px', color: 'black', textDecoration: 'none', "::before": {content:'""',width: 0,height: 0, borderStyle: "solid", borderWidth: "10px 15px 10px 0", borderColor: "transparent #d9d9d9 transparent transparent"}}}
+            href="/"
+            sx={{
+              display: "flex",
+              justifyContent: "end",
+              alignItems: "center",
+              gap: 1,
+              margin: "10px 0",
+              fontSize: "12px",
+              color: "black",
+              textDecoration: "none",
+              "::before": {
+                content: '""',
+                width: 0,
+                height: 0,
+                borderStyle: "solid",
+                borderWidth: "10px 15px 10px 0",
+                borderColor: "transparent #d9d9d9 transparent transparent",
+              },
+            }}
           >
             Back to Roles search
           </Link>
         </Box>
 
-        <Box position="absolute" right="10px" maxWidth="250px" sx={{ top: {xs: "-130px", md: "20px"}, textAlign: {xs:"right", md: "left"}}}>
+        <Box
+          position="absolute"
+          right="10px"
+          maxWidth="250px"
+          sx={{
+            top: { xs: "-130px", md: "20px" },
+            textAlign: { xs: "right", md: "left" },
+          }}
+        >
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at
@@ -341,18 +436,42 @@ const InfoPage = ({ id, info }: Props) => {
             .getUTCDate()
             .toString()
             .padStart(2, "0")}`}</Typography>
-            {/* @ts-ignore comment */}
+          {/* @ts-ignore comment */}
           <Typography variant="subtitle3">{`Category: ${category}`}</Typography>
-          <Box sx={{position: "relative", display: "inline"}}>
+          <Box sx={{ position: "relative", display: "inline" }}>
             <CommonBtn
               variant="small"
               topic={`${jobTitle} ${companyName}`}
               recipient={emailAddress}
             />
-            <Tooltip title="Send us an email expressing interest in the role and we will reach out to you within 2 working days" placement="right">
-                <Link sx={{ cursor: "pointer", backgroundColor: "#F0F0F0", border: "1px solid #D9D9D9", borderRadius: "50%", fontSize: "14px", color: "#A7A7A7", textDecoration: "none", fontWeight: "600", width: "26px", height: "26px", display: "flex", justifyContent: "center", alignItems: "center", position: "absolute", top: "-24px", right: "-28px"}}>?</Link>
+            <Tooltip
+              title="Send us an email expressing interest in the role and we will reach out to you within 2 working days"
+              placement="right"
+            >
+              <Link
+                sx={{
+                  cursor: "pointer",
+                  backgroundColor: "#F0F0F0",
+                  border: "1px solid #D9D9D9",
+                  borderRadius: "50%",
+                  fontSize: "14px",
+                  color: "#A7A7A7",
+                  textDecoration: "none",
+                  fontWeight: "600",
+                  width: "26px",
+                  height: "26px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  position: "absolute",
+                  top: "-24px",
+                  right: "-28px",
+                }}
+              >
+                ?
+              </Link>
             </Tooltip>
-          </Box>  
+          </Box>
         </Box>
       </Container>
     </ThemeProvider>

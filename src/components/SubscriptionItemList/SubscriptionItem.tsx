@@ -69,14 +69,14 @@ export default function SubscriptionItem({
         {/* @ts-ignore comment */}
         <Typography variant="candidateTitle">{jobTitle}</Typography>
         {seniorityLevel &&
-          seniorityLevel.map((seniority: any) => (
+          seniorityLevel.map((seniority: any, index: number) => (
             seniority &&
-            <ChipStyled text={seniority} type={ChipStyledEnum.corner} />
+            <ChipStyled key={index} text={seniority} type={ChipStyledEnum.corner} />
           ))}
         {employmentOptions &&
-          employmentOptions.map((employmentOption: any) => (
+          employmentOptions.map((employmentOption: any, index: number) => (
             employmentOption &&
-            <ChipStyled text={employmentOption} type={ChipStyledEnum.corner} />
+            <ChipStyled key={index} text={employmentOption} type={ChipStyledEnum.corner} />
           ))}
         {country && <ChipStyled text={country} type={ChipStyledEnum.corner} />}
       </Box>
