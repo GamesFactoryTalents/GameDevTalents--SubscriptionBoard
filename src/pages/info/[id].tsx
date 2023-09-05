@@ -109,6 +109,7 @@ const InfoPage = ({ id, info }: Props) => {
             <Typography variant="singleSubscriptionSubtitle">
               {"Role Description:"}
             </Typography>
+            {/* @ts-ignore comment */}
             <Typography variant="singleSubscriptionSubtitle">
               {"Responsibilities:"}
             </Typography>
