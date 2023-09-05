@@ -51,6 +51,15 @@ const FilterMenu = () => {
   >([]);
   const [searchField, setSearchField] = useState<string>("");
 
+  const [openSpecialisations, setOpenSpecialisations] =
+    useState<boolean>(false);
+  const [openSkills, setOpenSkills] = useState<boolean>(false);
+  const [openGanres, setOpenGanres] = useState<boolean>(false);
+  const [openEngines, setOpenEngines] = useState<boolean>(false);
+  const [openPlatforms, setOpenPlatforms] = useState<boolean>(false);
+  const [openCountries, setOpenCountries] = useState<boolean>(false);
+  const [openSeniorityLevel, setOpenSeniorityLevel] = useState<boolean>(false);
+
   const [specialisationsForCategory, setSpecialisationsForCategory] = useState<
     string[]
   >([]);
@@ -154,39 +163,45 @@ const FilterMenu = () => {
     const rawSpecList = categoryEntry
       ? Object.values(categoryEntry)[0].specialities
       : [];
-    console.log("rawSpecList", rawSpecList);
     const uniqSpecList = [...new Set(rawSpecList)];
-    console.log("uniqSpecList", uniqSpecList.sort());
     return uniqSpecList.sort();
   }
 
   function changeSelectedSkills(event: SelectChangeEvent<string[]>) {
+    setOpenSkills(false);
     setSelectedSkills(event.target.value as string[]);
   }
 
   function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
     setSelectedSpecialisations([]);
     setSelectedCategory(event.target.value as string);
-    setSpecialisationsForCategory(specialitiesForCategory(event.target.value as string));
+    setSpecialisationsForCategory(
+      specialitiesForCategory(event.target.value as string)
+    );
   }
 
   function changeSelectedSpecialisations(event: SelectChangeEvent<string[]>) {
+    setOpenSpecialisations(false);
     setSelectedSpecialisations(event.target.value as string[]);
   }
 
   function changeSelectedGanres(event: SelectChangeEvent<string[]>) {
+    setOpenGanres(false);
     setSelecteGanres(event.target.value as string[]);
   }
 
   function changeSelectedEngines(event: SelectChangeEvent<string[]>) {
+    setOpenEngines(false);
     setSelectedEngines(event.target.value as string[]);
   }
 
   function changeSelectedPlatforms(event: SelectChangeEvent<string[]>) {
+    setOpenPlatforms(false);
     setSelectedPlatforms(event.target.value as string[]);
   }
 
   function changeSelectedCountries(event: SelectChangeEvent<string[]>) {
+    setOpenCountries(false);
     let currentValue = event.target.value;
     if (currentValue.includes("Europe")) {
       let countriesArr = countries
@@ -196,10 +211,10 @@ const FilterMenu = () => {
     } else {
       setSelectedCountries(currentValue as string[]);
     }
-    // event.target.blur();
   }
 
   function changeSelectedSeniorityLevel(event: SelectChangeEvent<string[]>) {
+    setOpenSeniorityLevel(false);
     setSelectedSeniorityLevel(event.target.value as string[]);
   }
 
@@ -300,7 +315,10 @@ const FilterMenu = () => {
           id="demo-multiple-chip"
           multiple
           value={selectedSeniorityLevel}
+          onOpen={() => setOpenSeniorityLevel(true)}
+          open={openSeniorityLevel}
           onChange={changeSelectedSeniorityLevel}
+          onClose={() => setOpenSeniorityLevel(false)}
           input={
             <OutlinedInput id="select-multiple-chip" label="seniorityLevel" />
           }
@@ -346,7 +364,10 @@ const FilterMenu = () => {
           multiple
           disabled={!selectedCategory}
           value={selectedSpecialisations}
+          onOpen={() => setOpenSpecialisations(true)}
+          open={openSpecialisations}
           onChange={changeSelectedSpecialisations}
+          onClose={() => setOpenSpecialisations(false)}
           input={
             <OutlinedInput id="select-multiple-chip" label="Specialisations" />
           }
@@ -392,7 +413,10 @@ const FilterMenu = () => {
           id="demo-multiple-chip"
           multiple
           value={selectedSkills}
+          onOpen={() => setOpenSkills(true)}
+          open={openSkills}
           onChange={changeSelectedSkills}
+          onClose={() => setOpenSkills(false)}
           input={<OutlinedInput id="select-multiple-chip" label="Skills" />}
           inputProps={{
             sx: {
@@ -434,11 +458,12 @@ const FilterMenu = () => {
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
           multiple
+          onOpen={() => setOpenPlatforms(true)}
+          onClose={() => setOpenPlatforms(false)}
+          open={openPlatforms}
           value={selectedPlatforms}
           onChange={changeSelectedPlatforms}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="gamePlatforms" />
-          }
+          input={<OutlinedInput id="select-multiple-chip" label="Platforms" />}
           inputProps={{
             sx: {
               padding: "10px",
@@ -480,7 +505,10 @@ const FilterMenu = () => {
           id="demo-multiple-chip"
           multiple
           value={selectedGanres}
+          onOpen={() => setOpenGanres(true)}
+          open={openGanres}
           onChange={changeSelectedGanres}
+          onClose={() => setOpenGanres(false)}
           input={<OutlinedInput id="select-multiple-chip" label="gameGenres" />}
           inputProps={{
             sx: {
@@ -523,7 +551,10 @@ const FilterMenu = () => {
           id="demo-multiple-chip"
           multiple
           value={selectedEngines}
+          onOpen={() => setOpenEngines(true)}
+          open={openEngines}
           onChange={changeSelectedEngines}
+          onClose={() => setOpenEngines(false)}
           input={
             <OutlinedInput id="select-multiple-chip" label="gameEngines" />
           }
@@ -568,7 +599,10 @@ const FilterMenu = () => {
           id="demo-multiple-chip"
           multiple
           value={selectedCountries}
+          onOpen={() => setOpenCountries(true)}
+          open={openCountries}
           onChange={changeSelectedCountries}
+          onClose={() => setOpenCountries(false)}
           input={<OutlinedInput id="select-multiple-chip" label="Countries" />}
           inputProps={{
             sx: {
