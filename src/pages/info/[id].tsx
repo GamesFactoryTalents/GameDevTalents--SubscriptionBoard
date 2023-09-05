@@ -341,6 +341,7 @@ const InfoPage = ({ id, info }: Props) => {
             .getUTCDate()
             .toString()
             .padStart(2, "0")}`}</Typography>
+            {/* @ts-ignore comment */}
           <Typography variant="subtitle3">{`Category: ${category}`}</Typography>
           <Box sx={{position: "relative", display: "inline"}}>
             <CommonBtn
