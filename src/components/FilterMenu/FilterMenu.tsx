@@ -165,7 +165,7 @@ const FilterMenu = () => {
   function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
     setSelectedSpecialisations([]);
     setSelectedCategory(event.target.value as string);
-    setSpecialisationsForCategory(specialitiesForCategory(selectedCategory));
+    setSpecialisationsForCategory(specialitiesForCategory(selectedCategory) as string[]);
     // event.target.blur();
   }
 
