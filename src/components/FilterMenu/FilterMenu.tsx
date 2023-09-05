@@ -215,7 +215,7 @@ const FilterMenu = () => {
         );
         break;
       case "category":
-        setSelectedCategory(null);
+        setSelectedCategory('');
         break;
       case "specialisations":
         setSelectedSpecialisations((prevSelected) =>
