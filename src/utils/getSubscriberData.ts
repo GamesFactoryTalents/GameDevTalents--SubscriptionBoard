@@ -18,6 +18,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     seniorityLevel: subscriber.seniorityLevel.split(','),
     employmentOptions: subscriber.employmentOptions.includes(',') ? subscriber.employmentOptions.split(',') : [subscriber.employmentOptions],
     country: subscriber.country,
+    jobLocation: subscriber.jobLocation,
     ip: subscriber.ip,
     user_agent: subscriber.user_agent,
     referrer: subscriber.referrer,
@@ -31,7 +32,8 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     aboutStudio: subscriber.aboutStudio,
     theirCulture: subscriber.theirCulture,
     reasonsToWork: subscriber.reasonsToWork,
-    logoFile: JSON.parse(subscriber.logoFile),
+    logoFile: (subscriber.logoFile), /* JSON.parse */
+    showLogo: subscriber.showLogo,
     workPreferences: subscriber.workPreferences.includes(',') ? subscriber.workPreferences.split(',') : [subscriber.workPreferences],
   };
 }

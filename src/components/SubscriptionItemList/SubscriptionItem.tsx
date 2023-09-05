@@ -7,6 +7,15 @@ import ChipStyledEnum from "../../interfaces/ChipStyledEnum";
 import { useRouter } from "next/navigation";
 import CommonBtn from "../CommonBtn/CommonBtn";
 
+
+/* didn't know how to handle it =((( */
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
 export default function SubscriptionItem({
   subscriber,
 }: {
@@ -40,6 +49,7 @@ export default function SubscriptionItem({
     theirCulture,
     reasonsToWork,
     logoFile,
+    showLogo,
     created_at,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
@@ -51,7 +61,8 @@ export default function SubscriptionItem({
         cursor: "pointer",
         position: "relative",
       }}
-      onClick={() => push(`/info/${id}`)}
+      // onClick={() => push(`/info/${id}`)}
+      onClick={() => window.open(`/info/${id}`, "_blank")}
     >
       <Box sx={{ display: "flex", alignItems: "center", maxWidth: '60%', flexWrap: 'wrap', rowGap: 0, columnGap: 1, mb: 1 }}>
         {/* The comment below is about disabling MUI and TS discord */}
@@ -152,25 +163,33 @@ export default function SubscriptionItem({
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Salary Range:</Typography>
-            {gamePlatforms.map((platform: any) => (
+            {(salaryRange[0] === '0' && salaryRange[1] === '100000') ? (
               <ChipStyled
-                key={platform}
+              key={'Negotiable'}
+              text={'Negotiable'}
+              type={ChipStyledEnum.round}
+            />
+            ) : (
+              <ChipStyled
+                key={`${salaryRange[0]} - ${salaryRange[1]}`}
                 text={`€ ${salaryRange[0]} - ${salaryRange[1]}`}
                 type={ChipStyledEnum.round}
               />
-            ))}
+            )}
           </Box>
         )}
-        <Box position="absolute" top="20px" right="10px" maxWidth="250px">
+        <Box sx={{ position: {xs: "static", md: "absolute"}, pl: "90px" }} top="40px" right="10px" maxWidth="340px">
+        {showLogo && (
           <img
             src={logoFile.url}
             style={{
               maxWidth: "70px",
               maxHeight: "70px",
               position: "absolute",
-              left: "-90px",
+              left: 0,
             }}
           />
+        )}
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at

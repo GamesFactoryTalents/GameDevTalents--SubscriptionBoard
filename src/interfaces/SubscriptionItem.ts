@@ -7,6 +7,7 @@ export default interface ISubscriptionItem {
   linkJob: string;
   emailAddress: string;
   jobTitle: string;
+  jobLocation: string;
   category: string;
   specialities: string | string[];
   skills: string | string[];
@@ -29,5 +30,6 @@ export default interface ISubscriptionItem {
   theirCulture: string;
   reasonsToWork: string;
   logoFile: any;
+  showLogo: any;
   workPreferences: string;
 }

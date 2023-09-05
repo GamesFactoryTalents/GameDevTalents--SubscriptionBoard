@@ -1,5 +1,13 @@
 import { createTheme } from "@mui/material/styles";
 
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+
 interface CustomPalette {
   gray: {
     strong: string;
@@ -30,6 +38,7 @@ const customTheme = createTheme({
   },
 
   typography: {
+    fontFamily: montserrat.style.fontFamily,
     /* @ts-ignore comment */
     candidateTitle: {
       fontSize: 22,
@@ -41,7 +50,7 @@ const customTheme = createTheme({
       fontSize: "14px",
       lineHeight: "17px",
       marginRight: "4px",
-      color: "#1a1a1c",
+      color: "#767677",
       minWidth: "120px",
     },
     chipCornerText: {
@@ -67,6 +76,19 @@ const customTheme = createTheme({
     singleSubscriptionText: {
       fontSize: "13px",
     },
+    subtitle2: {
+      fontSize: "14px",
+      lineHeight: "17px",
+      fontWeight: 600,
+      marginBottom: "7px",
+    },
+    subtitle3: {
+      fontSize: "14px",
+      lineHeight: "17px",
+      fontWeight: 600,
+      marginBottom: "32px",
+      display: "block",
+    }
   },
 
   components: {
@@ -78,6 +100,8 @@ const customTheme = createTheme({
           style: {
             color: "rgba(0, 0, 0, .87)",
             backgroundColor: "#e0e0e0",
+            fontWeight: 700,
+            marginTop: "20px",
           },
         },
         {

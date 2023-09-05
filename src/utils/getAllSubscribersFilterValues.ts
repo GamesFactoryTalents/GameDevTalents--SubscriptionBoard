@@ -1,21 +1,13 @@
 import subsriptionsJOSN from "../generated/subscribers.json";
+import skillTree from "../commonSettings/skillTree";
+import employmentOptions from "../commonSettings/employmentOptions";
 
 const subsriptions = [...subsriptionsJOSN];
 
 // TODO: add proper types
 export default function getAllSubscribersFilterValues(): any {
   const result = {
-    skills: Array.from(
-      new Set(
-        subsriptions
-          .map((s) => s.skills)
-          .flat()
-          .map((s) => s.split(","))
-          .flat()
-          .filter((s) => s !== "")
-      )
-    ),
-
+    skills: employmentOptions.skills,
     category: Array.from(
       new Set(
         subsriptions
@@ -36,26 +28,8 @@ export default function getAllSubscribersFilterValues(): any {
           .filter((s) => s !== "")
       )
     ),
-    gameGenres: Array.from(
-      new Set(
-        subsriptions
-          .map((s) => s.gameGenres)
-          .flat()
-          .map((s) => s.split(","))
-          .flat()
-          .filter((s) => s !== "")
-      )
-    ),
-    gameEngines: Array.from(
-      new Set(
-        subsriptions
-          .map((s) => s.gameEngines)
-          .flat()
-          .map((s) => s.split(","))
-          .flat()
-          .filter((s) => s !== "")
-      )
-    ),
+    gameGenres: employmentOptions.gameGenres,
+    gameEngines: employmentOptions.gameEngines,
     gamePlatforms: Array.from(
       new Set(
         subsriptions
@@ -67,16 +41,7 @@ export default function getAllSubscribersFilterValues(): any {
       )
     ),
 
-    seniorityLevel: Array.from(
-      new Set(
-        subsriptions
-          .map((s) => s.seniorityLevel)
-          .flat()
-          .map((s) => s.split(","))
-          .flat()
-          .filter((s) => s !== "")
-      )
-    ),
+    seniorityLevel: employmentOptions.seniorityLevels,
   };
   return result;
 }

@@ -12,8 +12,10 @@ const CommonBtn = ({ variant, topic, recipient }: Props) => {
       href={`mailto:${recipient}?subject=${topic}`}
       style={{
         maxWidth: "200px",
+        fontSize: "14px",
         zoom: variant === "small" ? "80%" : "150%",
         borderRadius: "10px",
+        padding: "7px 38px",
       }}
       /* @ts-ignore comment */
       variant="pink"

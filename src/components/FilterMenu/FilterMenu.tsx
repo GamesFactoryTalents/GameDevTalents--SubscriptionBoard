@@ -19,6 +19,9 @@ import subscribers from "../../generated/subscribers.json";
 import TextField from "@mui/material/TextField";
 import ISubscriptionItem from "../../interfaces/SubscriptionItem";
 
+
+import skillTree from "../../commonSettings/skillTree";
+
 const FilterMenu = () => {
   const {
     skills,
@@ -32,10 +35,12 @@ const FilterMenu = () => {
 
   const { candidatesDispatch, setDefaultCandidates } = store;
 
-  const _countries = countries.map((country) => country.label);
+  let countriesList = countries.map((country) => country.label);
+  const _countries = ["Europe", ...countriesList];
+
 
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [selectedSpecialisations, setSelectedSpecialisations] = useState<
     string[]
   >([]);
@@ -47,6 +52,11 @@ const FilterMenu = () => {
     string[]
   >([]);
   const [searchField, setSearchField] = useState<string>("");
+
+
+  const [specialisationsForCategory, setSpecialisationsForCategory] = useState<
+    string[]
+  >([]);
 
   useEffect(() => {
     const allFilters = {
@@ -73,12 +83,14 @@ const FilterMenu = () => {
       setDefaultCandidates();
       return;
     }
+    
 
     const currentCandidates = subscribers.filter(
       (subscriber: ISubscriptionItem) => {
         const subscriberData = getSubscriberData(subscriber);
 
         return (
+          (allFilters.selectedCategory === "" || allFilters.selectedCategory === null || allFilters.selectedCategory === subscriberData.category) &&
           allFilters.selectedSkills.every((skill) =>
             subscriberData.skills.includes(skill)
           ) &&
@@ -97,9 +109,9 @@ const FilterMenu = () => {
           allFilters.selectedCountries.every((country) =>
             subscriberData.country.includes(country)
           ) &&
-          allFilters.selectedSeniorityLevel.every((seniorityLevel) =>
+          (!Array.isArray(allFilters.selectedSeniorityLevel) || allFilters.selectedSeniorityLevel.length === 0 || allFilters.selectedSeniorityLevel.some((seniorityLevel) =>
             subscriberData.seniorityLevel.includes(seniorityLevel)
-          )
+          ))
         );
       }
     );
@@ -135,32 +147,59 @@ const FilterMenu = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchField]);
 
+/* I'm too tired to think how to do it better, sorry =( */
+  function specialitiesForCategory(category: string) {
+    const categoryEntry = skillTree.find((item) => {
+      return Object.keys(item)[0].toString().includes(category);
+    });
+    const rawSpecList = categoryEntry ? Object.values(categoryEntry)[0].specialities : [];
+    const uniqSpecList = [...new Set(rawSpecList)];
+    return uniqSpecList.sort();
+  }
+
   function changeSelectedSkills(event: SelectChangeEvent<string[]>) {
     setSelectedSkills(event.target.value as string[]);
+    // event.target.blur();
   }
 
   function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
+    setSelectedSpecialisations([]);
     setSelectedCategory(event.target.value as string);
+    setSpecialisationsForCategory(specialitiesForCategory(selectedCategory));
+    // event.target.blur();
   }
 
   function changeSelectedSpecialisations(event: SelectChangeEvent<string[]>) {
     setSelectedSpecialisations(event.target.value as string[]);
+    // event.target.blur();
   }
 
   function changeSelectedGanres(event: SelectChangeEvent<string[]>) {
     setSelecteGanres(event.target.value as string[]);
+    // event.target.blur();
   }
 
   function changeSelectedEngines(event: SelectChangeEvent<string[]>) {
     setSelectedEngines(event.target.value as string[]);
+    // event.target.blur();
   }
 
   function changeSelectedPlatforms(event: SelectChangeEvent<string[]>) {
     setSelectedPlatforms(event.target.value as string[]);
+    // event.target.blur();
   }
 
   function changeSelectedCountries(event: SelectChangeEvent<string[]>) {
-    setSelectedCountries(event.target.value as string[]);
+    let currentValue = event.target.value;
+    if (currentValue.includes("Europe")) {
+      let countriesArr = countries
+        .filter((value, key) => value.region === "Europe")
+        .map((value, key) => Object.values(value)[0]);
+      setSelectedCountries(countriesArr as string[]);
+    } else {
+      setSelectedCountries(currentValue as string[]);
+    }
+    // event.target.blur();
   }
 
   function changeSelectedSeniorityLevel(event: SelectChangeEvent<string[]>) {
@@ -219,9 +258,118 @@ const FilterMenu = () => {
         justifyContent: "space-between",
       }}
     >
+
+      {/* Category */}
+      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Category</InputLabel>
+        <Select
+          labelId="demo-multiple-chip-label"
+          id="demo-multiple-chip"
+          value={selectedCategory as any}
+          onChange={changeSelectedCategory}
+          input={<OutlinedInput id="select-multiple-chip" label="Category" />}
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
+          renderValue={(selected) => selected}
+        >
+          <MenuItem key={""} value={""}>
+            All Categories
+          </MenuItem>
+          {category.map((name: string) => (
+            <MenuItem key={name} value={name}>
+              {name}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+
+      {/* seniorityLevel */}
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Seniority Level</InputLabel>
+        <Select
+          labelId="demo-multiple-chip-label"
+          id="demo-multiple-chip"
+          multiple
+          value={selectedSeniorityLevel}
+          onChange={changeSelectedSeniorityLevel}
+          input={
+            <OutlinedInput id="select-multiple-chip" label="seniorityLevel" />
+          }
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
+          renderValue={(selected) => (
+            <Box
+              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
+            >
+              {selected.map((value) => (
+                <Chip
+                  key={value}
+                  label={value}
+                  onMouseDown={(e) => e.stopPropagation()}
+                  onDelete={() => handleDelete(value, "seniorityLevel")}
+                />
+              ))}
+            </Box>
+          )}
+        >
+          {seniorityLevel.map((name: string) => (
+            <MenuItem key={name} value={name}>
+              {name}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+
+      {/* Specialisations */}
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Specialisations</InputLabel>
+        <Select
+          labelId="demo-multiple-chip-label"
+          id="demo-multiple-chip"
+          multiple
+          disabled={!selectedCategory}
+          value={selectedSpecialisations}
+          onChange={changeSelectedSpecialisations}
+          input={
+            <OutlinedInput id="select-multiple-chip" label="Specialisations" />
+          }
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
+          renderValue={(selected) => (
+            <Box
+              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
+            >
+              {selected.map((value) => (
+                <Chip
+                  key={value}
+                  label={value}
+                  onMouseDown={(e) => e.stopPropagation()}
+                  onDelete={() => handleDelete(value, "specialisations")}
+                />
+              ))}
+            </Box>
+          )}
+        >
+          {selectedCategory && specialisationsForCategory.map((name: string) => (
+            <MenuItem key={name} value={name}>
+              {name}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+
       {/* Skills */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Skills</InputLabel>
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Skills</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -229,6 +377,11 @@ const FilterMenu = () => {
           value={selectedSkills}
           onChange={changeSelectedSkills}
           input={<OutlinedInput id="select-multiple-chip" label="Skills" />}
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
           renderValue={(selected) => (
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
@@ -252,19 +405,23 @@ const FilterMenu = () => {
         </Select>
       </FormControl>
 
-      {/* Specialisations */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Specialisations</InputLabel>
+      {/* gamePlatforms */}
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Platforms</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
           multiple
-          disabled={!selectedCategory}
-          value={selectedSpecialisations}
-          onChange={changeSelectedSpecialisations}
+          value={selectedPlatforms}
+          onChange={changeSelectedPlatforms}
           input={
-            <OutlinedInput id="select-multiple-chip" label="Specialisations" />
+            <OutlinedInput id="select-multiple-chip" label="gamePlatforms" />
           }
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
           renderValue={(selected) => (
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
@@ -274,42 +431,13 @@ const FilterMenu = () => {
                   key={value}
                   label={value}
                   onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "specialisations")}
+                  onDelete={() => handleDelete(value, "gamePlatforms")}
                 />
               ))}
             </Box>
           )}
         >
-          {specialisations.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-
-      {/* Category */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Category</InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
-          value={selectedCategory as any}
-          onChange={changeSelectedCategory}
-          input={<OutlinedInput id="select-multiple-chip" label="Category" />}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              <Chip
-                label={selected}
-                onMouseDown={(e) => e.stopPropagation()}
-                onDelete={() => handleDelete(null, "category")}
-              />
-            </Box>
-          )}
-        >
-          {category.map((name: string) => (
+          {gamePlatforms.map((name: string) => (
             <MenuItem key={name} value={name}>
               {name}
             </MenuItem>
@@ -318,8 +446,8 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameGenres */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Game Genres</InputLabel>
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Game Genres</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -327,6 +455,11 @@ const FilterMenu = () => {
           value={selectedGanres}
           onChange={changeSelectedGanres}
           input={<OutlinedInput id="select-multiple-chip" label="gameGenres" />}
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
           renderValue={(selected) => (
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
@@ -351,8 +484,8 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameEngines */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Game Engines</InputLabel>
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Game Engines</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -362,6 +495,11 @@ const FilterMenu = () => {
           input={
             <OutlinedInput id="select-multiple-chip" label="gameEngines" />
           }
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
           renderValue={(selected) => (
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
@@ -385,44 +523,9 @@ const FilterMenu = () => {
         </Select>
       </FormControl>
 
-      {/* gamePlatforms */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Game Platforms</InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
-          multiple
-          value={selectedPlatforms}
-          onChange={changeSelectedPlatforms}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="gamePlatforms" />
-          }
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "gamePlatforms")}
-                />
-              ))}
-            </Box>
-          )}
-        >
-          {gamePlatforms.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-
       {/* Countries */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Countries</InputLabel>
+      <FormControl sx={{ m: 1, width:  { xs: "100%", md: "48%"} }}>
+        <InputLabel id="demo-multiple-chip-label" sx={{top: '-3px',lineHeight: '1.05'}}>Countries</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
           id="demo-multiple-chip"
@@ -430,6 +533,11 @@ const FilterMenu = () => {
           value={selectedCountries}
           onChange={changeSelectedCountries}
           input={<OutlinedInput id="select-multiple-chip" label="Countries" />}
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
           renderValue={(selected) => (
             <Box
               sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
@@ -453,50 +561,26 @@ const FilterMenu = () => {
         </Select>
       </FormControl>
 
-      {/* seniorityLevel */}
-      <FormControl sx={{ m: 1, width: "48%" }}>
-        <InputLabel id="demo-multiple-chip-label">Seniority Level</InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
-          multiple
-          value={selectedSeniorityLevel}
-          onChange={changeSelectedSeniorityLevel}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="seniorityLevel" />
-          }
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "seniorityLevel")}
-                />
-              ))}
-            </Box>
-          )}
-        >
-          {seniorityLevel.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-
       {/* Search */}
       <FormControl sx={{ m: 1, width: "100%" }}>
         <TextField
           id="filled-search"
           label="Keywords search"
           type="search"
-          variant="filled"
+          variant="outlined"
           value={searchField}
           onChange={(e) => setSearchField(e.target.value)}
+          InputLabelProps={{
+            sx: {
+              top: '-3px',
+              lineHeight: '1.05',
+            },
+          }}
+          inputProps={{
+            sx: {
+              padding: '10px',
+            },
+          }}
         />
       </FormControl>
     </Box>
