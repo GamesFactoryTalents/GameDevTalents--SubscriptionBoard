@@ -114,7 +114,7 @@ const FilterMenu = () => {
             subscriberData.gamePlatforms.includes(platform)
           ) &&
           allFilters.selectedCountries.every((country) =>
-            subscriberData.country.includes(country)
+            subscriberData.jobLocation.includes(country)
           ) &&
           (!Array.isArray(allFilters.selectedSeniorityLevel) ||
             allFilters.selectedSeniorityLevel.length === 0 ||
