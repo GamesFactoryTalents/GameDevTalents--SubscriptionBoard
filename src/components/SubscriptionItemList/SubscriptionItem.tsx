@@ -118,7 +118,7 @@ export default function SubscriptionItem({
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
-            <Typography variant="candidateOptionText">Game Ganres:</Typography>
+            <Typography variant="candidateOptionText">Game Genres:</Typography>
             {gameGenres.map((ganre: any) => (
               <ChipStyled
                 key={ganre}

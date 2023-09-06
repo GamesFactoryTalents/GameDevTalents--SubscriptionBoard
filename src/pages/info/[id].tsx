@@ -94,6 +94,32 @@ const InfoPage = ({ id, info }: Props) => {
           <Typography variant="singleSubscriptionTitle">
             {info.jobTitle}
           </Typography>
+
+          {info.seniorityLevel &&
+            Array.isArray(info.seniorityLevel) &&
+            info.seniorityLevel.map(
+              (option: any, index: number) =>
+                option && (
+                  <ChipStyled
+                    key={index}
+                    text={option}
+                    type={ChipStyledEnum.corner}
+                  />
+                )
+            )}
+
+          {info.workPreferences &&
+            Array.isArray(info.workPreferences) &&
+            info.workPreferences.map(
+              (option: any, index: number) =>
+                option && (
+                  <ChipStyled
+                    key={index}
+                    text={option}
+                    type={ChipStyledEnum.corner}
+                  />
+                )
+            )}
           {info.employmentOptions &&
             Array.isArray(info.employmentOptions) &&
             info.employmentOptions.map(
@@ -108,7 +134,7 @@ const InfoPage = ({ id, info }: Props) => {
             )}
 
           {info.country && (
-            <ChipStyled text={info.country} type={ChipStyledEnum.corner} />
+            <ChipStyled text={info.jobLocation} type={ChipStyledEnum.corner} />
           )}
         </Box>
 
@@ -117,82 +143,96 @@ const InfoPage = ({ id, info }: Props) => {
           <Typography variant="singleSubscriptionTitle">
             {"Studio's Preferred Countries of Hire"}
           </Typography>
-          <ChipStyled text={info.jobLocation} type={ChipStyledEnum.corner} />
+          <ChipStyled text={info.country} type={ChipStyledEnum.corner} />
         </Box>
 
         <Stack sx={{ gap: 2 }}>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Role Description:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
+          {/* @ts-ignore comment */}
+          <Typography variant="singleSubscriptionSubtitle">
+            {"Role Description:"}
+          </Typography>
+          {responsibilities && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
               {"Responsibilities:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
               {responsibilities}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Requirements:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {requirements}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Team Member would ideally also have: "}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {idealAdditions}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"About the Studio:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {aboutStudio}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Their Culture:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {theirCulture}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Reasons to work with them:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">
-              {reasonsToWork}
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Benefits:"}
-            </Typography>
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionText">{benefits}</Typography>
-          </Box>
+              </Typography>
+            </Box>
+          )}
+          {requirements && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"Requirements:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                {requirements}
+              </Typography>
+            </Box>
+          )}
+          {idealAdditions && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"Team Member would ideally also have: "}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                {idealAdditions}
+              </Typography>
+            </Box>
+          )}
+          {aboutStudio && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"About the Studio:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                {aboutStudio}
+              </Typography>
+            </Box>
+          )}
+          {theirCulture && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"Their Culture:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                {theirCulture}
+              </Typography>
+            </Box>
+          )}
+          {reasonsToWork && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"Reasons to work with them:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                {reasonsToWork}
+              </Typography>
+            </Box>
+          )}
+          {benefits && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+                {"Benefits:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">{benefits}</Typography>
+            </Box>
+          )}
         </Stack>
 
         {/* TODO: Make the component */}
@@ -346,47 +386,6 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
         </Stack>
-        {(workPreferences || employmentOptions) && (
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 2,
-              flexDirection: "column",
-            }}
-          >
-            {/* @ts-ignore comment */}
-            <Typography variant="singleSubscriptionSubtitle">
-              {"Employment Preferences:"}
-            </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-              {employmentOptions !== "" &&
-                Array.isArray(employmentOptions) &&
-                employmentOptions.map(
-                  (option: any, index: number) =>
-                    option && (
-                      <ChipStyled
-                        key={index}
-                        text={option}
-                        type={ChipStyledEnum.employmentOptions}
-                      />
-                    )
-                )}
-              {workPreferences !== "" &&
-                Array.isArray(workPreferences) &&
-                workPreferences.map(
-                  (option: any, index: number) =>
-                    option && (
-                      <ChipStyled
-                        key={index}
-                        text={option}
-                        type={ChipStyledEnum.workPreferences}
-                      />
-                    )
-                )}
-            </Box>
-          </Box>
-        )}
         <Box margin="30px 0">
           <CommonBtn
             variant="big"
