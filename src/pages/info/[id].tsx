@@ -402,7 +402,7 @@ const InfoPage = ({ id, info }: Props) => {
           <CommonBtn
             variant="big"
             topic={`I’m interested to learn more about ${jobTitle} ${id}`}
-            recipient={'talents@gft.com'}
+            recipient={'talents@gamesfactorytalents.com'}
           />
           <Link
             href="/"
@@ -453,7 +453,7 @@ const InfoPage = ({ id, info }: Props) => {
             <CommonBtn
               variant="small"
               topic={`I’m interested to learn more about ${jobTitle} ${id}`}
-              recipient={'talents@gft.com'}
+              recipient={'talents@gamesfactorytalents.com'}
             />
             <Tooltip
               title="Send us an email expressing interest in the role and we will reach out to you within 2 working days"
