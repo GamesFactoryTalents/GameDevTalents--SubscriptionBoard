@@ -7,7 +7,7 @@ export default interface ISubscriptionItem {
   linkJob: string;
   emailAddress: string;
   jobTitle: string;
-  roleLocation: string | string[];
+  roleLocation: string;
   category: string;
   specialities: string | string[];
   skills: string | string[];
@@ -15,7 +15,7 @@ export default interface ISubscriptionItem {
   gameEngines: string | string[];
   gamePlatforms: string | string[];
   seniorityLevel: string;
-  employmentOptions: string | string[];
+  employmentOptions: string;
   country: string;
   ip: string;
   user_agent: string;
