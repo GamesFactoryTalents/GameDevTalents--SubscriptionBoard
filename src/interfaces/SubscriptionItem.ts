@@ -15,7 +15,7 @@ export default interface ISubscriptionItem {
   gameEngines: string | string[];
   gamePlatforms: string | string[];
   seniorityLevel: string;
-  employmentOptions: string;
+  employmentOptions: string | string[];
   country: string;
   ip: string;
   user_agent: string;
@@ -31,5 +31,5 @@ export default interface ISubscriptionItem {
   reasonsToWork: string;
   logoFile: any;
   showLogo: any;
-  workPreferences: string;
+  workPreferences: string | string[];
 }

@@ -34,7 +34,7 @@ const InfoPage = ({ id, info }: Props) => {
     companyName,
     emailAddress,
     jobTitle,
-    jobLocation,
+    roleLocation,
     category,
     specialities,
     skills,
@@ -133,9 +133,9 @@ const InfoPage = ({ id, info }: Props) => {
                 )
             )}
 
-          {info.jobLocation && (
-            <ChipStyled text={info.jobLocation} type={ChipStyledEnum.corner} />
-          )}
+          {info.roleLocation && Array.isArray(info.roleLocation) && info.roleLocation.map((item) => {
+            (<ChipStyled text={item} type={ChipStyledEnum.corner} />)
+          })}
         </Box>
 
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>

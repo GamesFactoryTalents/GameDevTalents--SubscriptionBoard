@@ -39,7 +39,7 @@ export default function SubscriptionItem({
     seniorityLevel,
     employmentOptions,
     country,
-    jobLocation,
+    roleLocation,
     id,
     salaryRange,
     responsibilities,
@@ -79,7 +79,7 @@ export default function SubscriptionItem({
             employmentOption &&
             <ChipStyled key={index} text={employmentOption} type={ChipStyledEnum.corner} />
           ))}
-        {country && <ChipStyled text={jobLocation} type={ChipStyledEnum.corner} />}
+        {country && <ChipStyled text={country} type={ChipStyledEnum.corner} />}
       </Box>
 
       {/* TODO: Make the component */}
