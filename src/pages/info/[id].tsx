@@ -133,7 +133,7 @@ const InfoPage = ({ id, info }: Props) => {
                 )
             )}
 
-          {info.country && (
+          {info.jobLocation && (
             <ChipStyled text={info.jobLocation} type={ChipStyledEnum.corner} />
           )}
         </Box>
@@ -356,7 +356,7 @@ const InfoPage = ({ id, info }: Props) => {
                 ))}
             </Box>
           )}
-          {salaryRange.toString() !== "[0, 100000]" && (
+          {salaryRange.toString() !== "[0, 25000]" && (
             <Box
               sx={{
                 display: "flex",
@@ -370,7 +370,7 @@ const InfoPage = ({ id, info }: Props) => {
               <Typography variant="candidateOptionText">
                 Salary Range:
               </Typography>
-              {salaryRange[0] === "0" && salaryRange[1] === "100000" ? (
+              {salaryRange[0] === "0" && salaryRange[1] === "25000" ? (
                 <ChipStyled
                   key={"Negotiable"}
                   text={"Negotiable"}
@@ -440,8 +440,8 @@ const InfoPage = ({ id, info }: Props) => {
           <Box sx={{ position: "relative", display: "inline" }}>
             <CommonBtn
               variant="small"
-              topic={`${jobTitle} ${companyName}`}
-              recipient={emailAddress}
+              topic={`I’m interested to learn more about ${jobTitle} ${id}`}
+              recipient={'talents@gft.com'}
             />
             <Tooltip
               title="Send us an email expressing interest in the role and we will reach out to you within 2 working days"

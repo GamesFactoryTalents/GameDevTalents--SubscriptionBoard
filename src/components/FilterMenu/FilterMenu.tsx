@@ -463,7 +463,7 @@ const FilterMenu = () => {
           open={openPlatforms}
           value={selectedPlatforms}
           onChange={changeSelectedPlatforms}
-          input={<OutlinedInput id="select-multiple-chip" label="Platforms" />}
+          input={<TextField id="select-multiple-chip" label="Platforms" />}
           inputProps={{
             sx: {
               padding: "10px",

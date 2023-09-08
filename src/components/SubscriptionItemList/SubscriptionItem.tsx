@@ -159,12 +159,12 @@ export default function SubscriptionItem({
             ))}
           </Box>
         )}
-        {salaryRange.toString() !== "[0, 100000]" && (
+        {salaryRange.toString() !== "[0, 25000]" && (
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Salary Range:</Typography>
-            {(salaryRange[0] === '0' && salaryRange[1] === '100000') ? (
+            {(salaryRange[0] === '0' && salaryRange[1] === '25000') ? (
               <ChipStyled
               key={'Negotiable'}
               text={'Negotiable'}
