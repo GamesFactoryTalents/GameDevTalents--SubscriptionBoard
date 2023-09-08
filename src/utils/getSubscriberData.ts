@@ -18,7 +18,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     seniorityLevel: subscriber.seniorityLevel.split(','),
     employmentOptions: subscriber.employmentOptions.includes(',') ? subscriber.employmentOptions.split(',') : [subscriber.employmentOptions],
     country: subscriber.country,
-    roleLocation: subscriber.roleLocation.includes(',') ? subscriber.roleLocation.split(',') : [subscriber.roleLocation],
+    roleLocation: (subscriber.roleLocation.includes(',') ? subscriber.roleLocation.split(',') : [subscriber.roleLocation]) || [],
     ip: subscriber.ip,
     user_agent: subscriber.user_agent,
     referrer: subscriber.referrer,

@@ -1,5 +1,6 @@
 "use client";
 import {
+  Autocomplete,
   Box,
   Chip,
   FormControl,
@@ -7,9 +8,10 @@ import {
   MenuItem,
   OutlinedInput,
   Select,
+  Typography,
 } from "@mui/material";
 import { SelectChangeEvent } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import getAllSubscribersFilterValues from "../../utils/getAllSubscribersFilterValues";
 import countries from "../../commonSettings/countries";
 import { observer } from "mobx-react";
@@ -42,7 +44,7 @@ const FilterMenu = () => {
   const [selectedSpecialisations, setSelectedSpecialisations] = useState<
     string[]
   >([]);
-  const [selectedGanres, setSelecteGanres] = useState<string[]>([]);
+  const [selectedGanres, setSelectedGanres] = useState<string[]>([]);
   const [selectedEngines, setSelectedEngines] = useState<string[]>([]);
   const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
   const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
@@ -50,15 +52,6 @@ const FilterMenu = () => {
     string[]
   >([]);
   const [searchField, setSearchField] = useState<string>("");
-
-  const [openSpecialisations, setOpenSpecialisations] =
-    useState<boolean>(false);
-  const [openSkills, setOpenSkills] = useState<boolean>(false);
-  const [openGanres, setOpenGanres] = useState<boolean>(false);
-  const [openEngines, setOpenEngines] = useState<boolean>(false);
-  const [openPlatforms, setOpenPlatforms] = useState<boolean>(false);
-  const [openCountries, setOpenCountries] = useState<boolean>(false);
-  const [openSeniorityLevel, setOpenSeniorityLevel] = useState<boolean>(false);
 
   const [specialisationsForCategory, setSpecialisationsForCategory] = useState<
     string[]
@@ -125,6 +118,7 @@ const FilterMenu = () => {
       }
     );
 
+
     candidatesDispatch(currentCandidates);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
@@ -167,56 +161,6 @@ const FilterMenu = () => {
     return uniqSpecList.sort();
   }
 
-  function changeSelectedSkills(event: SelectChangeEvent<string[]>) {
-    setOpenSkills(false);
-    setSelectedSkills(event.target.value as string[]);
-  }
-
-  function changeSelectedCategory(event: SelectChangeEvent<string[]>) {
-    setSelectedSpecialisations([]);
-    setSelectedCategory(event.target.value as string);
-    setSpecialisationsForCategory(
-      specialitiesForCategory(event.target.value as string)
-    );
-  }
-
-  function changeSelectedSpecialisations(event: SelectChangeEvent<string[]>) {
-    setOpenSpecialisations(false);
-    setSelectedSpecialisations(event.target.value as string[]);
-  }
-
-  function changeSelectedGanres(event: SelectChangeEvent<string[]>) {
-    setOpenGanres(false);
-    setSelecteGanres(event.target.value as string[]);
-  }
-
-  function changeSelectedEngines(event: SelectChangeEvent<string[]>) {
-    setOpenEngines(false);
-    setSelectedEngines(event.target.value as string[]);
-  }
-
-  function changeSelectedPlatforms(event: SelectChangeEvent<string[]>) {
-    setOpenPlatforms(false);
-    setSelectedPlatforms(event.target.value as string[]);
-  }
-
-  function changeSelectedCountries(event: SelectChangeEvent<string[]>) {
-    setOpenCountries(false);
-    let currentValue = event.target.value;
-    if (currentValue.includes("Europe")) {
-      let countriesArr = countries
-        .filter((value, key) => value.region === "Europe")
-        .map((value, key) => Object.values(value)[0]);
-      setSelectedCountries(countriesArr as string[]);
-    } else {
-      setSelectedCountries(currentValue as string[]);
-    }
-  }
-
-  function changeSelectedSeniorityLevel(event: SelectChangeEvent<string[]>) {
-    setOpenSeniorityLevel(false);
-    setSelectedSeniorityLevel(event.target.value as string[]);
-  }
 
   //TODO: set name type as enum
   function handleDelete(value: any, name: string) {
@@ -235,7 +179,7 @@ const FilterMenu = () => {
         );
         break;
       case "gameGenres":
-        setSelecteGanres((prevSelected) =>
+        setSelectedGanres((prevSelected) =>
           prevSelected.filter((item) => item !== value)
         );
         break;
@@ -262,6 +206,7 @@ const FilterMenu = () => {
     }
   }
 
+
   return (
     <Box
       sx={{
@@ -272,364 +217,165 @@ const FilterMenu = () => {
     >
       {/* Category */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Category
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
-          value={selectedCategory as any}
-          onChange={changeSelectedCategory}
-          input={<OutlinedInput id="select-multiple-chip" label="Category" />}
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+      <Autocomplete
+          id="tags-outlined"
+          options={category}
+          onChange={(event, value) => {
+            setSelectedCategory(value as string);
+            setSpecialisationsForCategory(
+              specialitiesForCategory(value as string)
+            );
           }}
-          renderValue={(selected) => selected}
-        >
-          <MenuItem key={""} value={""}>
-            All Categories
-          </MenuItem>
-          {category.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Category"
+            />
+          )}
+        />
       </FormControl>
 
       {/* seniorityLevel */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Seniority Level
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
-          value={selectedSeniorityLevel}
-          onOpen={() => setOpenSeniorityLevel(true)}
-          open={openSeniorityLevel}
-          onChange={changeSelectedSeniorityLevel}
-          onClose={() => setOpenSeniorityLevel(false)}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="seniorityLevel" />
-          }
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={seniorityLevel}
+          onChange={(event, value) => {
+            setSelectedSeniorityLevel(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "seniorityLevel")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Seniority Level"
+            />
           )}
-        >
-          {seniorityLevel.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* Specialisations */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Specialisations
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
+          id="tags-outlined"
           disabled={!selectedCategory}
-          value={selectedSpecialisations}
-          onOpen={() => setOpenSpecialisations(true)}
-          open={openSpecialisations}
-          onChange={changeSelectedSpecialisations}
-          onClose={() => setOpenSpecialisations(false)}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="Specialisations" />
-          }
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          options={selectedCategory ?
+            specialisationsForCategory : []}
+          onChange={(event, value) => {
+            setSelectedSpecialisations(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "specialisations")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Specialisations"
+            />
           )}
-        >
-          {selectedCategory &&
-            specialisationsForCategory.map((name: string) => (
-              <MenuItem key={name} value={name}>
-                {name}
-              </MenuItem>
-            ))}
-        </Select>
+        />
       </FormControl>
 
       {/* Skills */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Skills
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
-          value={selectedSkills}
-          onOpen={() => setOpenSkills(true)}
-          open={openSkills}
-          onChange={changeSelectedSkills}
-          onClose={() => setOpenSkills(false)}
-          input={<OutlinedInput id="select-multiple-chip" label="Skills" />}
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={skills}
+          onChange={(event, value) => {
+            setSelectedSkills(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "skills")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Skills"
+            />
           )}
-        >
-          {skills.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* gamePlatforms */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Platforms
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+        <Autocomplete
           multiple
-          onOpen={() => setOpenPlatforms(true)}
-          onClose={() => setOpenPlatforms(false)}
-          open={openPlatforms}
-          value={selectedPlatforms}
-          onChange={changeSelectedPlatforms}
-          input={<OutlinedInput id="select-multiple-chip" label="Platforms" />}
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={gamePlatforms}
+          onChange={(event, value) => {
+            setSelectedPlatforms(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "gamePlatforms")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Platforms"
+            />
           )}
-        >
-          {gamePlatforms.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* gameGenres */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Game Genres
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
-          value={selectedGanres}
-          onOpen={() => setOpenGanres(true)}
-          open={openGanres}
-          onChange={changeSelectedGanres}
-          onClose={() => setOpenGanres(false)}
-          input={<OutlinedInput id="select-multiple-chip" label="gameGenres" />}
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={gameGenres}
+          onChange={(event, value) => {
+            setSelectedGanres(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "gameGenres")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Game Genres"
+            />
           )}
-        >
-          {gameGenres.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* gameEngines */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Game Engines
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
-          value={selectedEngines}
-          onOpen={() => setOpenEngines(true)}
-          open={openEngines}
-          onChange={changeSelectedEngines}
-          onClose={() => setOpenEngines(false)}
-          input={
-            <OutlinedInput id="select-multiple-chip" label="gameEngines" />
-          }
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={gameEngines}
+          onChange={(event, value) => {
+            setSelectedEngines(value as string[]);
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "gameEngines")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Game Engines"
+            />
           )}
-        >
-          {gameEngines.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* Countries */}
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
-        <InputLabel
-          id="demo-multiple-chip-label"
-          sx={{ top: "-3px", lineHeight: "1.05" }}
-        >
-          Countries
-        </InputLabel>
-        <Select
-          labelId="demo-multiple-chip-label"
-          id="demo-multiple-chip"
+      <Autocomplete
           multiple
-          value={selectedCountries}
-          onOpen={() => setOpenCountries(true)}
-          open={openCountries}
-          onChange={changeSelectedCountries}
-          onClose={() => setOpenCountries(false)}
-          input={<OutlinedInput id="select-multiple-chip" label="Countries" />}
-          inputProps={{
-            sx: {
-              padding: "10px",
-            },
+          id="tags-outlined"
+          options={_countries}
+          onChange={(event, value) => {
+            if (value.includes("Europe")) {
+              let countriesArr = countries
+                .filter((value, key) => value.region === "Europe")
+                .map((value, key) => Object.values(value)[0]);
+              setSelectedCountries(countriesArr as string[]);
+            } else {
+              setSelectedCountries(value as string[]);
+            }
           }}
-          renderValue={(selected) => (
-            <Box
-              sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, zIndex: 5 }}
-            >
-              {selected.map((value) => (
-                <Chip
-                  key={value}
-                  label={value}
-                  onMouseDown={(e) => e.stopPropagation()}
-                  onDelete={() => handleDelete(value, "Countries")}
-                />
-              ))}
-            </Box>
+          filterSelectedOptions
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Countries"
+            />
           )}
-        >
-          {_countries.map((name: string) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+        />
       </FormControl>
 
       {/* Search */}
