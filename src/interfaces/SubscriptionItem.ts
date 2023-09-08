@@ -31,5 +31,5 @@ export default interface ISubscriptionItem {
   reasonsToWork: string;
   logoFile: any;
   showLogo: any;
-  workPreferences: string | string[];
+  workPreferences: string;
 }
