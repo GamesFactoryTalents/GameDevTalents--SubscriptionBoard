@@ -7,7 +7,7 @@ export default interface ISubscriptionItem {
   linkJob: string;
   emailAddress: string;
   jobTitle: string;
-  jobLocation: string;
+  roleLocation: string | string[];
   category: string;
   specialities: string | string[];
   skills: string | string[];
