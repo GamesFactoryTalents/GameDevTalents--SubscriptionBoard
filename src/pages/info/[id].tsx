@@ -120,6 +120,8 @@ const InfoPage = ({ id, info }: Props) => {
                   />
                 )
             )}
+
+            
           {info.employmentOptions &&
             Array.isArray(info.employmentOptions) &&
             info.employmentOptions.map(
@@ -133,9 +135,19 @@ const InfoPage = ({ id, info }: Props) => {
                 )
             )}
 
-          {info.roleLocation && Array.isArray(info.roleLocation) && info.roleLocation.map((item) => {
-            (<ChipStyled text={item} type={ChipStyledEnum.corner} />)
-          })}
+
+          {info.roleLocation &&
+            Array.isArray(info.roleLocation) &&
+            info.roleLocation.map(
+              (option: any, index: number) =>
+                option && (
+                  <ChipStyled
+                    key={index}
+                    text={option}
+                    type={ChipStyledEnum.corner}
+                  />
+                )
+            )}
         </Box>
 
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
