@@ -110,6 +110,9 @@ const customTheme = createTheme({
           style: {
             color: "white",
             backgroundColor: "#ef0354",
+            "&:hover": {
+              backgroundColor: "#D9D9D9"
+            },
           },
         },
       ],

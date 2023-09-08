@@ -401,8 +401,8 @@ const InfoPage = ({ id, info }: Props) => {
         <Box margin="30px 0">
           <CommonBtn
             variant="big"
-            topic={`${jobTitle} ${companyName}`}
-            recipient={emailAddress}
+            topic={`I’m interested to learn more about ${jobTitle} ${id}`}
+            recipient={'talents@gft.com'}
           />
           <Link
             href="/"
