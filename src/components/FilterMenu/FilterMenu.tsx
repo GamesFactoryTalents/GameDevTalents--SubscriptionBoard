@@ -90,7 +90,7 @@ const FilterMenu = () => {
         const subscriberData = getSubscriberData(subscriber);
 
         return (
-          (allFilters.selectedCategory === "" ||
+          (allFilters.selectedCategory === "" || allFilters.selectedCategory === "All Categories" ||
             allFilters.selectedCategory === null ||
             allFilters.selectedCategory === subscriberData.category) &&
           allFilters.selectedSkills.every((skill) =>
