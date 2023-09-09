@@ -39,6 +39,8 @@ const FilterMenu = () => {
   let countriesList = countries.map((country) => country.label);
   const _countries = ["Europe", ...countriesList];
 
+  const categoryOptions = ['All Categories', ...category]
+
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedSpecialisations, setSelectedSpecialisations] = useState<
@@ -219,7 +221,7 @@ const FilterMenu = () => {
       <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
       <Autocomplete
           id="tags-outlined"
-          options={category}
+          options={categoryOptions}
           onChange={(event, value) => {
             setSelectedCategory(value as string);
             setSpecialisationsForCategory(
