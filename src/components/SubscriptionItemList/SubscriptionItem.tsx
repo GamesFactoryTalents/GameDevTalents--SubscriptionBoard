@@ -1,5 +1,12 @@
 "use client";
-import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import ISubscriptionItem from "../../interfaces/SubscriptionItem";
 import getSubscriberData from "../../utils/getSubscriberData";
 import ChipStyled from "../ChipStyled/ChipStyled";
@@ -7,8 +14,6 @@ import ChipStyledEnum from "../../interfaces/ChipStyledEnum";
 import { useRouter } from "next/navigation";
 import CommonBtn from "../CommonBtn/CommonBtn";
 
-
-/* didn't know how to handle it =((( */
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -55,7 +60,8 @@ export default function SubscriptionItem({
   } = getSubscriberData(subscriber);
   const theme = useTheme();
   return (
-    <Box
+    <Container
+      className={montserrat.className}
       sx={{
         borderBottom: `1px solid ${theme.palette.gray.strong}`,
         padding: "40px 16px 40px 0",
@@ -65,20 +71,42 @@ export default function SubscriptionItem({
       // onClick={() => push(`/info/${id}`)}
       onClick={() => window.open(`/info/${id}`, "_blank")}
     >
-      <Box sx={{ display: "flex", alignItems: "center", maxWidth: '60%', flexWrap: 'wrap', rowGap: 0, columnGap: 1, mb: 1 }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          maxWidth: "60%",
+          flexWrap: "wrap",
+          rowGap: 0,
+          columnGap: 1,
+          mb: 1,
+        }}
+      >
         {/* The comment below is about disabling MUI and TS discord */}
         {/* @ts-ignore comment */}
         <Typography variant="candidateTitle">{jobTitle}</Typography>
         {seniorityLevel &&
-          seniorityLevel.map((seniority: any, index: number) => (
-            seniority &&
-            <ChipStyled key={index} text={seniority} type={ChipStyledEnum.corner} />
-          ))}
+          seniorityLevel.map(
+            (seniority: any, index: number) =>
+              seniority && (
+                <ChipStyled
+                  key={index}
+                  text={seniority}
+                  type={ChipStyledEnum.corner}
+                />
+              )
+          )}
         {employmentOptions &&
-          employmentOptions.map((employmentOption: any, index: number) => (
-            employmentOption &&
-            <ChipStyled key={index} text={employmentOption} type={ChipStyledEnum.corner} />
-          ))}
+          employmentOptions.map(
+            (employmentOption: any, index: number) =>
+              employmentOption && (
+                <ChipStyled
+                  key={index}
+                  text={employmentOption}
+                  type={ChipStyledEnum.corner}
+                />
+              )
+          )}
         {country && <ChipStyled text={country} type={ChipStyledEnum.corner} />}
       </Box>
 
@@ -164,12 +192,12 @@ export default function SubscriptionItem({
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Salary Range:</Typography>
-            {(salaryRange[0] === '0' && salaryRange[1] === '25000') ? (
+            {salaryRange[0] === "0" && salaryRange[1] === "25000" ? (
               <ChipStyled
-              key={'Negotiable'}
-              text={'Negotiable'}
-              type={ChipStyledEnum.round}
-            />
+                key={"Negotiable"}
+                text={"Negotiable"}
+                type={ChipStyledEnum.round}
+              />
             ) : (
               <ChipStyled
                 key={`${salaryRange[0]} - ${salaryRange[1]}`}
@@ -179,18 +207,23 @@ export default function SubscriptionItem({
             )}
           </Box>
         )}
-        <Box sx={{ position: {xs: "static", md: "absolute"}, pl: "90px" }} top="40px" right="10px" maxWidth="340px">
-        {showLogo && (
-          <img
-            src={logoFile.url}
-            style={{
-              maxWidth: "70px",
-              maxHeight: "70px",
-              position: "absolute",
-              left: 0,
-            }}
-          />
-        )}
+        <Box
+          sx={{ position: { xs: "static", md: "absolute" }, pl: "90px" }}
+          top="40px"
+          right="10px"
+          maxWidth="340px"
+        >
+          {showLogo && (
+            <img
+              src={logoFile.url}
+              style={{
+                maxWidth: "70px",
+                maxHeight: "70px",
+                position: "absolute",
+                left: 0,
+              }}
+            />
+          )}
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at
@@ -208,6 +241,6 @@ export default function SubscriptionItem({
       <Button variant="gray" sx={{ width: "content-fit" }}>
         READ MORE
       </Button>
-    </Box>
+    </Container>
   );
 }

@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ThemeProvider } from "@mui/material/styles";
-
-// import GFTypeSelect from "./GFTypeSelect";
 import PropTypes from "prop-types";
-// import { makeStyles } from "@mui/styles";
 import emailjs from "@emailjs/browser";
 import tbFormConfig from "../interfaces/tbFormConfig";
 import RangeSlider from "react-range-slider-input";
@@ -16,6 +13,7 @@ import skillTree from "../commonSettings/skillTree";
 import employmentOptions from "../commonSettings/employmentOptions";
 import customTheme from "../theme/theme";
 import {
+  Autocomplete,
   Backdrop,
   Box,
   Button,
@@ -27,18 +25,16 @@ import {
   Grid,
   InputLabel,
   TextField,
+  Typography,
 } from "@mui/material";
 import { AlertTitle } from "@mui/material";
-import ChippedMultiselect from "../components/ChippedMultiselect/ChippedMultiselect";
-import GFSelect from "../components/GFSelect/GFSelect";
+import { Montserrat } from "next/font/google";
+import { Container } from "@mui/system";
 
 export const SENDING_NONE = "none";
 export const SENDING_IN_PROGRESS = "sending";
 export const SENDING_FAILED = "failed";
 export const SENDING_SUCCEEDED = "succeeded";
-// import tbFormConfig from './tbFormConfig';
-
-// const useStyles = makeStyles({
 //   formControlLabel: {
 //     width: "270px",
 //     display: "flex",
@@ -170,6 +166,11 @@ export const SENDING_SUCCEEDED = "succeeded";
 //   },
 // });
 
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
 function Alert(props: any) {
   return <AlertTitle elevation={6} variant="filled" {...props} />;
 }
@@ -189,7 +190,6 @@ function validateEmailAddress(emailAddress: any) {
 }
 
 export default function GFApplicationForm(props: any) {
-  // const classes = useStyles();
 
   const locationRef = useRef() as any;
   const locationRoleRef = useRef() as any;
@@ -209,7 +209,7 @@ export default function GFApplicationForm(props: any) {
       (item: any) => Object.keys(item)[0] === category
     ) as any;
     const rawSpecList =
-      ((categoryEntry && categoryEntry[category].specialities) || []);
+      (categoryEntry && categoryEntry[category].specialities) || [];
     const uniqSpecList = [...new Set(rawSpecList)];
     return uniqSpecList.sort();
   }
@@ -219,10 +219,6 @@ export default function GFApplicationForm(props: any) {
     (value: any, key: any) => Object.keys(value)[0]
   );
   const workPreferences = employmentOptions.workPreferences;
-
-  // const countriesList = [
-  //   ...new Set(props.countries.map((value, key) => Object.values(value)[0])),
-  // ];
 
   const seniorityLevels = employmentOptions.seniorityLevels;
   const skills = employmentOptions.skills;
@@ -242,7 +238,7 @@ export default function GFApplicationForm(props: any) {
   });
 
   const [formValues, setFormValues] = useState({
-    category: "",
+    category: '',
     specialities: [],
     skills: [],
     gameGenres: [],
@@ -266,8 +262,7 @@ export default function GFApplicationForm(props: any) {
 
   const updateCategoryField = (e: any) => {
     // cleaning out the specialities field when category is changed
-    if(e)
-    doUpdateFields([{ category: e.target.value }, { specialities: [] }]);
+    if (e) doUpdateFields([{ category: e.target.innerText }, { specialities: [] }]);
   };
 
   // Cannot be called several times in the update cycle as the next one will override the previous one
@@ -278,7 +273,7 @@ export default function GFApplicationForm(props: any) {
       const value = entry[name];
       updateObject[name] = value;
     }
-    // console.log('updateObject:', updateObject);
+
     setFormValues(updateObject);
   };
 
@@ -456,12 +451,8 @@ export default function GFApplicationForm(props: any) {
     return formValues.logoFile ? formValues.logoFile.name : `Logo`;
   }
 
-  // const fileControlLabelClassName = formValues.logoFile
-  //   ? classes.fileInputControlLabelFileSelected
-  //   : classes.fileInputControlLabelFileNonSelected;
 
   const updateField = (e: any) => {
-    // console.log('updateField', e.target.name, e.target.value, typeof e.target.value)
     let value = e.target.value;
     if (e.target.type === "checkbox") {
       value = e.target.checked && e.target.value;
@@ -482,327 +473,306 @@ export default function GFApplicationForm(props: any) {
 
   return (
     <ThemeProvider theme={customTheme}>
-      <form
-        name="personregistration"
-        onSubmit={handleSubmit}
-        ref={formRef.current}
-      >
-        <Grid
-          container
-          spacing={4}
-          direction="column"
-          alignItems="stretch"
+      <Container>
+        <form
+          name="personregistration"
+          onSubmit={handleSubmit}
+          ref={formRef.current}
         >
-          <Grid item>
-            <h2>Subscription form</h2>
-          </Grid>
-          <Grid container item direction="row" xs={12} spacing={2}>
-            <Grid item xs={6}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  First Name
-                </InputLabel>
-                <TextField
-                  required
-                  variant="filled"
-                  name="firstName"
-                  value={recruitValues.firstName}
-                  onChange={updateField}
-                />
-              </FormControl>
-            </Grid>
-            <Grid item xs={6}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  Last Name
-                </InputLabel>
-                <TextField
-                  required
-                  variant="filled"
-                  name="lastName"
-                  value={recruitValues.lastName}
-                  onChange={updateField}
-                />
-              </FormControl>
-            </Grid>
-          </Grid>
-          <Grid container item direction="row" xs={12} spacing={2}>
-            <Grid item xs={6}>
-              <FormControl required >
-                <InputLabel
-                  shrink
-                >
-                  Company Name
-                </InputLabel>
-                <TextField
-                  required
-                  variant="filled"
-                  name="companyName"
-                  value={recruitValues.companyName}
-                  onChange={updateField}
-                />
-              </FormControl>
-            </Grid>
-            <Grid item xs={6}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  Email Address
-                </InputLabel>
-                <TextField
-                  required
-                  type="email"
-                  variant="filled"
-                  name="emailAddress"
-                  error={knownErrors.emailAddress!}
-                  helperText={knownErrors.emailAddress}
-                  value={recruitValues.emailAddress}
-                  onChange={updateField}
-                />
-              </FormControl>
-            </Grid>
-          </Grid>
-
           <Grid
-            item
-            xs={6}
-            style={{ display: "flex", gap: "30px", width: "100%" }}
+            className={montserrat.className}
+            container
+            spacing={4}
+            direction="column"
+            alignItems="stretch"
           >
-            <Box
-              style={{
-                width: "100%",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={showLogoCheckbox}
-                    onChange={(event) => setShowLogo(event.target.checked)}
-                    name="showLogo"
+            <Grid item>
+              <h2>Subscription form</h2>
+            </Grid>
+            <Grid container item direction="row" xs={12} spacing={2}>
+              <Grid item xs={6}>
+                <FormControl sx={{ width: "100%" }} required>
+                  <TextField
+                    label="First Name"
+                    required
+                    name="firstName"
+                    value={recruitValues.firstName}
+                    onChange={updateField}
                   />
-                }
-                label="Publish Company Logo along with the Role Listing"
-              />
-              <FormHelperText style={{ width: "270px", display: "flex" }}>
-                <span>
-                  All Roles are published anonymously unless otherwise specified
-                </span>
-              </FormHelperText>
-            </Box>
-
-            {showLogoCheckbox && (
-              <Box>
-                <FormControl>
-                  <InputLabel
-                    id="cvFileLabel"
-                    shrink
-                  >
-                    Logo (Attachment)
-                  </InputLabel>
-                  <Button
-                    variant="contained"
-                    component="label"
-                    startIcon={<AttachFileIcon style={{ fontSize: 14 }} />}
-                  >
-                    <span>
-                      {fileSelectionButtonLabel()}
-                    </span>
-                    <input
-                      type="file"
-                      name="logoFile"
-                      id="cvFileInput"
-                      onChange={updateField}
-                      hidden
-                    />
-                  </Button>
-                  {resumeWarning && (
-                    <Alert severity="error">
-                      Please select file less than 5GB!
-                    </Alert>
-                  )}
                 </FormControl>
+              </Grid>
+              <Grid item xs={6}>
+                <FormControl sx={{ width: "100%" }} required>
+                  <TextField
+                    label="Last Name"
+                    required
+                    name="lastName"
+                    value={recruitValues.lastName}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
+            </Grid>
+            <Grid container item direction="row" xs={12} spacing={2}>
+              <Grid item xs={6}>
+                <FormControl sx={{ width: "100%" }} required>
+                  <TextField
+                    label="Company Name"
+                    required
+                    name="companyName"
+                    value={recruitValues.companyName}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item xs={6}>
+                <FormControl sx={{ width: "100%" }} required>
+                  <TextField
+                    label="Email Address"
+                    required
+                    type="email"
+                    name="emailAddress"
+                    error={knownErrors.emailAddress!}
+                    helperText={knownErrors.emailAddress}
+                    value={recruitValues.emailAddress}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
+            </Grid>
 
-                <FormHelperText>
-                  <span>Please select file less than 5GB</span>
+            <Grid
+              item
+              xs={6}
+              style={{ display: "flex", gap: "30px", width: "100%" }}
+            >
+              <Box
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={showLogoCheckbox}
+                      onChange={(event) => setShowLogo(event.target.checked)}
+                      name="showLogo"
+                    />
+                  }
+                  label="Publish Company Logo along with the Role Listing"
+                />
+                <FormHelperText style={{ width: "100%", display: "flex" }}>
+                  <span>
+                    All Roles are published anonymously unless otherwise
+                    specified
+                  </span>
                 </FormHelperText>
               </Box>
-            )}
-          </Grid>
-          <Grid container item direction="row" xs={12} spacing={2}>
-            <Grid item xs={12}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  Link to company website (URL)
-                </InputLabel>
-                <TextField
-                  required
-                  variant="filled"
-                  name="linkCompany"
-                  type="url"
-                  value={recruitValues.linkCompany}
-                  onChange={updateField}
-                />
-              </FormControl>
-            </Grid>
-          </Grid>
 
-          <Grid item>
-            <h2>Role Specification</h2>
-          </Grid>
-          <Grid container item direction="row" xs={12} spacing={2}>
-            <Grid item xs={12}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  Who are you looking for?
-                </InputLabel>
-                <TextField
-                  required
-                  variant="filled"
-                  name="jobTitle"
-                  value={formValues.jobTitle}
-                  onChange={updateField}
-                />
-              </FormControl>
-              <FormHelperText>Please specify a job title</FormHelperText>
-            </Grid>
+              <Grid
+                item
+                xs={6}
+                style={{ display: "flex", gap: "30px", width: "100%" }}
+              >
+                {showLogoCheckbox && (
+                  <Box>
+                    <FormControl sx={{ width: "100%" }}>
+                      <Button
+                        aria-label="upload logo"
+                        variant="contained"
+                        component="label"
+                        startIcon={<AttachFileIcon style={{ fontSize: 14 }} />}
+                      >
+                        <span>{fileSelectionButtonLabel()}</span>
+                        <input
+                          type="file"
+                          name="logoFile"
+                          id="cvFileInput"
+                          onChange={updateField}
+                          hidden
+                        />
+                      </Button>
+                      {resumeWarning && (
+                        <Alert severity="error">
+                          Please select file less than 5GB!
+                        </Alert>
+                      )}
+                    </FormControl>
 
-            <Grid
-              container
-              item
-              direction="row"
-              xs={12}
-              spacing={2}
-              style={{ marginTop: "10px" }}
-            >
-              <Grid item xs={6}>
-                <ChippedMultiselect
-                  name="seniorityLevel"
-                  labelText="Seniority Levels"
-                  options={seniorityLevels}
-                  onChange={seniorityLevelChanged}
-                  value={formValues.seniorityLevel}
-                />
+                    <FormHelperText>
+                      <span>Please select file less than 5GB</span>
+                    </FormHelperText>
+                  </Box>
+                )}
               </Grid>
-
-              <Grid item xs={6}>
-                <GFSelect
-                  labelText="Category"
-                  name="category"
-                  options={categories}
-                  value={formValues.category}
-                  onChange={updateCategoryField}
-                />
+            </Grid>
+            <Grid container item direction="row" xs={12} spacing={2}>
+              <Grid item xs={12}>
+                <FormControl sx={{ width: "100%" }} required>
+                  <TextField
+                    label="Link to company website (URL)"
+                    required
+                    name="linkCompany"
+                    type="url"
+                    value={recruitValues.linkCompany}
+                    onChange={updateField}
+                  />
+                </FormControl>
               </Grid>
             </Grid>
 
-            <Grid item xs={12} style={{ marginTop: "10px" }}>
-              <ChippedMultiselect
-                name="specialities"
-                labelText="Specialisations"
-                options={specialitiesForCategory(formValues.category) as any}
-                onChange={specialitiesChanged}
-                value={formValues.specialities}
-              />
-              <FormHelperText>
-                Please specify max. 3 specialties within your category. If a
-                specialty is not available in the list, enter it in the text
-                field
-              </FormHelperText>
+            <Grid item>
+              <h2>Role Specification</h2>
             </Grid>
+            <Grid container item direction="row" xs={12} spacing={2}>
+              <Grid item xs={12}>
+                <FormControl required sx={{ width: "100%" }}>
+                  <TextField
+                    label="Who are you looking for?"
+                    required
+                    name="jobTitle"
+                    value={formValues.jobTitle}
+                    onChange={updateField}
+                  />
+                </FormControl>
+                <FormHelperText>Please specify a job title</FormHelperText>
+              </Grid>
 
-            <Grid item xs={12} style={{ marginTop: "10px" }}>
-              <ChippedMultiselect
-                name="skills"
-                labelText="Key Skills – Tech Stack, Technologies and Tools"
-                options={skills}
-                onChange={skillsChanged}
-                value={formValues.skills}
-              />
-              <FormHelperText>
-                Please list max. 5 tech skills and stack e.g. C++, Unity,
-                Houdini etc. If a skill is not available in the list, enter it
-                in the text field
-              </FormHelperText>
-            </Grid>
+              <Grid
+                container
+                item
+                direction="row"
+                xs={12}
+                spacing={2}
+                style={{ marginTop: "10px" }}
+              >
+                <Grid item xs={6}>
+                  <Autocomplete
+                    multiple
+                    id="tags-outlined"
+                    options={seniorityLevels}
+                    onChange={seniorityLevelChanged}
+                    filterSelectedOptions
+                    renderInput={(params) => (
+                      <TextField {...params} label="Seniority Levels" />
+                    )}
+                  />
+                </Grid>
 
-            <Grid
-              container
-              item
-              direction="row"
-              xs={12}
-              spacing={2}
-              style={{ marginTop: "10px" }}
-            >
-              <Grid item xs={6}>
-                <ChippedMultiselect
-                  name="gameGenres"
-                  labelText="Game Genres"
-                  options={employmentOptions.gameGenres}
-                  onChange={gameGenresChanged}
-                  value={formValues.gameGenres}
-                  required={false}
+                <Grid item xs={6}>
+                  <Autocomplete
+                    id="tags-outlined"
+                    options={categories}
+                    onChange={updateCategoryField}
+                    renderInput={(params) => (
+                      <TextField {...params} label="Category" />
+                    )}
+                  />
+                </Grid>
+              </Grid>
+
+              <Grid item xs={12} style={{ marginTop: "10px" }}>
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
+                  options={specialitiesForCategory(formValues.category)}
+                  onChange={() => specialitiesChanged}
+                  renderInput={(params) => (
+                    <TextField {...params} label="Specialisations" />
+                  )}
                 />
                 <FormHelperText>
-                  Please list game genres. If a genre is not available in the
-                  list, enter them in the text field
+                  Please specify max. 3 specialties within your category. If a
+                  specialty is not available in the list, enter it in the text
+                  field
                 </FormHelperText>
               </Grid>
 
-              <Grid item xs={6}>
-                <ChippedMultiselect
-                  name="gameEngines"
-                  labelText="Game Engines"
-                  options={employmentOptions.gameEngines}
-                  onChange={gameEnginesChanged}
-                  value={formValues.gameEngines}
-                  required={false}
+              <Grid item xs={12} style={{ marginTop: "10px" }}>
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
+                  options={skills}
+                  onChange={() => skillsChanged}
+                  filterSelectedOptions
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label="Key Skills – Tech Stack, Technologies and Tools"
+                    />
+                  )}
                 />
                 <FormHelperText>
-                  Please list game engines. If an engine is not available in the
-                  list, enter them in the text field
+                  Please list max. 5 tech skills and stack e.g. C++, Unity,
+                  Houdini etc. If a skill is not available in the list, enter it
+                  in the text field
                 </FormHelperText>
               </Grid>
-            </Grid>
-          </Grid>
 
-          <Box
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "10px",
-              marginBottom: "10px",
-              position: "relative",
-              padding: "16px",
-            }}
-          >
+              <Grid
+                container
+                item
+                direction="row"
+                xs={12}
+                spacing={2}
+                style={{ marginTop: "10px" }}
+              >
+                <Grid item xs={6}>
+                  <Autocomplete
+                    multiple
+                    id="tags-outlined"
+                    options={employmentOptions.gameGenres}
+                    onChange={gameGenresChanged}
+                    filterSelectedOptions
+                    renderInput={(params) => (
+                      <TextField {...params} label="Game Genres" />
+                    )}
+                  />
+                  <FormHelperText>
+                    Please list game genres. If a genre is not available in the
+                    list, enter them in the text field
+                  </FormHelperText>
+                </Grid>
+
+                <Grid item xs={6}>
+                  <Autocomplete
+                    multiple
+                    id="tags-outlined"
+                    options={employmentOptions.gameEngines}
+                    onChange={gameGenresChanged}
+                    filterSelectedOptions
+                    renderInput={(params) => (
+                      <TextField {...params} label="Game Engines" />
+                    )}
+                  />
+                  <FormHelperText>
+                    Please list game engines. If an engine is not available in
+                    the list, enter them in the text field
+                  </FormHelperText>
+                </Grid>
+              </Grid>
+            </Grid>
+
             <Grid
               container
               item
               direction="row"
               xs={12}
               spacing={2}
-              style={{ marginTop: "10px" }}
+              style={{ position: "relative" }}
             >
               <Grid item xs={6}>
-                <ChippedMultiselect
-                  name="gamePlatforms"
-                  labelText="Platforms"
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
                   options={employmentOptions.platforms}
                   onChange={gamePlatformsChanged}
-                  value={formValues.gamePlatforms}
-                  required={false}
+                  filterSelectedOptions
+                  renderInput={(params) => (
+                    <TextField {...params} label="Platforms" />
+                  )}
                 />
                 <FormHelperText>
                   Please list platforms. If a platform is not available in the
@@ -810,20 +780,13 @@ export default function GFApplicationForm(props: any) {
                 </FormHelperText>
               </Grid>
 
-              <Grid item xs={6}>
-                <p
-                  style={{
-                    position: "absolute",
-                    top: "20px",
-                    margin: "0",
-                    color: "black",
-                    fontFamily: "Roboto",
-                    fontSize: "13px",
-                    fontWeight: "600",
-                  }}
+              <Grid item xs={6} style={{ paddingTop: "0" }}>
+                <Typography
+                  /* @ts-ignore comment */
+                  variant="subtitle2"
                 >
                   What is the salary range for this role?
-                </p>
+                </Typography>
                 <Box
                   style={{
                     display: "flex",
@@ -849,7 +812,7 @@ export default function GFApplicationForm(props: any) {
                   style={{
                     padding: "10px",
                     position: "absolute",
-                    top: "30px",
+                    top: "50px",
                     right: "100px",
                   }}
                 >
@@ -857,132 +820,116 @@ export default function GFApplicationForm(props: any) {
                 </FormHelperText>
               </Grid>
             </Grid>
-          </Box>
 
-          <Grid
-            container
-            item
-            direction="row"
-            xs={12}
-            spacing={2}
-            style={{ marginTop: "10px" }}
-          >
-            <Grid item xs={6}>
-              <ChippedMultiselect
-                name="workPreferences"
-                labelText="Work Preferences"
-                options={workPreferences}
-                onChange={workPreferencesChanged}
-                value={formValues.workPreferences}
-                required={true}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <ChippedMultiselect
-                name="employmentOptions"
-                labelText="Employment Options"
-                options={employmentOptionsPossible}
-                onChange={employmentOptionChanged}
-                value={formValues.employmentOptions}
-                required={true}
-              />
-            </Grid>
-          </Grid>
-
-          <Grid
-            container
-            item
-            direction="row"
-            xs={12}
-            spacing={2}
-            style={{ marginTop: "10px" }}
-          >
-            <Grid item xs={6} ref={locationRoleRef.current}>
-              <ChippedMultiselect
-                name="roleLocation"
-                labelText="Role Location(s)"
-                options={countriesList}
-                onChange={rolePreferencesChanged}
-                value={formValues.roleLocation}
-                required={true}
-              />
-              <FormHelperText>
-                Please specify a country or countries of the Role Location(s)
-              </FormHelperText>
-
-              {locationRoleWarning && (
-                <Alert severity="error">Please fill correct country!</Alert>
-              )}
-            </Grid>
-            <Grid item xs={6} ref={locationRef.current}>
-              <FormControl required>
-                <InputLabel
-                  shrink
-                >
-                  Preferred countries or area to hire from
-                </InputLabel>
-                <TextField
-                  variant="filled"
-                  name="country"
-                  value={formValues.country}
-                  onChange={updateField}
-                  required={true}
+            <Grid container item direction="row" xs={12} spacing={2}>
+              <Grid item xs={6}>
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
+                  options={workPreferences}
+                  onChange={workPreferencesChanged}
+                  filterSelectedOptions
+                  renderInput={(params) => (
+                    <TextField {...params} label="Work Preferences" />
+                  )}
                 />
-              </FormControl>
-              <FormHelperText>
-                Please specify a country or area like European Union or
-                Worldwide.
-              </FormHelperText>
-              {locationWarning && (
-                <Alert severity="error">Please fill correct country!</Alert>
-              )}
+              </Grid>
+              <Grid item xs={6}>
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
+                  options={employmentOptionsPossible}
+                  onChange={employmentOptionChanged}
+                  filterSelectedOptions
+                  renderInput={(params) => (
+                    <TextField {...params} label="Employment Options" />
+                  )}
+                />
+              </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12}>
-            <FormControl required>
-              <InputLabel
-                shrink
-              >
-                Link to Job Opening
-              </InputLabel>
-              <TextField
-                required
-                variant="filled"
-                name="linkJob"
-                type="url"
-                value={formValues.linkJob}
-                onChange={updateField}
-              />
-            </FormControl>
-          </Grid>
 
-          <Grid item>
-            <h3>
-              Please fill in additional information to enhance role matching
-              (Optional)
-            </h3>
-          </Grid>
+            <Grid
+              container
+              item
+              direction="row"
+              xs={12}
+              spacing={2}
+              sx={{ alignItems: "end" }}
+            >
+              <Grid item xs={6} ref={locationRoleRef.current}>
+                <Autocomplete
+                  multiple
+                  id="tags-outlined"
+                  options={countriesList}
+                  onChange={rolePreferencesChanged}
+                  filterSelectedOptions
+                  renderInput={(params) => (
+                    <TextField {...params} label="Role Location(s)" />
+                  )}
+                />
+                <FormHelperText>
+                  Please specify a country or countries of the Role Location(s)
+                </FormHelperText>
 
-          <Grid container item direction="row" xs={12} spacing={0}>
+                {locationRoleWarning && (
+                  <Alert severity="error">Please fill correct country!</Alert>
+                )}
+              </Grid>
+              <Grid item xs={6} ref={locationRef.current}>
+                <FormControl required sx={{ width: "100%" }}>
+                  <TextField
+                    label="Preferred countries or area to hire from"
+                    name="country"
+                    value={formValues.country}
+                    onChange={updateField}
+                    required={true}
+                  />
+                </FormControl>
+                <FormHelperText>
+                  Please specify a country or area like European Union or
+                  Worldwide.
+                </FormHelperText>
+                {locationWarning && (
+                  <Alert severity="error">Please fill correct country!</Alert>
+                )}
+              </Grid>
+            </Grid>
             <Grid item xs={12}>
-              <FormControl fullWidth>
-                <InputLabel
-                  shrink
-                >
-                  Tasks & Responsibilities
-                </InputLabel>
+              <FormControl required sx={{ width: "100%" }}>
+                {/* <InputLabel shrink>Link to Job Opening</InputLabel> */}
                 <TextField
-                  multiline
-                  variant="filled"
-                  name="responsibilities"
-                  value={formValues.responsibilities}
+                  label="Link to Job Opening"
+                  required
+                  name="linkJob"
+                  type="url"
+                  value={formValues.linkJob}
                   onChange={updateField}
                 />
               </FormControl>
             </Grid>
-          </Grid>
 
-          {/* <Grid container item direction="row" xs={12} spacing={0}>
+            <Grid item>
+              <h3>
+                Please fill in additional information to enhance role matching
+                (Optional)
+              </h3>
+            </Grid>
+
+            <Grid container item direction="row" xs={12} spacing={0}>
+              <Grid item xs={12}>
+                <FormControl fullWidth>
+                  <TextField
+                    label="Tasks & Responsibilities"
+                    multiline
+                    name="responsibilities"
+                    value={formValues.responsibilities}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
+            </Grid>
+
+            {/* <Grid container item direction="row" xs={12} spacing={0}>
           <Grid item xs={12}>
             <FormControl fullWidth className={classes.formLine}>
               <InputLabel
@@ -1006,7 +953,7 @@ export default function GFApplicationForm(props: any) {
           </Grid>
         </Grid> */}
 
-          {/* <Grid container item direction="row" xs={12} spacing={0}>
+            {/* <Grid container item direction="row" xs={12} spacing={0}>
           <Grid item xs={12}>
             <FormControl fullWidth className={classes.formLine}>
               <InputLabel
@@ -1030,26 +977,21 @@ export default function GFApplicationForm(props: any) {
           </Grid>
         </Grid> */}
 
-          <Grid container item direction="row" xs={12} spacing={0}>
-            <Grid item xs={12}>
-              <FormControl fullWidth>
-                <InputLabel
-                  shrink
-                >
-                  About the Studio
-                </InputLabel>
-                <TextField
-                  multiline
-                  variant="filled"
-                  name="aboutStudio"
-                  value={formValues.aboutStudio}
-                  onChange={updateField}
-                />
-              </FormControl>
+            <Grid container item direction="row" xs={12} spacing={0}>
+              <Grid item xs={12}>
+                <FormControl fullWidth>
+                  <TextField
+                    label="About the Studio"
+                    multiline
+                    name="aboutStudio"
+                    value={formValues.aboutStudio}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
             </Grid>
-          </Grid>
 
-          {/* <Grid container item direction="row" xs={12} spacing={0}>
+            {/* <Grid container item direction="row" xs={12} spacing={0}>
           <Grid item xs={12}>
             <FormControl fullWidth className={classes.formLine}>
               <InputLabel
@@ -1073,7 +1015,7 @@ export default function GFApplicationForm(props: any) {
           </Grid>
         </Grid> */}
 
-          {/* <Grid container item direction="row" xs={12} spacing={0}>
+            {/* <Grid container item direction="row" xs={12} spacing={0}>
           <Grid item xs={12}>
             <FormControl fullWidth className={classes.formLine}>
               <InputLabel
@@ -1097,89 +1039,81 @@ export default function GFApplicationForm(props: any) {
           </Grid>
         </Grid> */}
 
-          <Grid container item direction="row" xs={12} spacing={0}>
-            <Grid item xs={12}>
-              <FormControl fullWidth>
-                <InputLabel
-                  shrink
-                >
-                  Benefits
-                </InputLabel>
-                <TextField
-                  multiline
-                  variant="filled"
-                  name="benefits"
-                  value={formValues.benefits}
-                  onChange={updateField}
-                />
-              </FormControl>
+            <Grid container item direction="row" xs={12} spacing={0}>
+              <Grid item xs={12}>
+                <FormControl fullWidth>
+                  <TextField
+                    label="Benefits"
+                    multiline
+                    name="benefits"
+                    value={formValues.benefits}
+                    onChange={updateField}
+                  />
+                </FormControl>
+              </Grid>
             </Grid>
-          </Grid>
 
-          <Grid item xs={12}>
-            {props.sendingStatus === SENDING_FAILED && (
-              <Alert severity="error">
-                We are sorry, something went wrong. Please, try again later or
-                contact us by email.
-                {props.errorMessage && " Server tells: "} {props.errorMessage}
-              </Alert>
-            )}
-            {(!props.sendingStatus ||
-              props.sendingStatus === SENDING_NONE ||
-              props.sendingStatus === SENDING_FAILED) && (
-              <Button
-                type="submit"
-                variant="contained"
-                endIcon={<ArrowRightAltIcon />}
-                onClick={() => setAnotherRole(false)}
-                color="secondary"
-              >
-                Subscribe Now
-              </Button>
-            )}
-            {(!props.sendingStatus ||
-              props.sendingStatus === SENDING_NONE ||
-              props.sendingStatus === SENDING_FAILED) && (
-              <Button
-                type="submit"
-                variant="contained"
-                endIcon={<ArrowRightAltIcon />}
-                color="primary"
-                onClick={() => setAnotherRole(true)}
-                className="anotherRole"
-              >
-                Add Another Role
-              </Button>
-            )}
-            {props.sendingStatus === SENDING_IN_PROGRESS && (
-              <CircularProgress />
-            )}
-            {
-              // For messages before posting such as e.g. file size limit
-              props.sendingStatus === SENDING_NONE && props.errorMessage && (
+            <Grid item xs={12}>
+              {props.sendingStatus === SENDING_FAILED && (
                 <Alert severity="error">
-                  {props.errorMessage}
+                  We are sorry, something went wrong. Please, try again later or
+                  contact us by email.
+                  {props.errorMessage && " Server tells: "} {props.errorMessage}
                 </Alert>
-              )
-            }
-            <Backdrop
-              open={props.sendingStatus === SENDING_SUCCEEDED}
-            >
-              <Alert severity="success">
-                Thank you for your subscription. We will notify you once a
-                matching talent is available.
-              </Alert>
-            </Backdrop>
+              )}
+              {(!props.sendingStatus ||
+                props.sendingStatus === SENDING_NONE ||
+                props.sendingStatus === SENDING_FAILED) && (
+                <Button
+                  type="submit"
+                  variant="contained"
+                  endIcon={<ArrowRightAltIcon />}
+                  onClick={() => setAnotherRole(false)}
+                  color="secondary"
+                >
+                  Subscribe Now
+                </Button>
+              )}
+              {(!props.sendingStatus ||
+                props.sendingStatus === SENDING_NONE ||
+                props.sendingStatus === SENDING_FAILED) && (
+                <Button
+                  type="submit"
+                  variant="contained"
+                  endIcon={<ArrowRightAltIcon />}
+                  color="primary"
+                  onClick={() => setAnotherRole(true)}
+                  className="anotherRole"
+                >
+                  Add Another Role
+                </Button>
+              )}
+              {props.sendingStatus === SENDING_IN_PROGRESS && (
+                <CircularProgress />
+              )}
+              {
+                // For messages before posting such as e.g. file size limit
+                props.sendingStatus === SENDING_NONE && props.errorMessage && (
+                  <Alert severity="error">{props.errorMessage}</Alert>
+                )
+              }
+              <Backdrop open={props.sendingStatus === SENDING_SUCCEEDED}>
+                <Alert severity="success">
+                  Thank you for your subscription. We will notify you once a
+                  matching talent is available.
+                </Alert>
+              </Backdrop>
 
-            {/*props.recommendedCandidates.length > 0 && (
+              {/*props.recommendedCandidates.length > 0 && (
                   <Grid item xs={12}>
                     <p>Candidates IDS: </p>
                     {props.recommendedCandidates.map(cand => (<p>{cand['Candidate ID']}</p>))}
                   </Grid>
               )*/}
+            </Grid>
           </Grid>
-        </Grid>
-      </form>
+        </form>
+      </Container>
     </ThemeProvider>
   );
 }
