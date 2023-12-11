@@ -14,6 +14,7 @@ import ChipStyledEnum from "../../interfaces/ChipStyledEnum";
 import customTheme from "../../theme/theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CommonBtn from "../../components/CommonBtn/CommonBtn";
+import { Button } from "@mui/material";
 
 interface Props {
   id: string;
@@ -404,6 +405,16 @@ const InfoPage = ({ id, info }: Props) => {
             topic={`I’m interested to learn more about ${jobTitle} ${id}`}
             recipient={'talents@gamesfactorytalents.com'}
           />
+          <Button
+            href={linkJob}
+          >
+            READ MORE
+          </Button>
+          <Button
+            href={'apply.talents.games'}
+          >
+            I’m Interested to join Careers Zone
+          </Button>
           <Link
             href="/"
             sx={{
