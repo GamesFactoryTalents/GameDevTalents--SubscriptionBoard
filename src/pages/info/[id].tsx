@@ -367,11 +367,17 @@ const InfoPage = ({ id, info }: Props) => {
           />
           <Button
             href={linkJob}
+            /* @ts-ignore comment */
+            variant="pink"
+            color="secondary"
           >
             READ MORE
           </Button>
           <Button
             href={'apply.talents.games'}
+            /* @ts-ignore comment */    
+            variant="pink"
+            color="secondary"
           >
             I’m Interested to join Careers Zone
           </Button>
