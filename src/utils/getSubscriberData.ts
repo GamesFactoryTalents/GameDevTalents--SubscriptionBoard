@@ -11,6 +11,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     jobTitle: subscriber.jobTitle,
     category: subscriber.category,
     specialities: Array.isArray(subscriber.specialities) ? [] : subscriber.specialities.split(','),
+    artAndAnimationStyles: Array.isArray(subscriber.artAndAnimationStyles) ? [] : subscriber.artAndAnimationStyles.split(','),
     skills: Array.isArray(subscriber.skills) ? [] : subscriber.skills.split(','),
     gameGenres: Array.isArray(subscriber.gameGenres) ? [] : subscriber.gameGenres.split(','),
     gameEngines: Array.isArray(subscriber.gameEngines) ? [] : subscriber.gameEngines.split(','),
@@ -27,13 +28,8 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     salaryRange: [subscriber.salaryRange.split(',')[0], subscriber.salaryRange.split(',')[1]],
     responsibilities: subscriber.responsibilities,
     requirements: subscriber.requirements,
-    benefits: subscriber.benefits,
-    idealAdditions: subscriber.idealAdditions,
-    aboutStudio: subscriber.aboutStudio,
-    theirCulture: subscriber.theirCulture,
-    reasonsToWork: subscriber.reasonsToWork,
+    jobDescription: subscriber.jobDescription,
     logoFile: subscriber.logoFile ? JSON.parse(subscriber.logoFile) : {}, /* JSON.parse */
-    showLogo: subscriber.showLogo,
     workPreferences: subscriber.workPreferences.includes(',') ? subscriber.workPreferences.split(',') : [subscriber.workPreferences],
   };
 }

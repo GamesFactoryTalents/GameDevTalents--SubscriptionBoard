@@ -24,12 +24,7 @@ export default interface ISubscriptionItem {
   salaryRange: string;
   responsibilities: string;
   requirements: string;
-  benefits: string;
-  idealAdditions: string;
-  aboutStudio: string;
-  theirCulture: string;
-  reasonsToWork: string;
+  jobDescription: string;
   logoFile: any;
-  showLogo: any;
   workPreferences: string;
 }

@@ -49,13 +49,8 @@ export default function SubscriptionItem({
     salaryRange,
     responsibilities,
     requirements,
-    benefits,
-    idealAdditions,
-    aboutStudio,
-    theirCulture,
-    reasonsToWork,
+    jobDescription,
     logoFile,
-    showLogo,
     created_at,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
@@ -213,8 +208,7 @@ export default function SubscriptionItem({
           right="10px"
           maxWidth="340px"
         >
-          {showLogo && (
-            <img
+          <img
               src={logoFile.url}
               style={{
                 maxWidth: "70px",
@@ -222,8 +216,7 @@ export default function SubscriptionItem({
                 position: "absolute",
                 left: 0,
               }}
-            />
-          )}
+          />
           <Typography variant="subtitle2">{`Job ID: ${id}`}</Typography>
           <Typography variant="subtitle2">{`Job Posted: ${new Date(
             created_at
