@@ -21,7 +21,7 @@ const CommonBtn = ({ variant, topic, recipient }: Props) => {
       variant="pink"
       color="secondary"
     >
-      I&#39;M INTERESTED
+      APPLY
     </Button>
   );
 };

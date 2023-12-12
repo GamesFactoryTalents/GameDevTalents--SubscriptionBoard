@@ -366,11 +366,6 @@ const InfoPage = ({ id, info }: Props) => {
           flexWrap:"wrap",
           gap:"20px",
           }}>
-          <CommonBtn
-            variant="big"
-            topic={`I’m interested to learn more about ${jobTitle} ${id}`}
-            recipient={'talents@gamesfactorytalents.com'}
-          />
           <Button
             href={linkJob}
             /* @ts-ignore comment */
@@ -378,16 +373,16 @@ const InfoPage = ({ id, info }: Props) => {
             color="secondary"
             style={{borderRadius: "10px",width: "200px",}}
           >
-            READ MORE
+            APPLY
           </Button>
           <Button
             href={'https://apply.talents.games'}
             /* @ts-ignore comment */    
-            variant="pink"
-            color="secondary"
+            variant="contained"
+            color="primary"
             style={{borderRadius: "10px",width: "200px",}}
           >
-            I’m Interested to join Careers Zone
+            JOIN CAREERS ZONE
           </Button>
           <Link
             href="/"
@@ -435,13 +430,17 @@ const InfoPage = ({ id, info }: Props) => {
           {/* @ts-ignore comment */}
           <Typography variant="subtitle3">{`Category: ${category}`}</Typography>
           <Box sx={{ position: "relative", display: "inline" }}>
-            <CommonBtn
-              variant="small"
-              topic={`I’m interested to learn more about ${jobTitle} ${id}`}
-              recipient={'talents@gamesfactorytalents.com'}
-            />
+            <Button
+              href={linkJob}
+              /* @ts-ignore comment */
+              variant="pink"
+              color="secondary"
+              style={{borderRadius: "10px",width: "200px",}}
+            >
+              APPLY
+            </Button>
             <Tooltip
-              title="Send us an email expressing interest in the role and we will reach out to you within 2 working days"
+              title="Send your application directly to the Studio."
               placement="right"
             >
               <Link
