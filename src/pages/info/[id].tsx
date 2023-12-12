@@ -88,18 +88,13 @@ const InfoPage = ({ id, info }: Props) => {
             {info.jobTitle}
           </Typography>
 
-          {info.seniorityLevel &&
-            Array.isArray(info.seniorityLevel) &&
-            info.seniorityLevel.map(
-              (option: any, index: number) =>
-                option && (
+          {info.seniorityLevel && (
                   <ChipStyled
-                    key={index}
-                    text={option}
+                    key={1}
+                    text={info.seniorityLevel}
                     type={ChipStyledEnum.corner}
                   />
-                )
-            )}
+          )}
 
           {info.workPreferences &&
             Array.isArray(info.workPreferences) &&
@@ -129,18 +124,13 @@ const InfoPage = ({ id, info }: Props) => {
             )}
 
 
-          {info.roleLocation &&
-            Array.isArray(info.roleLocation) &&
-            info.roleLocation.map(
-              (option: any, index: number) =>
-                option && (
+          {info.roleLocation && (
                   <ChipStyled
-                    key={index}
-                    text={option}
+                    key={1}
+                    text={info.roleLocation}
                     type={ChipStyledEnum.corner}
                   />
-                )
-            )}
+          )}
         </Box>
 
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
@@ -180,64 +170,19 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
             </Box>
           )}
-          {idealAdditions && (
+          {jobDescription && (
             <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionSubtitle">
-                {"Team Member would ideally also have: "}
+                {"Job Description:"}
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                {idealAdditions}
+                {jobDescription}
               </Typography>
             </Box>
           )}
-          {aboutStudio && (
-            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionSubtitle">
-                {"About the Studio:"}
-              </Typography>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionText">
-                {aboutStudio}
-              </Typography>
-            </Box>
-          )}
-          {theirCulture && (
-            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionSubtitle">
-                {"Their Culture:"}
-              </Typography>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionText">
-                {theirCulture}
-              </Typography>
-            </Box>
-          )}
-          {reasonsToWork && (
-            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionSubtitle">
-                {"Reasons to work with them:"}
-              </Typography>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionText">
-                {reasonsToWork}
-              </Typography>
-            </Box>
-          )}
-          {benefits && (
-            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionSubtitle">
-                {"Benefits:"}
-              </Typography>
-              {/* @ts-ignore comment */}
-              <Typography variant="singleSubscriptionText">{benefits}</Typography>
-            </Box>
-          )}
+          
         </Stack>
 
         {/* TODO: Make the component */}
