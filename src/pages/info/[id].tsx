@@ -380,7 +380,7 @@ const InfoPage = ({ id, info }: Props) => {
             /* @ts-ignore comment */    
             variant="contained"
             color="primary"
-            style={{borderRadius: "10px",width: "200px",}}
+            style={{borderRadius: "10px",width: "200px", backgroundColor: "#3f51b5",}}
           >
             JOIN CAREERS ZONE
           </Button>
