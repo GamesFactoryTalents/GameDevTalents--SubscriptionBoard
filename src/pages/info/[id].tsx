@@ -67,16 +67,13 @@ const InfoPage = ({ id, info }: Props) => {
             md: "50px",
           },
         }}
-      >
-        {info.showLogo && (
-          <img
+      ><img
             src={logoFile.url}
             style={{
               maxWidth: "70px",
               maxHeight: "70px",
             }}
           />
-        )}
 
         <Box
           sx={{
