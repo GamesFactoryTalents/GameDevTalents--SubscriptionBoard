@@ -381,7 +381,7 @@ const InfoPage = ({ id, info }: Props) => {
             READ MORE
           </Button>
           <Button
-            href={'apply.talents.games'}
+            href={'https://apply.talents.games'}
             /* @ts-ignore comment */    
             variant="pink"
             color="secondary"
