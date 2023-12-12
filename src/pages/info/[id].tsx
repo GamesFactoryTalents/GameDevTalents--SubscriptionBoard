@@ -359,7 +359,13 @@ const InfoPage = ({ id, info }: Props) => {
             </Box>
           )}
         </Stack>
-        <Box margin="30px 0">
+        <Box 
+        sx={{
+          margin:"30px 0", 
+          display:"flex",
+          flexWrap:"wrap",
+          gap:"20px",
+          }}>
           <CommonBtn
             variant="big"
             topic={`I’m interested to learn more about ${jobTitle} ${id}`}
@@ -370,6 +376,7 @@ const InfoPage = ({ id, info }: Props) => {
             /* @ts-ignore comment */
             variant="pink"
             color="secondary"
+            style={{borderRadius: "10px",width: "200px",}}
           >
             READ MORE
           </Button>
@@ -378,6 +385,7 @@ const InfoPage = ({ id, info }: Props) => {
             /* @ts-ignore comment */    
             variant="pink"
             color="secondary"
+            style={{borderRadius: "10px",width: "200px",}}
           >
             I’m Interested to join Careers Zone
           </Button>
