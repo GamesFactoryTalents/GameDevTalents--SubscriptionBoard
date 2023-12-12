@@ -43,6 +43,7 @@ const InfoPage = ({ id, info }: Props) => {
     gameEngines,
     gamePlatforms,
     seniorityLevel,
+    artAndAnimationStyles,
     employmentOptions,
     country,
     salaryRange,
@@ -228,6 +229,28 @@ const InfoPage = ({ id, info }: Props) => {
                   <ChipStyled
                     key={skill}
                     text={skill}
+                    type={ChipStyledEnum.round}
+                  />
+                ))}
+            </Box>
+          )}
+          {artAndAnimationStyles.toString() !== "" && (
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              {/* The comment below is about disabling MUI and TS discord */}
+              {/* @ts-ignore comment */}
+              <Typography variant="candidateOptionText">Skills:</Typography>
+              {Array.isArray(artAndAnimationStyles) &&
+                artAndAnimationStyles.map((style: any) => (
+                  <ChipStyled
+                    key={style}
+                    text={style}
                     type={ChipStyledEnum.round}
                   />
                 ))}

@@ -10,6 +10,7 @@ export default interface ISubscriptionItem {
   roleLocation: string;
   category: string;
   specialities: string | string[];
+  artAndAnimationStyles: string | string[];
   skills: string | string[];
   gameGenres: string | string[];
   gameEngines: string | string[];

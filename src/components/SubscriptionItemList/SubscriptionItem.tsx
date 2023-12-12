@@ -42,6 +42,7 @@ export default function SubscriptionItem({
     gameEngines,
     gamePlatforms,
     seniorityLevel,
+    artAndAnimationStyles,
     employmentOptions,
     country,
     roleLocation,
@@ -132,6 +133,20 @@ export default function SubscriptionItem({
               <ChipStyled
                 key={skill}
                 text={skill}
+                type={ChipStyledEnum.round}
+              />
+            ))}
+          </Box>
+        )}
+        {artAndAnimationStyles.toString() !== "" && (
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            {/* The comment below is about disabling MUI and TS discord */}
+            {/* @ts-ignore comment */}
+            <Typography variant="candidateOptionText">Art And Animation Styles:</Typography>
+            {artAndAnimationStyles.map((style: any) => (
+              <ChipStyled
+                key={style}
+                text={style}
                 type={ChipStyledEnum.round}
               />
             ))}
