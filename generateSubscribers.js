@@ -4,7 +4,7 @@ const csv = require('csv-parser');
 let subscribers = [];
 
 async function main() {
-  fs.createReadStream('./src/generated/personregistration.csv')
+  fs.createReadStream('./src/generated/vacancies.csv')
     .pipe(csv())
     .on('data', (row) => {
       subscribers.push(row);

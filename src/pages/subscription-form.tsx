@@ -475,7 +475,7 @@ export default function GFApplicationForm(props: any) {
     <ThemeProvider theme={customTheme}>
       <Container>
         <form
-          name="personregistration"
+          name="vacancies"
           onSubmit={handleSubmit}
           ref={formRef.current}
         >
