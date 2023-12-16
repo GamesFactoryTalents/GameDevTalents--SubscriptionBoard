@@ -213,7 +213,7 @@ const FilterMenu = () => {
     <>
     <Box sx={{ width: "100%", height: { xs: "70px", md: "135px"} }}>
         <Box sx={{ width: "760px", m: "auto", maxHeight: "100%"}}>
-          <img style={{ maxHeight: "100%"}} className="titleLogo" src="board-name-logo.png" alt="Game factory talents title logo"/>
+          <img style={{ maxWidth: "100%"}} className="titleLogo" src="board-name-logo.png" alt="Game factory talents title logo"/>
         </Box>
       </Box>
     <Box
@@ -222,7 +222,8 @@ const FilterMenu = () => {
         flexWrap: "wrap",
         justifyContent: "space-between",
         background: "rgba(255, 255, 255, 0.8)", 
-        borderRadius: "14px", p: "24px", gap: "12px"
+        borderRadius: "14px", p: "24px", gap: "12px",
+        marginBottom: "16px"
       }}
     >
       {/* Category */}
