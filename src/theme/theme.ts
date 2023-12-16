@@ -91,21 +91,6 @@ const customTheme = createTheme({
     }
   },
 
-  input: {
-    "& .MuiFormLabel-root": {
-      fontSize: "16px",
-      fontWeight: "400",
-      color: "#1a1a1c",
-      transform: "translate(8px,6px) scale(1)",
-    },
-    "& .MuiInputBase-root": {
-      padding: "7px!important",
-      borderRadius: "8px", 
-    },
-    "& .MuiInputBase-input": {
-      height: "1.1876em",
-    }
-  },
 
   components: {
     MuiButton: {
@@ -133,6 +118,23 @@ const customTheme = createTheme({
         },
       ],
     },
+    TextField: {
+      style: {
+        "& .MuiFormLabel-root": {
+          fontSize: "16px",
+          fontWeight: "400",
+          color: "#1a1a1c",
+          transform: "translate(8px,6px) scale(1)",
+        },
+        "& .MuiInputBase-root": {
+          padding: "7px!important",
+          borderRadius: "8px", 
+        },
+        "& .MuiInputBase-input": {
+          height: "1.1876em",
+        }
+      }
+    }
   },
 });
 
