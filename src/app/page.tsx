@@ -5,7 +5,7 @@ import SubscriptionsPagination from "../components/SubscriptionsPagination/Subsc
 
 export default function Home() {
   return (
-    <Container sx={{ p: 2, background: "#00b0ff" }}>
+    <Container sx={{ p: 2, background: "#00b0ff", maxWidth: "100%" }}>
       <FilterMenu />
       <SubscriptionsPagination />
     </Container>

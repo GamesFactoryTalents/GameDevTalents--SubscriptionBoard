@@ -19,7 +19,7 @@ const SubscriptionItemList = (props: Props) => {
   );
 
   return (
-    <Stack sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+    <Stack sx={{ display: "flex", flexDirection: "column", gap: 1, maxWidth: "100%", p: "0" }}>
       {currentPageSubscribers.map((subscriber: ISubscriptionItem) => (
         <SubscriptionItem key={subscriber.id} subscriber={subscriber} />
       ))}

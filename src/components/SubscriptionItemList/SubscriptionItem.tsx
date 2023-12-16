@@ -64,6 +64,7 @@ export default function SubscriptionItem({
         cursor: "pointer",
         position: "relative",
         borderRadius: "14px",
+        background: "white"
       }}
       // onClick={() => push(`/info/${id}`)}
       onClick={() => window.open(`/info/${id}`, "_blank")}
