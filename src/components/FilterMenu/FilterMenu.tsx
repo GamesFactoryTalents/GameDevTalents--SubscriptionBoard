@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { SelectChangeEvent } from "@mui/material";
+import { makeStyles } from "@material-ui/core/styles";
 import { useEffect, useRef, useState } from "react";
 import getAllSubscribersFilterValues from "../../utils/getAllSubscribersFilterValues";
 import countries from "../../commonSettings/countries";
@@ -84,6 +85,25 @@ const FilterMenu = () => {
       setDefaultCandidates();
       return;
     }
+
+    const useStyles = makeStyles((theme) => ({
+      input: {
+        "& .MuiFormLabel-root": {
+          fontSize: "16px",
+          fontWeight: "400",
+          color: "#1a1a1c",
+          transform: "translate(8px,6px) scale(1)",
+        },
+        "& .MuiInputBase-root": {
+          padding: "7px!important",
+          borderRadius: "8px", 
+        },
+        "& .MuiInputBase-input": {
+          height: "1.1876em",
+        }
+      }
+    }));
+    const classes = useStyles();
 
     const currentCandidates = subscribers.filter(
       (subscriber: ISubscriptionItem) => {
@@ -241,6 +261,7 @@ const FilterMenu = () => {
           renderInput={(params) => (
             <TextField
               {...params}
+              className={classes.input}
               label="Category"
             />
           )}

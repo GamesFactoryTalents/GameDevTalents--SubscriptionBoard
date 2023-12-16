@@ -25,7 +25,7 @@ export default function SubscriptionsPagination() {
   };
 
   return (
-    <Container sx={{ p: 0 }}>
+    <Container sx={{ padding: "0!important", maxWidth: "100%!important" }}>
       <SubscriptionItemList page={page} rowsPerPage={rowsPerPage} />
       <TablePagination
         component="div"
@@ -34,6 +34,11 @@ export default function SubscriptionsPagination() {
         onPageChange={handleChangePage}
         rowsPerPage={rowsPerPage}
         onRowsPerPageChange={handleChangeRowsPerPage}
+        sx={{
+          borderRadius: "14px",
+          background: "white",
+          marginTop: "16px"
+        }}
       />
     </Container>
   );
