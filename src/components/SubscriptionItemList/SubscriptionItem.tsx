@@ -63,6 +63,7 @@ export default function SubscriptionItem({
         padding: "40px 16px 40px 0",
         cursor: "pointer",
         position: "relative",
+        borderRadius: "14px",
       }}
       // onClick={() => push(`/info/${id}`)}
       onClick={() => window.open(`/info/${id}`, "_blank")}

@@ -25,7 +25,7 @@ export default function SubscriptionsPagination() {
   };
 
   return (
-    <Container sx={{ p: 2 }}>
+    <Container sx={{ p: 0 }}>
       <SubscriptionItemList page={page} rowsPerPage={rowsPerPage} />
       <TablePagination
         component="div"

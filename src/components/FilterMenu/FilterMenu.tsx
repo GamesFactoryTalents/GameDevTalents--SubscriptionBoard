@@ -210,15 +210,23 @@ const FilterMenu = () => {
 
 
   return (
+    <>
+    <Box sx={{ width: "100%", height: { xs: "70px", md: "135px"} }}>
+        <Box sx={{ width: "760px"}}>
+          <img className="titleLogo" src="board-name-logo.png" alt="Game factory talents title logo"/>
+        </Box>
+      </Box>
     <Box
       sx={{
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
+        background: "rgba(255, 255, 255, 0.8)", 
+        borderRadius: "14px", p: "24px", gap: "12px"
       }}
     >
       {/* Category */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" }  }}>
       <Autocomplete
           id="tags-outlined"
           options={categoryOptions}
@@ -239,7 +247,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* seniorityLevel */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -258,7 +266,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Specialisations */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -279,7 +287,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Skills */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -298,7 +306,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gamePlatforms */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
         <Autocomplete
           multiple
           id="tags-outlined"
@@ -317,7 +325,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameGenres */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -336,7 +344,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* gameEngines */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -355,7 +363,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Countries */}
-      <FormControl sx={{ m: 1, width: { xs: "100%", md: "48%" } }}>
+      <FormControl sx={{ m: 0, width: { xs: "100%", md: "calc(50% - 6px)" } }}>
       <Autocomplete
           multiple
           id="tags-outlined"
@@ -381,7 +389,7 @@ const FilterMenu = () => {
       </FormControl>
 
       {/* Search */}
-      <FormControl sx={{ m: 1, width: "100%" }}>
+      <FormControl sx={{ m: 0, width: "100%" }}>
         <TextField
           id="filled-search"
           label="Keywords search"
@@ -403,6 +411,7 @@ const FilterMenu = () => {
         />
       </FormControl>
     </Box>
+    </>
   );
 };
 

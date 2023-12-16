@@ -143,19 +143,15 @@ const InfoPage = ({ id, info }: Props) => {
         </Box>
 
         <Stack sx={{ gap: 2 }}>
-          {/* @ts-ignore comment */}
-          <Typography variant="singleSubscriptionSubtitle">
-            {"Role Description:"}
-          </Typography>
-          {responsibilities && (
+          {jobDescription && (
             <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionSubtitle">
-              {"Responsibilities:"}
+                {"Job Description:"}
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-              {responsibilities}
+                {jobDescription}
               </Typography>
             </Box>
           )}
@@ -171,15 +167,15 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
             </Box>
           )}
-          {jobDescription && (
+          {responsibilities && (
             <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionSubtitle">
-                {"Job Description:"}
+              {"Responsibilities:"}
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                {jobDescription}
+              {responsibilities}
               </Typography>
             </Box>
           )}
