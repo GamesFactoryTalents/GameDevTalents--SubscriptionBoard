@@ -129,14 +129,16 @@ const customTheme = createTheme({
               fontWeight: "400",
               color: "#1a1a1c",
               transform: "translate(8px,6px) scale(1)",
+              lineHeight: "1.4375em",
             },
             "& .MuiInputBase-root": {
               padding: "7px!important",
               borderRadius: "8px", 
+              overflow: "hidden",
             },
             "& .MuiInputBase-input": {
               height: "1.1876em",
-              padding: "0"
+              padding: "0!important"
             }
           }
         }

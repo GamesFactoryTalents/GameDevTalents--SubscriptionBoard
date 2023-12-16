@@ -212,7 +212,7 @@ const FilterMenu = () => {
   return (
     <>
     <Box sx={{ width: "100%", height: { xs: "70px", md: "135px"} }}>
-        <Box sx={{ width: "760px", m: "auto", maxHeight: "100%"}}>
+        <Box sx={{ width: "760px", m: "auto", maxHeight: "100%", maxWidth: "100%"}}>
           <img style={{ maxWidth: "100%"}} className="titleLogo" src="board-name-logo.png" alt="Game factory talents title logo"/>
         </Box>
       </Box>
