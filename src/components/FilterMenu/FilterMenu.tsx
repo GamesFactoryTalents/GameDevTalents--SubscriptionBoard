@@ -241,7 +241,6 @@ const FilterMenu = () => {
           renderInput={(params) => (
             <TextField
               {...params}
-              className={classes.input}
               label="Category"
             />
           )}
