@@ -5,7 +5,7 @@ let subscribers = [];
 
 async function main() {
   fs.createReadStream('./src/generated/vacancies.csv')
-    .pipe(csv())
+    .pipe(csv({newline: '<br/>'}))
     .on('data', (row) => {
       subscribers.push(row);
     })
