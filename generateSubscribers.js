@@ -5,8 +5,9 @@ let subscribers = [];
 
 async function main() {
   fs.createReadStream('./src/generated/vacancies.csv')
-    .pipe(csv({newline: '<br/>'}))
+    .pipe(csv())
     .on('data', (row) => {
+      row.replace('\n','<br/>');
       subscribers.push(row);
     })
     .on('end', () => {
