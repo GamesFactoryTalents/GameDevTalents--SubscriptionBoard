@@ -1,66 +1,29 @@
-firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,responsibilities,requirements,jobDescription,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at
-Kateryna,Markova,test,http://test.com,Barbados,http://test.com,testforstyles@gmail.com,test new fields ,Game Design,Narrative Design,Ad monetization,,,,,Junior,Part-time,Украина,Onsite,"0,25000",test,test,test,"{""filename"":""logo_innogames_standard_400_1.jpeg"",""type"":""file"",""size"":38047,""url"":""https://d33wubrfki0l68.cloudfront.net/ed8189ea-04f4-431f-97aa-bbd62e878494/logo_innogames_standard_400_1.jpeg""}",ZR_319_JOB,false,89.99.243.231,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",https://publish.talents.games/,2023-12-12T00:53:33.757Z
-Vasia,Tolou,OneAnotter,https://www.linkedin.com/in/vasileiatolou/,Finland,https://www.linkedin.com/in/vasileiatolou/,vasia.tolou@gmail.com,Social Media and Community Manager,UA & Marketing,"Community Management,Marketing Strategy",Social Media,,,,,"Junior,Middle",Full-time,European Union,Remote,"2500,4500",Doing the job,Being good at job,Job,"{""filename"":""Games_factory_logo_Main.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/e8b33c38-475c-40e6-b3d0-40d1f10b1e13/Games_factory_logo_Main.png""}",ZR_329_JOB,true,2001:14ba:9c6f:3d00:25b4:ff3f:29f5:1fda,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0,https://publish.talents.games/,2023-12-11T11:59:56.894Z
-Shalini,Fernz,GFT,https://gamesfactorytalents.com/,"Finland,Denmark",https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000003861184/Senior-Game-Developer?source=CareerSite,shalini@gamesfactorytalents.com,Game Designer,Game Design,"Gameplay Design,Game Design",Game Design,,,,,Middle,Full-time,Europe,Onsite,"0,25000",Test,test,test,"{""filename"":""Games_factory_logo_Main.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/e8b33c38-475c-40e6-b3d0-40d1f10b1e13/Games_factory_logo_Main.png""}",ZR_339_JOB,true,2001:14ba:44f3:f400:c5d1:c7f6:81e3:9f97,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",https://publish.talents.games/,2023-12-11T11:57:45.940Z
-tewt,tewt,test,http://test.com,Afghanistan,http://test.com,testnewfields@gmail.com,test new fields ,Game Design,Balance Design,3D Engine,,,,,Senior,Full-time,Украина,Remote,"0,25000",sfsdfds,sfsffsdfs,"sdfsdfsdfsdf
-s
-dfs
-dfs
-dfsd
-fs
-df","{""filename"":""Games_factory_logo_Main.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/e8b33c38-475c-40e6-b3d0-40d1f10b1e13/Games_factory_logo_Main.png""}",ZR_349_JOB,false,88.155.135.107,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",https://publish.talents.games/,2023-12-09T19:05:23.256Z
-Oleg,Paliy,GFT,https://gamesfactorytalents.zohorecruit.eu,Albania,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000006025081/Associate-Game-Producer?source=CareerSite,oleg@gamefactorytalents.com,Associate Game Producer,Data & Analytics,"Business Intelligence (BI),Data Management","3D Engine,AB testing,Adobe InDesign,.NET",Card Games,Cocos2d,"AR,VR,Console",,"Lead,Manager","Part-time,Freelance",MENA,Remote,"9000,13500","hipped at least 1 project on mobile/console.
+"firstName","lastName","companyName","linkCompany","roleLocation","linkJob","emailAddress","jobTitle","category","specialities","skills","gameGenres","gameEngines","gamePlatforms","artAndAnimationStyles","seniorityLevel","employmentOptions","country","workPreferences","salaryRange","jobDescription","requirements","responsibilities","logoFile","id","willAttendPGC","ip","user_agent","referrer","created_at"
+"oleg","pali","Games Factory Talents ","https://gamesfactorytalents.com","Saudi Arabia","https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000006962050/Creative-Marketing-Manager?source=CareerSite","paliy.oleg@gmail.com","Creative Marketing Manager","UA & Marketing","Marketing Management,Brand Marketing,Creative Marketing ","Vendor Management ,Campaigns Management,Campaigns Optimization","","","Not applicable","","Senior","Full-time","Wordwide ","Onsite","0,25000","Our client, a world-leading game studios in Saudi Arabia are creating high-quality games for international audiences. Also to help Saudi’s passionate gaming sector to develop homegrown IP and more broadly, make KSA a global hub for gaming. As part of the team, you will work alongside the best global gaming talents who have relocated to Riyadh to be part of the ambitious group, and innovative, passionate and hardworking Saudis.
 
-Able to take charge of the whole production process, including launch and post-launch.
-
-Strong understanding of project velocity, burndown, Game KPIs, and the ability to use data while making decisions.
-
-Strong Project Management and planning skills.
-
-Strong knowledge of Scrum and agile development and a practitioner of the same.
-
-Exceptional know-how in production pipelines, tools, and methodologies.
-
-Faster learner, eye for details, while keeping a 360-degree check on the project.
-
-Master of influence, helping others understand and become passionate about their work.
-
-Accomplished mediator and resolver of conflicts.
-
-Strong experience with MS Office Suite and Atlassian software and/or various project management tools.
-
-Bachelors or equivalent in project management or technical degree.
-","Assist with the day-to-day functioning on the production floor, sprints, processes, and interactions.
-
-Coordinate day to day operations with external teams and support with production dependencies.
-
-Facilitate and drive team communication and guide team culture to build a highly engaged team.
-
-Partner with art, UX, engineering, QA, and design teams to ensure quality and realistic expectations for timelines, estimates, and project deliverables.
-
-Support in developing and following the project scope.
-
-Ensure relevance of resource planning, workload, team organization, pipeline choices, tools, methods & technology.
-
-Work closely with the Marketing team (requires strong experience with related KPIs).
-
-Support with conducting performance evaluations on direct reports and performance reviews for team members.
-
-Takes part in decisions regarding hiring & promotions within the project.","As your main focus you will build great relationships with the Producer, Design Director, Art Director, Technical Director, Lead Live Operations, and other stakeholders to deliver AAA titles. You will also support the conception of the direction and vision of the project along with taking care of the project timeline, budget, and quality standards.
-","{""filename"":""browser.png"",""type"":""file"",""size"":35896,""url"":""https://d33wubrfki0l68.cloudfront.net/4ae7b7d2-d84f-4969-9fbf-1a90a76e6a6e/browser.png""}",ZR_359_JOB,false,85.76.132.234,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.talents.games/,2023-12-09T17:47:11.989Z
-Tat,Nam,GFT,https://gamesjobfair.com,Finland,https://careers.redhillgames.com/jobs/3099882-environment-artist?promotion=773818-trackable-share-link-games-job-fair,paliy.oleg@gmail.com,Environment Artist,Art & Animation,"Animation,3D Art ,2D Art",3D Engine,"Life-style,Puzzle","Blender,ARkit","PC,Console",,Lead,Full-time,EU,Onsite,"4000,6500","Any game is a reflection of the talent that creates it. We take great care in selecting the right candidates for the team. We want to talk to you and get to know you. We want you to know your colleagues and lead. Here's how the process usually looks:
-","We know this may sound like a lot and we fully appreciate the fact that interview processes may be stressful to go through. Rest assured – we’ll do everything we can to make it as smooth, transparent and fast as possible for you. 
-","Redhill Games capitalizes on the extensive knowledge of AAA PC and console titles in co-developing some of the world’s leading gaming brands. As an international team of seasoned industry veterans, we strive to create gaming experiences that make a lasting impression on the players.
-","{""filename"":""Online_1.png"",""type"":""file"",""size"":16635,""url"":""https://d33wubrfki0l68.cloudfront.net/2ed589a5-7d77-46dc-a595-e3fe00743714/Online_1.png""}",ZR_369_JOB,true,85.76.132.234,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.talents.games/,2023-12-09T17:22:34.155Z
-Tat,Nam,GFT,https://gamesjobfair.com,Finland,https://careers.redhillgames.com/jobs/3099883-technical-artist?promotion=773814-trackable-share-link-games-job-fair,paliy.oleg@gmail.com,Tester ,QA & Testing,"Game Field Test Engineering,Game Testing","AD-LDS,Ad Tech,3D Studio Max","Simulation,Puzzle",Cocos2d,"Console,PC",,"Senior,Middle","Full-time,Part-time",anywhere ,"Onsite,Hybrid","3000,3500","Familiarity with working on a proprietary game engine.
-Experience with multiplayer game development.
-A background in engineering related to game design.
-Experience in 3DS Max or Maya.","A minimum of 3 years of experience in a Level or Mission Design role, with at least one shipped title on PC and/or console, or equivalent experience on a live game.
-At least 3 years of hands-on experience using 3D world and level building tools such as Unreal Engine, Unity, or CryEngine.
-Proficiency in traditional and visual scripting languages for creating level flows and various gameplay scenarios.
-Proven ability to develop maps and levels from initial blockout to final delivery.
-Track record of effectively receiving and implementing feedback from players and stakeholders.
-Experience collaborating within cross-discipline teams that include programmers, artists, and animators.
-","Founded in 2018, Redhill Games holds a unique position in the Finnish gaming industry. Our studio is dedicated to co-developing leading action-adventure games, setting us apart as a one-of-a-kind presence in Finland. With experienced leadership and an outstanding development team, we offer the opportunity to collaborate with some of the best AAA studios in the industry.
-","{""filename"":""Online_1.png"",""type"":""file"",""size"":16635,""url"":""https://d33wubrfki0l68.cloudfront.net/344955eb-61c6-46f6-a428-2015eab8cc6a/Online_1.png""}",ZR_309_JOB,true,85.76.132.234,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.talents.games/,2023-12-09T17:15:03.665Z
-test,test,test,http://test.com,Argentina,http://test.com,testforstyles@gmail.com,test new fields ,Game Design,Narrative Design,Ad Tech,Strategy,Frostbite,AR,,Manager,Full-time,Украина,Onsite,"0,25000",testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest,test,test,"{""filename"":""Online_1.png"",""type"":""file"",""size"":16635,""url"":""https://d33wubrfki0l68.cloudfront.net/8870c10c-b3da-4b2c-9c24-692746f8265c/Online_1.png""}",ZR_399_JOB,true,90.135.28.136,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",https://subscribe-career-zone.netlify.app/,2023-12-08T00:12:22.430Z
+They are seeking a Creative Marketing Manager to drive brand and business success of our games on strategic markets and casual as well as niche segments, to play an integral part in our Marketing organization. As Creative Artist, s/he will develop and communicate big, bold, creative ideas that will engage fans and drive business growth. The role will be global taking into account each cultural relevant specificity.
+","Relevant experience in a creative marketing team or agency as creative director role with a proven track record in delivering outstanding campaigns with commercial results.
+Great creative and strategic instincts, driven by the desire to make great work, creatively ambitious.
+Experience working with creative/production agencies.
+Experience delivering campaigns including classical and digital, social.
+You’ll have solid experience of how to use insights effectively to drive creative strategies and taking a player-centric approach to inform creative development.
+Confident in setting up campaign measurement and analysis in order to assess the performance of, and optimize, our campaigns and creative content.
+Be a digital native with an in depth understanding of all digital and social channels, with experience of planning and delivering effective digital campaigns.
+Strong presentation skills.
+Experience of juggling multiple schedules and workflow, handing a high volume of requests simultaneously and working with content management systems.
+An enthusiasm and passion for games and an understanding of digital businesses is a must.","Shaping and delivering high profile campaigns with creativity and innovation considering each parameter (data analysis, market research results, production).
+Shape and deliver creative campaigns including responsibility for TV, digital, print, content production workstreams, managing campaigns with support, and be an integral part of the team working on large projects with ability to run key workstreams.
+Manage creative partners and suppliers including freelance consultants, creative agencies and production / post-production partners including setting up and onboarding agencies.
+Manage campaign budgets with meticulous attention to detail and forward-planning, working with the Brand Manager to ensure flawless tracking of budgets across the team.
+Manage Digital ad production edit adaptations, legal approvals, localization, usage and music rights for global media planning.
+Prepare, present and distribute campaign presentations, internally and externally to key partners.
+Respond to asset requests from external partners to ensure they are provided with all relevant materials and asset release form.
+Brining strategic retour and an audience-centric mindset to everything we do.
+Write campaign briefs and devise strategies to include gathering insights, competitor landscape analysis and translating insights into effective brand and campaign strategies, ensuring we always stay audience and insight centric.
+Bring knowledge of the evolving media landscape to creative development, working closely with the data & research teams, production and communication team to craft strategic, integrated and innovative campaign plans.
+Stay up to date with gaming, media and creative industry trends and innovations and pro-actively share insights and information with CMK Manager and production team.
+Put in place effective campaign measurement and analyze brand and market performance with a good understanding of key brand and game metrics, along with those of our competitors working closely with our Data & Research team.
+Understanding of measurement and KPIs utilizing best practices and key learnings to ensure SGS produces the best content.
+Be a driver and innovator within the marketing organization.
+Bring agile thinking to non-linear campaign planning processes, working in cross discipline project teams, in order to shape campaign plans applying strategic, creative and project management skills as required.
+","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/6e9b6039-2b6f-4818-9b92-7f9deea30436/Games_factory_logo_Full.png""}","jqFmAvTwo1y3BQR5qNmhdH","true","2001:999:70c:51ef:2c91:612:4e68:bdbb","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15","https://publish.talents.games/","2023-12-17T11:26:34.724Z"
