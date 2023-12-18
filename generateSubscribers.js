@@ -10,6 +10,7 @@ async function main() {
       row.jobDescription.replace('\n','<br/>');
       row.requirements.replace('\n','<br/>');
       row.responsibilities.replace('\n','<br/>');
+      console.log(row);
       subscribers.push(row);
     })
     .on('end', () => {
