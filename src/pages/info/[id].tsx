@@ -151,7 +151,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                {jobDescription}
+                <p dangerouslySetInnerHTML={{__html: jobDescription}} />
               </Typography>
             </Box>
           )}
