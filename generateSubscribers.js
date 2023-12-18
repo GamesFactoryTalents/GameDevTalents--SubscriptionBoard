@@ -8,9 +8,9 @@ async function main() {
     .pipe(csv())
     .on('data', (row) => {
       console.log(/(?:\\[rn]|[\r\n]+)+/g.test(row.jobDescription));
-      row.jobDescription.replace(/\r\n/g,'<br/>');
-      row.requirements.replace(/\r\n/g,'<br/>');
-      row.responsibilities.replace(/\r\n/g,'<br/>');
+      row.jobDescription.replace(/(?:\\[rn]|[\r\n]+)+/g,'<br/>');
+      row.requirements.replace(/(?:\\[rn]|[\r\n]+)+/g,'<br/>');
+      row.responsibilities.replace(/(?:\\[rn]|[\r\n]+)+/g,'<br/>');
       console.log(row);
       subscribers.push(row);
     })
