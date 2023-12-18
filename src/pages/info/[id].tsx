@@ -163,7 +163,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                {requirements}
+                <p dangerouslySetInnerHTML={{__html: requirements}} />
               </Typography>
             </Box>
           )}
@@ -175,7 +175,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-              {responsibilities}
+                <p dangerouslySetInnerHTML={{__html: responsibilities}} />
               </Typography>
             </Box>
           )}
