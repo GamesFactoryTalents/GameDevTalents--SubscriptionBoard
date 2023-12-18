@@ -7,7 +7,9 @@ async function main() {
   fs.createReadStream('./src/generated/vacancies.csv')
     .pipe(csv())
     .on('data', (row) => {
-      row.replace('\n','<br/>');
+      row.jobDescription.replace('\n','<br/>');
+      row.requirements.replace('\n','<br/>');
+      row.responsibilities.replace('\n','<br/>');
       subscribers.push(row);
     })
     .on('end', () => {
