@@ -7,7 +7,7 @@ async function main() {
   fs.createReadStream('./src/generated/vacancies.csv')
     .pipe(csv())
     .on('data', (row) => {
-      console.log(/\r\n/g.test(row.jobDescription));
+      console.log(/(?:\\[rn])+/g.test(row.jobDescription));
       row.jobDescription.replace(/\r\n/g,'<br/>');
       row.requirements.replace(/\r\n/g,'<br/>');
       row.responsibilities.replace(/\r\n/g,'<br/>');
