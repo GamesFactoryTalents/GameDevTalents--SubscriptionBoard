@@ -60,7 +60,7 @@ export default function SubscriptionItem({
       className={montserrat.className}
       sx={{
         borderBottom: `1px solid ${theme.palette.gray.strong}`,
-        padding: { xs: "25px", md: "40px 16px 40px 0" },
+        padding: { xs: "25px", md: "40px 16px" },
         cursor: "pointer",
         position: "relative",
         borderRadius: "14px",
@@ -111,7 +111,7 @@ export default function SubscriptionItem({
       </Box>
 
       {/* TODO: Make the component */}
-      <Stack sx={{ gap: 1, position: "relative" }}>
+      <Stack sx={{ gap: 1, position: {xs: "relative", md: "static" } }}>
         {specialities.toString() !== "" && (
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
