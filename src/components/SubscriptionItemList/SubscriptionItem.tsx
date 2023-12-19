@@ -60,12 +60,13 @@ export default function SubscriptionItem({
       className={montserrat.className}
       sx={{
         borderBottom: `1px solid ${theme.palette.gray.strong}`,
-        padding: "40px 16px 40px 0",
+        padding: { xs: "25px", md: "40px 16px 40px 0" },
         cursor: "pointer",
         position: "relative",
         borderRadius: "14px",
         background: "white",
-        maxWidth: "100%!important"
+        maxWidth: "100%!important",
+        overflow: "hidden"
       }}
       // onClick={() => push(`/info/${id}`)}
       onClick={() => window.open(`/info/${id}`, "_blank")}
@@ -74,7 +75,7 @@ export default function SubscriptionItem({
         sx={{
           display: "flex",
           alignItems: "center",
-          maxWidth: "60%",
+          maxWidth: { xs: "100%", md: "60%"},
           flexWrap: "wrap",
           rowGap: 0,
           columnGap: 1,
@@ -110,9 +111,9 @@ export default function SubscriptionItem({
       </Box>
 
       {/* TODO: Make the component */}
-      <Stack sx={{ gap: 1 }}>
+      <Stack sx={{ gap: 1, position: "relative" }}>
         {specialities.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">
@@ -128,7 +129,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         {skills.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Skills:</Typography>
@@ -142,7 +143,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         {artAndAnimationStyles.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Art And Animation Styles:</Typography>
@@ -157,7 +158,7 @@ export default function SubscriptionItem({
         )}
 
         {gameGenres.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Game Genres:</Typography>
@@ -171,7 +172,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         {gameEngines.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Game Engines:</Typography>
@@ -185,7 +186,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         {gamePlatforms.toString() !== "" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">
@@ -201,7 +202,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         {salaryRange.toString() !== "[0, 25000]" && (
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             {/* The comment below is about disabling MUI and TS discord */}
             {/* @ts-ignore comment */}
             <Typography variant="candidateOptionText">Salary Range:</Typography>
@@ -221,7 +222,7 @@ export default function SubscriptionItem({
           </Box>
         )}
         <Box
-          sx={{ position: { xs: "static", md: "absolute" }, pl: "90px" }}
+          sx={{ position: { xs: "static", md: "absolute" }, pl: "90px", mt: {xs: "20px", md: "0"} }}
           top="40px"
           right="10px"
           maxWidth="340px"

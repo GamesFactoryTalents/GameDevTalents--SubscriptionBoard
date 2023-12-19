@@ -29,6 +29,7 @@ export default function ChipStyled({ text, type }: Props) {
             lineHeight: "24px",
             padding: "0 12px",
             borderRadius: "13px",
+            whiteSpace: "nowrap",
           };
         } else if (type === ChipStyledEnum.employmentOptions) {
           return {
