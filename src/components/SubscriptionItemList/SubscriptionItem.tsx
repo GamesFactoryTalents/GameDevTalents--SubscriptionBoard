@@ -107,7 +107,7 @@ export default function SubscriptionItem({
                 />
               )
           )}
-        {country && <ChipStyled text={country} type={ChipStyledEnum.corner} />}
+        {roleLocation && <ChipStyled text={roleLocation[0]} type={ChipStyledEnum.corner} />}
       </Box>
 
       {/* TODO: Make the component */}
