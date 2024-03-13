@@ -372,13 +372,13 @@ const InfoPage = ({ id, info }: Props) => {
             APPLY
           </Button>
           <Button
-            href={'https://apply.talents.games'}
+            href={'https://gamesfactorytalents.com/submit-profile'}
             /* @ts-ignore comment */    
             variant="contained"
             color="primary"
             style={{borderRadius: "10px",width: "200px", backgroundColor: "#3f51b5",}}
           >
-            JOIN CAREERS ZONE
+            SUBMIT PROFILE
           </Button>
           <Link
             href="/"
