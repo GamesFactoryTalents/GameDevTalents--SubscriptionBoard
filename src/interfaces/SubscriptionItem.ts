@@ -24,6 +24,7 @@ export default interface ISubscriptionItem {
   created_at: string;
   salaryRange: string;
   responsibilities: string;
+  benefits: string;
   requirements: string;
   jobDescription: string;
   logoFile: any;

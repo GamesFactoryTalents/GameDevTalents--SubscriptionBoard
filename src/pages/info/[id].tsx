@@ -48,6 +48,7 @@ const InfoPage = ({ id, info }: Props) => {
     country,
     salaryRange,
     responsibilities,
+    benefits,
     requirements,
     jobDescription,
     logoFile,
@@ -176,6 +177,18 @@ const InfoPage = ({ id, info }: Props) => {
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
                 <p dangerouslySetInnerHTML={{__html: responsibilities}} />
+              </Typography>
+            </Box>
+          )}
+          {benefits && (
+            <Box sx={{ display: "flex", gap: 2, flexDirection: "column" }}>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionSubtitle">
+              {"Benefits:"}
+              </Typography>
+              {/* @ts-ignore comment */}
+              <Typography variant="singleSubscriptionText">
+                <p dangerouslySetInnerHTML={{__html: benefits}} />
               </Typography>
             </Box>
           )}

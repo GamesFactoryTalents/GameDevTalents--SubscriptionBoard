@@ -27,6 +27,7 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     id: subscriber.id,
     salaryRange: [subscriber.salaryRange.split(',')[0], subscriber.salaryRange.split(',')[1]],
     responsibilities: subscriber.responsibilities,
+    benefits: subscriber.benefits,
     requirements: subscriber.requirements,
     jobDescription: subscriber.jobDescription,
     logoFile: subscriber.logoFile ? JSON.parse(subscriber.logoFile) : {}, /* JSON.parse */

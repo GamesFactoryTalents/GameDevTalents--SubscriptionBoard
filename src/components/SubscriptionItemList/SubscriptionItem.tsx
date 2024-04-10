@@ -49,6 +49,7 @@ export default function SubscriptionItem({
     id,
     salaryRange,
     responsibilities,
+    benefits,
     requirements,
     jobDescription,
     logoFile,

@@ -252,6 +252,7 @@ export default function GFApplicationForm(props: any) {
     roleLocation: [],
     salaryRange: [salaryFrom, salaryTo],
     responsibilities: "",
+    benefits: "",
     requirements: "",
     idealAdditions: "",
     theirCulture: "",
