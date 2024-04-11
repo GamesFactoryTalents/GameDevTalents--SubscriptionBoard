@@ -1,4 +1,45 @@
 firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at,
+1,2,3,https://li.co,Australia,https://li.co,asdf@dddco.co,adsf,Game Design,Balance Design,2D Art,,,,,Middle,Full-time,adsf,Onsite,"0,25000","Must-have skills:
+TypeScript
+PixiJS
+XState
+
+
+
+Bonus skills to master:
+Node.js
+HTML / CSS
+GitLab CI
+Yarn
+Gulp
+Webpack
+Sentry
+WebGL
+Mocha
+Serverless","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
+
+
+- Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
+- Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
+- Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
+- Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
+- Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
+- Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","Must-have skills:
+TypeScript
+PixiJS
+XState
+
+Bonus skills to master:
+Node.js
+HTML / CSS
+GitLab CI
+Yarn
+Gulp
+Webpack
+Sentry
+WebGL
+Mocha
+Serverless",,,5ksJp7N6Ls8tR3JqpwNSpG,false,2001:999:40c:5349:d49c:44c0:5585:a8df,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-04-11T20:54:56.809Z,
 1,2,adsf,https://k.co,Australia,https://li.co,ppod@dgg.co,2,Data & Analytics,Data Analytics,2D Art,AR/Location Based,,,,Junior,Part-time,aefadf,Onsite,"0,25000","Must-have skills:
 TypeScript
 PixiJS
@@ -41,11 +82,11 @@ Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoy
 Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
 
 Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.",,,vupQZF7uGUqNtKybBJk362,false,2001:999:40c:5349:d49c:44c0:5585:a8df,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-04-11T20:26:28.253Z,
-Elina,Arponen,Quicksave Interactive,https://www.quicksave.fi/,Finland,mailto:jobs@quicksave.fi?subject=Senior Game Programmer,elina.arponen@quicksave.fi,Senior Game Programmer,Programming & Engineering,"Fullstack Development ,Game Development","TypeScript,PixiJs,XState",,,"Social,Web",,Senior,Full-time,"Anywhere, but long distance should relocate to be closer in time zones","Onsite,Hybrid","4000,6500","We're on the hunt for a Senior Game Programmer with a solid full-stack development background and 5+ years of experience to join our talented game development team. We value a ""\n""proactive learning attitude and the ability to collaborate with our seasoned developers.","Must-have skills:
+Elina,Arponen,Quicksave Interactive,https://www.quicksave.fi/,Finland,mailto:jobs@quicksave.fi?subject=Senior Game Programmer,elina.arponen@quicksave.fi,Senior Game Programmer,Programming & Engineering,"Fullstack Development ,Game Development","TypeScript,PixiJs,XState",,,"Social,Web",,Senior,Full-time,"Anywhere, but long distance should relocate to be closer in time zones","Onsite,Hybrid","4000,6500",We're on the hunt for a Senior Game Programmer with a solid full-stack development background and 5+ years of experience to join our talented game development team. We value a proactive learning attitude and the ability to collaborate with our seasoned developers.,"Must-have skills:
 TypeScript
 PixiJS
 XState
-'\n'
+\n
 Bonus skills to master:
 Node.js
 HTML / CSS
@@ -57,14 +98,7 @@ Sentry
 WebGL
 Mocha
 Serverless
-","In this role, you'll be a key player in our internal game development team.","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
-
-Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
-Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
-Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
-Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
-Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
-Relocation Support: For those \n moving \nto join us, we provide relocation services and assistance to make""\n"" your transition as smooth as possible.","{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/cb7c1a67-f77a-4b96-ae42-8a4deb332b1d/QS_logo_orange_tall_x1024.png""}",Senior-Game-Programmer-Quicksave,false,81.197.172.35,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.gamesfactorytalents.com/,2024-04-11T08:57:30.904Z,
+","In this role, you'll be a key player in our internal game development team.",Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.,"{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/cb7c1a67-f77a-4b96-ae42-8a4deb332b1d/QS_logo_orange_tall_x1024.png""}",Senior-Game-Programmer-Quicksave,false,81.197.172.35,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.gamesfactorytalents.com/,2024-04-11T08:57:30.904Z,
 Elina,Arponen,Quicksave Interactive,https://www.quicksave.fi/,Finland,mailto:jobs@quicksave.fi?subject=Senior Tools Programmer,elina.arponen@quicksave.fi,Senior Tools Programmer,Programming & Engineering,"Backend Development,Tools Development ","TypeScript,PixiJs,XState,Electron,HTML/CSS",,,"Web,Social",,Senior,Full-time,"Anywhere, but long distance should relocate to be closer in time zones","Onsite,Hybrid","4000,6500","We're looking for a Senior Tools Programmer with at least 5 years of experience. It's fine if your experience isn't in gaming, but an enthusiasm for games and a desire to dive into the gaming industry are key. ","Must-have skills:
 
 TypeScript
@@ -85,14 +119,7 @@ Gulp
 Webpack
 Sentry
 WebGL
-Mocha","This role is all about collaboration, innovation, and working closely with our CTO to develop our backend services and tools.","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
-
-Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
-Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
-Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
-Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
-Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
-     \nRelocation Support: For those moving to join us, we provide relocation services ""\n"" and assistance to make your transition as smooth as possible.","{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/8db289e7-7135-4776-8bc8-c05e13fa91d9/QS_logo_orange_tall_x1024.png""}",Senior-Tools-Programmer-Quicksave,false,81.197.172.35,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.gamesfactorytalents.com/,2024-04-11T08:48:56.370Z,
+Mocha","This role is all about collaboration, innovation, and working closely with our CTO to develop our backend services and tools.",Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.,"{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/8db289e7-7135-4776-8bc8-c05e13fa91d9/QS_logo_orange_tall_x1024.png""}",Senior-Tools-Programmer-Quicksave,false,81.197.172.35,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.gamesfactorytalents.com/,2024-04-11T08:48:56.370Z,
 Oleg,Paliy,Games Factory Talents,https://gamesfactorytalents.com/,Switzerland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000005659001/Lead-Product-Manager?source=CareerSite,paliy.oleg@gmail.com,Lead Product Manager,Production,Product Management,"F2P Free to Play,Live Operations,Business Strategy,Strategic Planning",Hyper-casual,Unity,Mobile,,Lead,Full-time,Worldwide,Remote,"0,25000","We are looking for a highly experienced Lead Product Manager with F2P casual or hyper-casual experience to help our client's studio to build games that are unique, exciting and with lots of heart! 
 
 Lead the development & live ops of a new & exciting hybrid casual game. Define a clear product vision, strategy, and roadmap for the game.
@@ -105,10 +132,7 @@ Love for the startup environment, working in small teams, iterating quickly, wea
 Proven track record of successfully developing, launching and managing digital products
 Strong analytical and problem-solving skills.
 Non-violent communication
-","Together with the Analytics team, monitor monetization, game economy, player engagement, and other significant metrics.
-Put a strategy in action - Lead proofs-of-concept, working closely with multi-disciplinary development teams to create “product-market fit”.
-Create constant live events that will drive further engagement and monetization.
-Define in-game sales, offers, and promotions to maximize conversion rate and ARPPU.",,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/97be8ed7-1815-40a2-964e-55f1e0bd2813/Games_factory_logo_export_FULL_CMYK.png""}",ZR_372_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:43:05.546Z,
+","Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.",,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/97be8ed7-1815-40a2-964e-55f1e0bd2813/Games_factory_logo_export_FULL_CMYK.png""}",ZR_372_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:43:05.546Z,
 Oleg,Paliy,Redhill Games,https://gamesfactorytalents.com/,Finland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000006776167/Lead-Character-Artist?source=CareerSite,paliy.oleg@gmail.com,Lead Character Artist,Art & Animation,"Character Art,Art Direction,3D Art ","Maya,Mudbox,Zbrush,Marvelous Designer,Substance Painter",,Unreal Engine (UE),"PC,Console",Realistic,Lead,Full-time,Worldwide,Hybrid,"4000,6000","Our client, Redhill Games, is searching for a telented Lead Character Artist to join their team:
 
 Due to growth, we are seeking a talented Lead Character Artist to lead and inspire a creative team of artists, drive innovation, and ensure exceptional character art across all our projects.
@@ -127,12 +151,7 @@ You have proficient knowledge of Unreal Engine, Maya / Modo / MudBox / ZBrush, M
 Additional skills that will help you stand out:
 Interest and understanding of different art styles 
 You have an excellent understanding of form, shape, structure, and anatomy
-Strong traditional art skills such as painting, drawing or sculpting","Lead and mentor a team of character artists, providing guidance, feedback, and training to ensure their growth and development.
-Produce high-quality character models, textures, and shaders that meet the artistic and technical requirements of the project.
-Contributing to the references, concepts, and art direction, while also having the initiative to take the work further independently
-Optimize character assets for performance while maintaining visual fidelity.
-Working closely with the team and external partners to ensure that quality is consistent and cohesive
-Stay updated on industry trends and emerging technologies in character design and 3D modelling.",,"{""filename"":""60894c3ba12c1d2b81ae7671_RedHillLogoRed.png"",""type"":""file"",""size"":18756,""url"":""https://d33wubrfki0l68.cloudfront.net/a77e387f-e60b-4b43-904f-78532eee1e61/60894c3ba12c1d2b81ae7671_RedHillLogoRed.png""}",ZR_390_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:34:15.200Z,
+Strong traditional art skills such as painting, drawing or sculpting",,,"{""filename"":""60894c3ba12c1d2b81ae7671_RedHillLogoRed.png"",""type"":""file"",""size"":18756,""url"":""https://d33wubrfki0l68.cloudfront.net/a77e387f-e60b-4b43-904f-78532eee1e61/60894c3ba12c1d2b81ae7671_RedHillLogoRed.png""}",ZR_390_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:34:15.200Z,
 Oleg,Paliy,Games Factory Talents,https://gamesfactorytalents.com/,Finland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000007394001/Backend-Developer?source=CareerSite,paliy.oleg@gmail.com,Backend Developer,Programming & Engineering,"Backend Architecture,Backend Development,Fullstack Development ","Python,MongoDB,Redis",,,,,Senior,Full-time,Finland and Baltics,Hybrid,"4000,6000","Our friendly neighborhood studio in Helsinki is on the hunt for an experienced Backend Developer to join their dynamic team. Fueled by the thrill of creating immersive gaming experiences, and currently working on a soon to be released production, they're looking for seasoned experts but also open to welcoming fresh and gifted talent. ","Proficiency with NoSQL databases like MongoDB and Redis.
 
 Strong command of the Python programming language.
@@ -151,12 +170,7 @@ Experience shipping multiple games.
 
 Familiarity with Python frameworks like Django, Flask, or Tornado.
 
-A good grasp of what GraphQL can do.","Developing and maintaining the existing backend.
-
-Crafting and implementing new backend features.
-
-Contributing to and maintaining the development pipeline.
-",,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/1bc7fb5d-dc70-4d7d-a275-83b41527a42e/Games_factory_logo_export_FULL_CMYK.png""}",ZR_449_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:29:31.649Z,
+A good grasp of what GraphQL can do.",Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.,"Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.","{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/1bc7fb5d-dc70-4d7d-a275-83b41527a42e/Games_factory_logo_export_FULL_CMYK.png""}",ZR_449_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:29:31.649Z,
 Oleg,Paliy,Games Factory Talents,https://gamesfactorytalents.com/,Finland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000005406001/Full-stack-Developer?source=CareerSite,paliy.oleg@gmail.com,Full-stack Developer,Programming & Engineering,"Fullstack Development ,Backend Development,Frontend Development ","Ruby on Rails,JavaScript (JS),SQL,React,jQuery",,,,,Senior,Full-time,Finland and Baltics,"Hybrid,Onsite","4000,6000","Our friendly neighborhood studio in Helsinki is on the hunt for an experienced Backend Developer to join their dynamic team. Fueled by the thrill of creating immersive gaming experiences, and currently working on a soon to be released production, they're looking for seasoned experts but also open to welcoming fresh and gifted talent. 
 
 If this is you, here’s what you'd be diving into:
@@ -179,12 +193,7 @@ Experience shipping multiple games.
 Familiarity with Python frameworks like Django, Flask, or Tornado.
 
 A good grasp of what GraphQL can do.
-","
-Developing and maintaining the existing backend.
-
-Crafting and implementing new backend features.
-
-Contributing to and maintaining the development pipeline.",,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/4f1a24a6-1508-4693-85d8-fbc95a701d6f/Games_factory_logo_export_FULL_CMYK.png""}",ZR_315_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:25:19.541Z,
+",,,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/4f1a24a6-1508-4693-85d8-fbc95a701d6f/Games_factory_logo_export_FULL_CMYK.png""}",ZR_315_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T11:25:19.541Z,
 Oleg,Paliy,Games Factory Talents,https://gamesfactorytalents.com,Finland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000003861184/Senior-Game-Developer?source=CareerSite,paliy.oleg@gmail.com,Senior Game Developer,Programming & Engineering,"Game Development,Gameplay Development,AR Development","C#,Unity,Unity 3D",,Unity,Not applicable,,Senior,Full-time,Finland,Hybrid,"4000,6000","Our adventurous client studio in Helsinki is currently seeking a skilled (Senior) Game Developer to join their team. The gig? Formulating innovative game concepts tailor-made for their unique products, with a strong emphasis on movement-based gameplay. From ideation to deployment, you'll be at the helm of projects that promise to inject joy and activity into the lives of players across the globe.","Skills:
 
 3+ years of Unity game development experience.
@@ -205,10 +214,7 @@ Experience with Kinect movement-based games.
 
 Background in sports/exergaming.
 
-Knowledge of UI/UX design principles.","Design and implement new game features, emphasizing movement-based mechanics.
-
-Shepherd projects from concept to completion, ensuring engaging player experiences.
-",,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/39dcfc6f-401a-4708-9019-0b00a571799e/Games_factory_logo_export_FULL_CMYK.png""}",ZR_305_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T10:36:25.082Z,
+Knowledge of UI/UX design principles.","Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.",Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.,"{""filename"":""Games_factory_logo_export_FULL_CMYK.png"",""type"":""file"",""size"":35727,""url"":""https://d33wubrfki0l68.cloudfront.net/39dcfc6f-401a-4708-9019-0b00a571799e/Games_factory_logo_export_FULL_CMYK.png""}",ZR_305_JOB,false,2001:999:400:ecb5:54a0:e84f:ee2c:287e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-03-13T10:36:25.082Z,
 Maja,Kryżan,BoomBit S.A.,https://boombit.com/careers/,Poland,https://boombit.traffit.com/public/an/TXoxcw==?source=PGC,maja.kryzan@boombit.com,Head of PC & Console Publishing,Production,"Publishing Production,Creative Production,Product Management","Publishing,Project Management","Hyper-casual,Casual,Driving,Idle",Unity,"PC,Console",,Manager,Full-time,Worldwide,Hybrid,"0,25000","We are BoomBit, a leading Mobile Gaming company with a global audience of millions of players and over 1 billion downloads of our games since our inception in 2010. Our main games from the BoomBit Group include Hunt Royale, Dancing Line and Ramp Car Jumping. We’re a game developer and a publisher. With over 320 employees, we cover games of nearly any genre in the free-to-play (F2P) model on iOS and Android, and also on the Nintendo Switch. 
 
 We have experts across publishing, user interface/experience (UI/UX), game design, monetisation, user acquisition (UA), creative, business intelligence (BI), quality assurance (QA), LiveOps, art and game development spread across and are continually looking to strengthen our team.
@@ -238,21 +244,7 @@ Why should you apply?
 - Ability to manage projects on time and on budget
 - Good work organization
 - Communication skills
-- Flexible mindset","- Co-create and execute publishing strategy for the PC and console’s portfolio
-- Manage PC and consoles games’ portfolio
-- Create and execute digital pricing and bundle policy
-- Create and execute retail policy
-- Secure distribution deals and be in direct contact with the platform owner
-- Plan and execute marketing activities, including user acquisition, reviews, PR, events, and advertising
-- Oversee the development of new games and be in touch with product owners
-- Manage and plan publishing budget and roadmap
-- Build relationships with key stakeholders, developers, marketing agencies, and platform owners
-- Lead a high-performance team handling all aspects of PC and console game publishing, from strategy to product management
-- Build and curate a portfolio of top-tier, commercially successful PC and console games
-- Cultivate strong relationships with game developers, marketing partners, platform holders, and influencers
-- Monitor and analyze financial performance, making data-driven decisions to maximize ROI
-- Analyze the market and implement best practices in marketing and publishing strategies
-- Maintain close cooperation with the head of the business development & investments",,"{""filename"":""boombit_logo_png.png"",""type"":""file"",""size"":69299,""url"":""https://d33wubrfki0l68.cloudfront.net/8f14fc13-a7b0-4db6-8757-3f9c4a4e7340/boombit_logo_png.png""}",7QAtnE6wKmi5dAeS7BU4oj,true,89.151.42.135,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-19T13:35:05.293Z,
+- Flexible mindset",,,"{""filename"":""boombit_logo_png.png"",""type"":""file"",""size"":69299,""url"":""https://d33wubrfki0l68.cloudfront.net/8f14fc13-a7b0-4db6-8757-3f9c4a4e7340/boombit_logo_png.png""}",7QAtnE6wKmi5dAeS7BU4oj,true,89.151.42.135,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-19T13:35:05.293Z,
 Maja,Kryżan,BoomBit S.A.,https://boombit.com/careers/,Poland,https://boombit.traffit.com/public/an/TXoxdg==?source=PGC,maja.kryzan@boombit.com,Head of Services Sales,Business & Management,"Business Development,Sales,Product Management","Business Development,Business Strategy,service,Business Analysis,playable adds",,,,,Manager,Full-time,Worldwide,Hybrid,"0,25000","We are BoomBit, a leading Mobile Gaming company with a global audience of millions of players and over 1 billion downloads of our games since our inception in 2010. Our main games from the BoomBit Group include Hunt Royale, Dancing Line and Ramp Car Jumping. We’re a game developer and a publisher. With over 320 employees, we cover games of nearly any genre in the free-to-play (F2P) model on iOS and Android, and also on the Nintendo Switch. 
 
 We have experts across publishing, user interface/experience (UI/UX), game design, monetisation, user acquisition (UA), creative, business intelligence (BI), quality assurance (QA), LiveOps, art and game development spread across and are continually looking to strengthen our team.
@@ -275,16 +267,7 @@ Why should you apply?
 - In-depth knowledge of user acquisition, business intelligence, quality assurance services, playable ads, and game creatives
 - Proven track record of success in sales leadership roles, preferably within the gaming industry
 - Excellent communication, negotiation, and presentation skills
-- Ability to travel as needed","- Develop and execute a comprehensive sales strategy and plan in order to achieve revenue targets and maximize market share in the gaming industry
-- Lead, mentor, and inspire a high-performing sales team, fostering a collaborative and results-driven culture
-- Build and maintain strong relationships with key clients and stakeholders in the gaming industry
-- Understand client needs and industry trends to position our services effectively and identify new business opportunities
-- Identify and pursue new business opportunities, partnerships, and collaborations to expand our services portfolio
-- Stay informed about industry trends, competitive offerings, and emerging technologies to ensure a competitive edge
-- Work closely with the services delivery team to develop compelling proposals that address client needs
-- Lead negotiations of contracts and agreements, ensuring mutually beneficial terms for both the client and the company
-- Establish and maintain sales reporting mechanisms to track key performance indicators (KPIs) and measure the effectiveness of sales strategies
-- Analyze sales data to identify areas for improvement and implement corrective actions as needed",,"{""filename"":""boombit_logo_png.png"",""type"":""file"",""size"":69299,""url"":""https://d33wubrfki0l68.cloudfront.net/dd2fa214-e2ac-4c64-8469-73ca6c60d907/boombit_logo_png.png""}",j7p1TavJib6N8zCpSC9Eyi,true,89.151.42.135,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-19T13:29:38.747Z,
+- Ability to travel as needed",Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.,"Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.","{""filename"":""boombit_logo_png.png"",""type"":""file"",""size"":69299,""url"":""https://d33wubrfki0l68.cloudfront.net/dd2fa214-e2ac-4c64-8469-73ca6c60d907/boombit_logo_png.png""}",j7p1TavJib6N8zCpSC9Eyi,true,89.151.42.135,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-19T13:29:38.747Z,
 Emma,Myall,Space Ape Games,https://spaceapegames.com/,United Kingdom,https://apply.workable.com/space-ape-games/j/A3A5FA0A70/,emma.myall@spaceapegames.com,Integration Artist - Vehicle Art Team,Art & Animation,"Art integration,Technical Art","Art integration,3D art",Match 3,Unity,Mobile,Stylized,Middle,Full-time,United Kingdom,Hybrid,"0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, Beatstar, in 2021 and we’re following its success with Countrystar less than two years later. We also officially launched our first puzzle game in 2023, Chrome Valley Customs, and we’re focusing on scaling this game to further global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
 
 Chrome Valley Customs is all about classic car restoration and customisation. The player takes rusted wrecks and turns them into dream rides, spending currency they have earned playing an explosive Match 3 puzzle game. Each step of the restoration process is hand crafted to provide a satisfying reward to the player - it is this experience that they have been eager for while playing the puzzle levels! We are looking for an Integration Artist to craft these moments of magic to tell each vehicle’s restoration story.
@@ -292,11 +275,7 @@ Chrome Valley Customs is all about classic car restoration and customisation. Th
 Together with the Vehicle Art Lead you will own the visual portrayal of the vehicles in the game. You will use your broad skill set including 3D modelling, animation and VFX to create world class cutscene style content within the Unity game engine - everything from camera framing to arc welder particles! The quality of the restoration meta game will be in your hands, and you will have the ownership to push it to the very best it can be.","You are a hungry all-rounder with a broad, ever-expanding skill set. Modelling, animation, VFX, or even shader coding - you love bringing your wide range of skills together to make something awesome!
 You want to own the visual presentation of a pivotal part of a globally successful game. The restoration cutscenes are what keeps players coming back for more so making them visually rewarding is critical to the games success
 You love working collaboratively with a range of disciplines to make great player experiences. Game designers, developers and artists all work together to make the vehicle restoration a joy to play, and you will be one of the voices pushing for visual quality
-You are comfortable using the Unity game engine and can problem solve issues when they arise","Create short cutscene style experiences showing the restoration and customisation of a range of vehicles
-Prepare 3D assets for integration, ensuring they are constructed in a way that allows you to achieve your vision for the restoration sequence
-Create custom animations and VFX to add impact to the restoration steps your are tasked with portraying
-Work with the art leads to push the visual quality of the game to the very best it can be
-Work with developers to iterate and improve in-house tooling to unlock new artistic possibilities",,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/5b60f445-de62-4a1c-a917-d2ee371c0020/Space-Ape-Games_Logo_Vert_Orange02.png""}",9NQwSiHq8S5FFq1vAPMxN7,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:39:26.964Z,
+You are comfortable using the Unity game engine and can problem solve issues when they arise",,,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/5b60f445-de62-4a1c-a917-d2ee371c0020/Space-Ape-Games_Logo_Vert_Orange02.png""}",9NQwSiHq8S5FFq1vAPMxN7,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:39:26.964Z,
 Emma,Myall,Space Ape Games,https://spaceapegames.com/,United Kingdom,https://apply.workable.com/space-ape-games/j/C5210181AD/,emma.myall@spaceapegames.com,Software Engineer (Shared Tech),Programming & Engineering,Software engineer,"Software Engineer,Shared Tech",Casual,Unity,Mobile,,Middle,Full-time,Worldwide,Hybrid,"0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, , in 2021 and we’re following its success with  less than two years later. We also officially launched our first puzzle game in 2023, , and we’re focusing on scaling this game to further global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
 
 We invite developers of diverse talent, skills and backgrounds to join our team.
@@ -308,14 +287,7 @@ Experience with the .NET ecosystem
 Experience developing tools for Android and iOS
 Experience with modern game engines, bonus points for Unity
 The ability to participate in code reviews, offering valuable insights and suggestions, and incorporating received feedback to enhance code quality and maintainability
-Testing mindset - understand the value of automated testing and writing testable software","We’re looking for a Software Engineer to join our Shared Tech Team who are a small, empowered, cross functional team with the goal to support other developers in game teams. You will:
-
-Develop software shared across the company, mainly written in C# but can use other tools as you find the need
-Own and deliver end to end, high quality, documented and tested tech solutions and tooling projects 
-Contribute regularly to code shared between several teams and developers
-Provide direct help to the game development team if needed (embedding)
-Assist in project management and planning with insights and technical advice
-Act as an ambassador for development, both inside and outside of Space Ape",,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/0509ea5c-420b-4ba5-8376-54154128308a/Space-Ape-Games_Logo_Vert_Orange02.png""}",kwBiGMrtP6TgNHUybqkKjX,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:35:22.130Z,
+Testing mindset - understand the value of automated testing and writing testable software","Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.",Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/0509ea5c-420b-4ba5-8376-54154128308a/Space-Ape-Games_Logo_Vert_Orange02.png""}",kwBiGMrtP6TgNHUybqkKjX,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:35:22.130Z,
 Emma,Myall,Space Ape Games,https://spaceapegames.com/,United Kingdom,https://apply.workable.com/space-ape-games/j/FAA46C365F/,emma.myall@spaceapegames.com,Match 3 Artist,Art & Animation,3D Art ,"3D Blender,3D Game Art,Unity",Match 3,Unity,Mobile,Stylized,Middle,Full-time,Worldwide,Hybrid,"0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, , in 2021 and we’re following its success with  less than two years later. We also officially launched our first puzzle game in 2023, , and we’re focusing on scaling this game to further global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
 
 Chrome Valley Customs is a puzzle and decorate game themed around classic car culture. The player takes rusted wrecks and turns them into dream rides, spending currency they have earned playing an explosive Match 3 puzzle game. Players come to restore cars, but it’s our world class Match 3 puzzle that keeps them playing, and as such we need a lot of puzzle content! We are looking for an experienced Match 3 Artist to own the visual presentation of our puzzle game and to create content to engage players for years to come.
@@ -325,11 +297,7 @@ You love the puzzle genre, specifically Match 3. The craft and detail that goes 
 You have great graphic design skills, and can stylise and simplify where needed to make blocker icons readable and recognisable
 You are a proficient 3D modeller (ideally with a knowledge of Blender) with a good grasp of colour and lighting, and how they can be used to create strong graphic imagery
 You love the fine details, and are happiest when you can polish an asset to perfection. You will relish having near complete ownership of an assets design, and will want to add bells and whistles to make it shine
-You enjoy working collaboratively and take feedback well. You believe that by working together the final result is always better","Own the visual presentation of the Match 3 puzzle game, pushing the quality while adhering to the style set out by the Art Lead
-Take Match 3 art assets from concept to final render and integrate them into the Unity game engine
-Be the artistic voice of the Match 3 team, working with game designers to develop recognisable and fun metaphors that best explain the game mechanics
-Drive visual improvements to the puzzle game, using the skills you have where applicable or leading shared art resources to achieve your vision when required
-Work with developers and technical artists to reach new levels of explosive visual quality",,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/4e417ce4-fcd7-489e-979c-1700e0d9408f/Space-Ape-Games_Logo_Vert_Orange02.png""}",xmvNWqSC1WGkdzhuSd5Yiq,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:28:12.141Z,
+You enjoy working collaboratively and take feedback well. You believe that by working together the final result is always better",,,"{""filename"":""Space-Ape-Games_Logo_Vert_Orange02.png"",""type"":""file"",""size"":28076,""url"":""https://d33wubrfki0l68.cloudfront.net/4e417ce4-fcd7-489e-979c-1700e0d9408f/Space-Ape-Games_Logo_Vert_Orange02.png""}",xmvNWqSC1WGkdzhuSd5Yiq,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:28:12.141Z,
 Emma,Myall,Space Ape Games,https://spaceapegames.com/,United Kingdom,https://apply.workable.com/space-ape-games/j/CF196A3FCC/,emma.myall@spaceapegames.com,Feature Team Lead Designer,Game Design,"Game Design,System Design,Economy Design",Game Design,Match 3,Unity,Mobile,,Lead,Full-time,Worldwide,Hybrid,"0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, , in 2021 and we’re following its success with  less than two years later. We also officially launched our first puzzle game in July, , and we’re preparing to scale this game to global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
 
 We are looking for a Feature Team Lead Designer to join our pit crew and turbocharge the potential of Chrome Valley Customs. In this position, you'll be working closely with the Game Lead and Lead Game Designer to create delightful and innovative features which make CVC an entertainment destination for our beloved players.","Experience designing meaningful player-facing features for casual players - ideally you've shipped multiple features with positive impacts on game KPIs
@@ -340,13 +308,7 @@ Deep understanding of the business side of free-to-play design and how it intera
 Expert knowledge of the existing free-to-play market and the other choices available to our players
 A passion for games that personally appeal to players and fit into their lives
 Bonus: A love of cars and the world of car fans
-We expect you'll need at least 7 years in game development with 3 of those in mobile to achieve the degree of experience we'd like","Own the design process of new features and minigames, from defining goals and creating specs to overseeing live iterations
-Assist in creating the feature roadmap and evolving the design vision of the game
-Relate to our players and understand their behaviour through quantitative and qualitative data
-Keep a constant eye on the market and understand the innovations that could benefit our game and players
-Work closely with the Product team to ensure the sustainability of the game economy
-Support other game designers and mentor them in your areas of expertise
-Maintain the high standard of quality expected by our dedicated players",,,tEwY2qGHYxRUwkvv47zUxU,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:25:18.651Z,
+We expect you'll need at least 7 years in game development with 3 of those in mobile to achieve the degree of experience we'd like","Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.",,tEwY2qGHYxRUwkvv47zUxU,true,2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-18T17:25:18.651Z,
 Emma,Myall,Space Ape Games,https://spaceapegames.com/,United Kingdom,https://apply.workable.com/space-ape-games/j/BC1CF45A9F/,emma.myall@spaceapegames.com,Senior Art Producer ,Production,Game Art Production,Project Planning,Match 3,Unity,Mobile,,Senior,Full-time,Worldwide,Hybrid,"0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, , in 2021 and we’re following its success with  less than two years later. We also officially launched our first puzzle game in July, , and we’re preparing to scale this game to global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
 
 We seek a passionate, talented, creative producer to help with all aspects of art production and development. Working across a wide portfolio of new, in-development and live titles, you will be responsible for content pipelines, schedules and building key relationships with external partners. Alongside the Studio Art Director, you will be crucial in maintaining a healthy art culture and artists' personal development, growth and well-being.","5+ years as a producer, project management or equivalent experience
@@ -391,7 +353,7 @@ As a Data Engineer you will be responsible for developing, testing and maintaini
 -Create, manage and optimise the usage of our data warehouses.
 
 -Work with stakeholders across the organisation to ensure the scalability and performance of our data infrastructure as our business evolves. 
-",,"{""filename"":""image (2).png"",""type"":""file"",""size"":10496,""url"":""https://d33wubrfki0l68.cloudfront.net/45f72365-b32f-4c69-9a24-a8874e823546/image%20(2).png""}",vrkTtuWU4yCdrCQdwJVnDY,true,5.151.146.161,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-15T15:53:06.861Z,
+","Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","{""filename"":""image (2).png"",""type"":""file"",""size"":10496,""url"":""https://d33wubrfki0l68.cloudfront.net/45f72365-b32f-4c69-9a24-a8874e823546/image%20(2).png""}",vrkTtuWU4yCdrCQdwJVnDY,true,5.151.146.161,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",https://publish.talents.games/,2024-01-15T15:53:06.861Z,
 Jen ,Flannery,Kwalee,https://www.kwalee.com/,United Kingdom,https://jobs.jobvite.com/kwalee/job/oW1Ypfw4,jen.flannery@kwalee.com,Senior Game Designer,Game Design,"Player Experience Design,System Design,Narrative Design","Unity,UI Design,Game Mechanics,Narrative Design",Casual,Unity,Mobile,,Senior,Full-time,Worldwide,Hybrid,"0,5500","Kwalee creates engaging and innovative games that are easy to pick up and play. Specialising in both the development and publishing of casual and hybrid casual games, we also bring our creative touch to publishing PC & Console titles, ensuring a diverse and exciting gaming portfolio. 
 
 With a focus on fun and creativity we have made a mark in the gaming industry and strive to make the most fun games for the world's players! Joining Kwalee means becoming part of a team that has reached over 1 billion players around the globe. 
