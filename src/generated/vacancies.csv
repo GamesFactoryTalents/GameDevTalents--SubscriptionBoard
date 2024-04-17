@@ -1,4 +1,34 @@
 firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at,
+Elina,Arponen,Quicksave Interactive,https://www.quicksave.fi/,Finland,mailto:jobs@quicksave.fi?subject=Senior Game Programmer,elina.arponen@quicksave.fi,Senior Game Programmer,Programming & Engineering,"Fullstack Development ,Game Development,Web Development","TypeScript,PixiJs,XState",,,"Social,Web",,Senior,Full-time,"Anywhere, but long distance should relocate to be closer in time zones.","Onsite,Hybrid","4000,6500","We're on the hunt for a Senior Game Programmer with a solid full-stack development background and 5+ years of experience to join our talented game development team. We value a proactive learning attitude and the ability to collaborate with our seasoned developers. 
+","Must-have skills:
+- TypeScript
+- PixiJS
+- XState
+
+ Bonus skills to master:
+-  Node.js
+- HTML / CSS
+- GitLab CI
+- Yarn
+- Gulp
+- Webpack
+- Sentry
+- WebGL
+- Mocha
+-  Serverless
+","In this role, you'll be a key player in our internal game development team.","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
+
+- Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
+
+- Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
+
+- Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
+
+- Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
+
+- Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
+
+- Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/32bb986a-b5c7-4f1e-b359-ad5d16c1078f/QS_logo_orange_tall_x1024.png""}",Senior-Game-Programmer-Quicksave-2,false,2001:999:70d:d41:d9ca:f599:5079:b5a3,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-04-17T07:32:39.771Z,
 Elina,Arponen,Quicksave Interactive,https://www.quicksave.fi/,Finland,mailto:jobs@quicksave.fi?subject=Senior Game Programmer,elina.arponen@quicksave.fi,Senior Game Programmer,Programming & Engineering,"Fullstack Development ,Game Development","TypeScript,PixiJs,XState",,,"Social,Web",,Senior,Full-time,"Anywhere, but long distance should relocate to be closer in time zones","Onsite,Hybrid","4000,6500",We're on the hunt for a Senior Game Programmer with a solid full-stack development background and 5+ years of experience to join our talented game development team. We value a proactive learning attitude and the ability to collaborate with our seasoned developers.,"Must-have skills:
 TypeScript
 PixiJS
