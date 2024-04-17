@@ -152,7 +152,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                <p style={{whiteSpace: "pre"}} dangerouslySetInnerHTML={{__html: jobDescription}} />
+                <p style={{whiteSpace: "pre-wrap"}} dangerouslySetInnerHTML={{__html: jobDescription}} />
               </Typography>
             </Box>
           )}
@@ -164,7 +164,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                <p style={{whiteSpace: "pre"}} dangerouslySetInnerHTML={{__html: requirements}} />
+                <p style={{whiteSpace: "pre-wrap"}} dangerouslySetInnerHTML={{__html: requirements}} />
               </Typography>
             </Box>
           )}
@@ -176,7 +176,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                <p style={{whiteSpace: "pre"}} dangerouslySetInnerHTML={{__html: responsibilities}} />
+                <p style={{whiteSpace: "pre-wrap"}} dangerouslySetInnerHTML={{__html: responsibilities}} />
               </Typography>
             </Box>
           )}
@@ -188,7 +188,7 @@ const InfoPage = ({ id, info }: Props) => {
               </Typography>
               {/* @ts-ignore comment */}
               <Typography variant="singleSubscriptionText">
-                <p style={{whiteSpace: "pre"}} dangerouslySetInnerHTML={{__html: benefits}} />
+                <p style={{whiteSpace: "pre-wrap"}} dangerouslySetInnerHTML={{__html: benefits}} />
               </Typography>
             </Box>
           )}
