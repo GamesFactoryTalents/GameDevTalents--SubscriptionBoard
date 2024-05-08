@@ -44,6 +44,7 @@ export default function SubscriptionItem({
     seniorityLevel,
     artAndAnimationStyles,
     employmentOptions,
+    workPreferences,
     country,
     roleLocation,
     id,
@@ -51,9 +52,9 @@ export default function SubscriptionItem({
     responsibilities,
     requirements,
     jobDescription,
-    logoFile,
-    created_at,
     benefits,
+    logoFile,
+    created_at
   } = getSubscriberData(subscriber);
   const theme = useTheme();
   return (
