@@ -53,6 +53,7 @@ export default function SubscriptionItem({
     jobDescription,
     logoFile,
     created_at,
+    benefits,
   } = getSubscriberData(subscriber);
   const theme = useTheme();
   return (

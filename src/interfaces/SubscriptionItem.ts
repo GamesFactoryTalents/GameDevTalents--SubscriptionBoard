@@ -28,4 +28,5 @@ export default interface ISubscriptionItem {
   jobDescription: string;
   logoFile: any;
   workPreferences: string;
+  benefits: string;
 }

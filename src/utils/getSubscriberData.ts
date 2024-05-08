@@ -31,5 +31,6 @@ export default function getSubscriberData(subscriber: ISubscriptionItem) {
     jobDescription: subscriber.jobDescription,
     logoFile: subscriber.logoFile ? JSON.parse(subscriber.logoFile) : {}, /* JSON.parse */
     workPreferences: subscriber.workPreferences.includes(',') ? subscriber.workPreferences.split(',') : [subscriber.workPreferences],
+    benefits: subscriber.benefits,
   };
 }
