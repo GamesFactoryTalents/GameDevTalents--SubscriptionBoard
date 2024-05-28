@@ -1,5 +1,5 @@
-"firstName","lastName","companyName","linkCompany","roleLocation","linkJob","emailAddress","jobTitle","category","specialities","skills","gameGenres","gameEngines","gamePlatforms","artAndAnimationStyles","seniorityLevel","employmentOptions","country","workPreferences","salaryRange","jobDescription","requirements","responsibilities","benefits","logoFile","id","willAttendPGC","ip","user_agent","referrer","created_at"
-"Oleg","Paliy","Games Factory Talents","https://li.co","Finland","https://gamesfactorytalents.zohorecruit.eu/recruit/ViewJob.na?digest=i4mIQiRPz1msHkKn68Y.KrbcRgWJZCEXfaZQhxuDEn8-&embedsource=CareerSite","oleg.paliy@gma.co","Senior Game Developer","Programming & Engineering","Game Development,Gameplay Development,AR Development","C#,Unity,Unity 3D","AR/Location Based","Unity","","","Senior","Full-time","Finland","Onsite,Hybrid","4000,6500","Our adventurous client studio in Helsinki is currently seeking a skilled (Senior) Game Developer to join their team. The gig? Formulating innovative game concepts tailor-made for their unique products, with a strong emphasis on movement-based gameplay. From ideation to deployment, you'll be at the helm of projects that promise to inject joy and activity into the lives of players across the globe.
+firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at
+Oleg,Paliy,Games Factory Talents,https://li.co,Finland,https://gamesfactorytalents.zohorecruit.eu/recruit/ViewJob.na?digest=i4mIQiRPz1msHkKn68Y.KrbcRgWJZCEXfaZQhxuDEn8-&embedsource=CareerSite,oleg.paliy@gma.co,Senior Game Developer,Programming & Engineering,"Game Development,Gameplay Development,AR Development","C#,Unity,Unity 3D",AR/Location Based,Unity,,,Senior,Full-time,Finland,"Onsite,Hybrid","4000,6500","Our adventurous client studio in Helsinki is currently seeking a skilled (Senior) Game Developer to join their team. The gig? Formulating innovative game concepts tailor-made for their unique products, with a strong emphasis on movement-based gameplay. From ideation to deployment, you'll be at the helm of projects that promise to inject joy and activity into the lives of players across the globe.
 
 ","3+ years of Unity game development experience.
 
@@ -15,8 +15,8 @@ Shepherd projects from concept to completion, ensuring engaging player experienc
 
 Dive into fun and exciting projects that push the boundaries of gaming innovation.
 
-Work in a cool and inspiring workspace that fosters creativity and collaboration.","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/fd2d5464-43cb-4b1b-a132-c72102970035/Games_factory_logo_Full.png""}","bYLBqQFWdavBgKx7D1JXYB","true","2001:999:480:3a11:88a2:b1d6:54ad:700","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","https://publish.talents.games/","2024-05-08T21:24:29.689Z"
-"Oleg","Paliy","Games Factory Talents","https://li.co","Finland","https://gamesfactorytalents.zohorecruit.eu/recruit/ViewJob.na?digest=i4mIQiRPz1msHkKn68Y.KrbcRgWJZCEXfaZQhxuDEn8-&embedsource=CareerSite","oleg.paliy@gma.co","Fullstack Developer","Programming & Engineering","Fullstack Development ,Backend Architecture,Frontend Development ","Ruby on Rails,JavaScript (JS),SQL,React,jQuery","","","","","Senior","Full-time","Finland and Baltics","Onsite,Hybrid","4000,6000","Our neighbouring studio in Helsinki is on the lookout for a skilled Full Stack Developer to join their ranks and assist in sculpting the web infrastructure for their dynamic gaming products. In the realm of active gaming, a robust web infrastructure is paramount, and as a Full Stack Developer, you'll play a vital role in shaping the web platform to new heights.
+Work in a cool and inspiring workspace that fosters creativity and collaboration.","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/fd2d5464-43cb-4b1b-a132-c72102970035/Games_factory_logo_Full.png""}",bYLBqQFWdavBgKx7D1JXYB,true,2001:999:480:3a11:88a2:b1d6:54ad:700,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.talents.games/,2024-05-08T21:24:29.689Z
+Oleg,Paliy,Games Factory Talents,https://li.co,Finland,https://gamesfactorytalents.zohorecruit.eu/recruit/ViewJob.na?digest=i4mIQiRPz1msHkKn68Y.KrbcRgWJZCEXfaZQhxuDEn8-&embedsource=CareerSite,oleg.paliy@gma.co,Fullstack Developer,Programming & Engineering,"Fullstack Development ,Backend Architecture,Frontend Development ","Ruby on Rails,JavaScript (JS),SQL,React,jQuery",,,,,Senior,Full-time,Finland and Baltics,"Onsite,Hybrid","4000,6000","Our neighbouring studio in Helsinki is on the lookout for a skilled Full Stack Developer to join their ranks and assist in sculpting the web infrastructure for their dynamic gaming products. In the realm of active gaming, a robust web infrastructure is paramount, and as a Full Stack Developer, you'll play a vital role in shaping the web platform to new heights.
 ","Experience with Ruby on Rails.
 
 Familiarity with JavaScript and its libraries (jQuery, React, Angular).
@@ -35,151 +35,8 @@ Utilize Ruby on Rails and ReactJS for web development
 
 Deploy web apps on mobile platforms","Join an international team, and work in a cool and inspiring workspace that fosters creativity and collaboration.
 
-You’ll have the opportunity to tackle groundbreaking projects and innovative games, reaching players worldwide.","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/ddd87524-28d8-4dcf-9ce8-dcd4a97ff677/Games_factory_logo_Full.png""}","rRAg9s17ENHHhkQRqwR4nf","true","2001:999:480:3a11:88a2:b1d6:54ad:700","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","https://publish.talents.games/","2024-05-08T21:19:24.075Z"
-"Oleg","Paliy","Quicksave ","https://quisk.co","Finland","mailto:jobs@quicksave.fi?subject=Senior Tools Programmer","oleg.paliy@gma.co","Senior Tools Programmer","Programming & Engineering","Backend Architecture,Tools Development ","TypeScript,PixiJs,XState,Electron,HTML/CSS","","","Social,Web","","Senior","Full-time","Anywhere, but long distance should relocate to be closer in time zones.","Onsite,Hybrid","4000,6500","We're looking for a Senior Tools Programmer with at least 5 years of experience. It's fine if your experience isn't in gaming, but an enthusiasm for games and a desire to dive into the gaming industry are key. 
-
-","Must-have skills:
-TypeScript
-PixiJS
-XState
-Electron
-HTML/CSS
-
-Bonus skills to master:
-AWS
-Node.js
-GitLab CI
-Yarn
-Serverless
-Gulp
-Webpack
-Sentry
-WebGL
-Mocha","This role is all about collaboration, innovation, and working closely with our CTO to develop our backend services and tools.
-
-","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
-
-1. Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
-
-2. Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
-
-3. Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
-
-4. Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
-
-5. Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
-
-6. Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/dbcb1573-c342-4938-a031-3181dec87c18/QS_logo_orange_tall_x1024.png""}","5CqopVFVHaLiwrTHQ9Gpzu","false","2001:999:480:3a11:88a2:b1d6:54ad:700","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","https://publish.talents.games/","2024-05-08T21:11:43.586Z"
-"Oleg","Paliy","Quicksave ","https://quisk.co","Finland","mailto:jobs@quicksave.fi?subject=Senior Game Programmer	","oleg.paliy@gma.co","Senior Game Programmer","Programming & Engineering","Fullstack Development ,Game Development,Web Development","TypeScript,PixiJs,XState","","","Social,Web","","Senior","Full-time","Anywhere, but long distance should relocate to be closer in time zones.","Onsite","4000,6500","We're on the hunt for a Senior Game Programmer with a solid full-stack development background and 5+ years of experience to join our talented game development team. We value a proactive learning attitude and the ability to collaborate with our seasoned developers. 
-
-","Must-have skills:
-- TypeScript
-- PixiJS
-- XState
-
- Bonus skills to master:
--  Node.js
-- HTML / CSS
-- GitLab CI
-- Yarn
-- Gulp
-- Webpack
-- Sentry
-- WebGL
-- Mocha
--  Serverless","In this role, you'll be a key player in our internal game development team.
-
-","Joining Quicksave Interactive means being part of a growing startup poised to make waves in the gaming and tools market. We value transparency and offer a glimpse into the entire startup journey.
-
-- Flexible Work Environment: Our approach supports hybrid and remote workstyles, with online meetings accommodating all. For those in the Helsinki area, bi-weekly team lunches provide a chance to connect in person.
-
-- Competitive Compensation: Expect a competitive salary along with comprehensive healthcare coverage.
-
-- Quarterly Team Events: Every quarter, we bring everyone together for fun and active team events. It's a great time to unwind and bond with the team.
-
-- Lunch Benefit: Enjoy a lunch benefit that makes daily meals convenient and enjoyable.
-
-- Modern Office: Work in a beautiful office space located in the heart of Helsinki Design District, designed to inspire creativity and collaboration.
-
-- Relocation Support: For those moving to join us, we provide relocation services and assistance to make your transition as smooth as possible.","{""filename"":""QS_logo_orange_tall_x1024.png"",""type"":""file"",""size"":34665,""url"":""https://d33wubrfki0l68.cloudfront.net/118a5f7c-3ca7-4cc1-825f-f8320be1c1c7/QS_logo_orange_tall_x1024.png""}","7464pELiiaz4Dkp9ogUUf2","false","2001:999:480:3a11:88a2:b1d6:54ad:700","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36","https://publish.talents.games/","2024-05-08T21:08:46.564Z"
-"Maja","Kryżan","BoomBit S.A.","https://boombit.com/careers/","Poland","https://boombit.traffit.com/public/an/TXoxcw==?source=PGC","maja.kryzan@boombit.com","Head of PC & Console Publishing","Production","Publishing Production,Creative Production,Product Management","Publishing,Project Management","Hyper-casual,Casual,Driving,Idle","Unity","PC,Console","","Manager","Full-time","Worldwide","Hybrid","0,25000","We are BoomBit, a leading Mobile Gaming company with a global audience of millions of players and over 1 billion downloads of our games since our inception in 2010. Our main games from the BoomBit Group include Hunt Royale, Dancing Line and Ramp Car Jumping. We’re a game developer and a publisher. With over 320 employees, we cover games of nearly any genre in the free-to-play (F2P) model on iOS and Android, and also on the Nintendo Switch. 
-
-We have experts across publishing, user interface/experience (UI/UX), game design, monetisation, user acquisition (UA), creative, business intelligence (BI), quality assurance (QA), LiveOps, art and game development spread across and are continually looking to strengthen our team.
-
-Why should you apply?
- 
-- Competitive salary based on experience and skills
-- Stable employment condition
-- Flexible working hours! Start between 7 and 10 AM – it's your call
-- Work tools provided – Computer/Monitor – everything to help you succeed
-- A modern, non-corporate work culture with fun, creative people who make your job more enjoyable
-- Direct communication with supervisors
-- International team with expertise from around the Mobile Games Industry
-- A creative environment that encourages knowledge-sharing
-- Possibilities to improve your skills, e.g., internal workshops and training programs
-- Nice office in Gdańsk with garden, place for bicycles, with shower and fully equipped kitchen
-- Many opportunities to integrate with others: board games evenings, LAN parties, BBQ at the office during summer, and more
-- Quarterly Team building events (optional) – an excellent way for you and your team members to bond
-- Certified Employer by Great Place to Work","- Proven experience in a senior publishing role within the gaming industry
-- In-depth knowledge of PC and console platforms, market trends, and player behavior
-- Bachelor’s degree in a relevant field
-- Strong negotiation and relationship management skills
-- Excellent analytical and strategic thinking abilities
-- Demonstrated success in launching and managing successful games on PC and consoles
-- Effective communication skills and the ability to work cross-functionally
-- Independence in problem solving
-- Ability to manage projects on time and on budget
-- Good work organization
-- Communication skills
-- Flexible mindset","- Co-create and execute publishing strategy for the PC and console’s portfolio
-- Manage PC and consoles games’ portfolio
-- Create and execute digital pricing and bundle policy
-- Create and execute retail policy
-- Secure distribution deals and be in direct contact with the platform owner
-- Plan and execute marketing activities, including user acquisition, reviews, PR, events, and advertising
-- Oversee the development of new games and be in touch with product owners
-- Manage and plan publishing budget and roadmap
-- Build relationships with key stakeholders, developers, marketing agencies, and platform owners
-- Lead a high-performance team handling all aspects of PC and console game publishing, from strategy to product management
-- Build and curate a portfolio of top-tier, commercially successful PC and console games
-- Cultivate strong relationships with game developers, marketing partners, platform holders, and influencers
-- Monitor and analyze financial performance, making data-driven decisions to maximize ROI
-- Analyze the market and implement best practices in marketing and publishing strategies
-- Maintain close cooperation with the head of the business development & investments",,"{""filename"":""boombit_logo_png.png"",""type"":""file"",""size"":69299,""url"":""https://d33wubrfki0l68.cloudfront.net/8f14fc13-a7b0-4db6-8757-3f9c4a4e7340/boombit_logo_png.png""}","7QAtnE6wKmi5dAeS7BU4oj","true","89.151.42.135","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","https://publish.talents.games/","2024-01-19T13:35:05.293Z"
-"Emma","Myall","Space Ape Games","https://spaceapegames.com/","United Kingdom","https://apply.workable.com/space-ape-games/j/BC1CF45A9F/","emma.myall@spaceapegames.com","Senior Art Producer ","Production","Game Art Production","Project Planning","Match 3","Unity","Mobile","","Senior","Full-time","Worldwide","Hybrid","0,25000","It’s a really exciting time to be at Space Ape Games. We’ve created a fast-paced environment that promotes genuine autonomy and we have projects at all stages of the development cycle. We launched our hit music game, , in 2021 and we’re following its success with  less than two years later. We also officially launched our first puzzle game in July, , and we’re preparing to scale this game to global success. On top of all this, we’re running several mature live games and working on some exciting new projects behind the scenes!
-
-We seek a passionate, talented, creative producer to help with all aspects of art production and development. Working across a wide portfolio of new, in-development and live titles, you will be responsible for content pipelines, schedules and building key relationships with external partners. Alongside the Studio Art Director, you will be crucial in maintaining a healthy art culture and artists' personal development, growth and well-being.","5+ years as a producer, project management or equivalent experience
-Experience in supervising production pipelines
-Solid understanding of creative pipelines, approval processes, and dependency chains.
-Strong organisational skills and attention to detail
-Self-starter - Someone who can approach challenges creatively and see things through to their final resolution
-Ability to build, track, and maintain feature and content schedules
-Excellent verbal and written communication skills
-Familiar with Scrum, Kanban, and Waterfall project management methodologies
-Be able to give feedback internally and externally in a professional manner","The building and maintaining of art production pipelines, both internally and with our external teams
-To find new art production partners, coordinate with existing collaborators and take on prominent aspects of partner management from contract negotiations
-Facilitate the art production schedules - partnering with art, product and marketing teams to define the scope and verify all asset requests are scheduled
-Provide transparency on art production status and communicate frequently with the rest of the production team/leads on asset status, risks, and problem-solving opportunities
-Schedule team meetings and run art reviews (as well as in-game content reviews) while providing actionable notes and follow-up info to attendees
-Provide mentorship of artists, helping set goals and providing feedback
-Motivate and provide support to the art team, contributing to a positive environment and culture through organising training, events and the improvement of existing rituals
-Facilitate communication, organisation, processes and pipelines across art disciplines",,,"1yDY6YgwT6NBwhPWd8bDVu","true","2a01:4b00:87ff:4800:89a2:b182:3ff5:ec76","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36","https://publish.talents.games/","2024-01-18T17:21:50.483Z"
-"Nurashekin Binte","Mohamed Rashid","Games Factory Talents","https://www.gamesfactorytalents.com/about-us","Finland","https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000003861184/Senior-Game-Developer?source=CareerSite","nura@gamesfactorytalents.com","Senior Game Developer","Programming & Engineering","Game Development","Unity,C#,AR,Kinect","AR/Location Based","Unity","AR","","Senior","Full-time","Finland","Hybrid","0,25000","Our client Valo Motion is looking for a (Senior) Game Developer to join their team of professionals. While working as a Game Developer at Valo Motion, you will be creating and implementing unique game concepts for Valo Motion’s products. You will work with a highly passionate and motivated team to design, develop, deliver and maintain unique games and products that have not existed before.
-
-Valo Motion offers job possibilities that allow working with larger concepts, platforms and full games. Having full control over their own product platforms and remote software deployment ensures that the games that they develop will always end up to players. They provide a possibility for challenging and inspiring work with unique products that make a difference in the world by making people active. Valo Motion is looking for a Game Developer to join their family of enthusiasts who want to provide joy and thrill of movement to players around the globe.","- 3+ years of experience working with the Unity game engine
-- Passion for game design and development
-- Excellent knowledge of C#
-- Experience working on commercial products
-- Good communication skills
-​
-Pluses
-- Knowledge of AR technologies
-- Experience with Kinect or movement based games
-- Sports/exergame background
-- Knowledge of UI/UX design","- Designing and implementing (rapid prototyping) new game features and interactions
-​- Taking a game project from the concept stage to the finish line
-",,"{""filename"":""gft logo.png"",""type"":""file"",""size"":11093,""url"":""https://d33wubrfki0l68.cloudfront.net/d82725c7-2872-496d-8268-8c208281ff01/gft%20logo.png""}","8YoYgpzCpmbEMmAjT7kAG6","true","2001:14bb:119:3896:5458:ec2:f21b:ad5f","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0","https://publish.talents.games/","2024-01-12T12:57:26.398Z"
-"Nurashekin Binte","Mohamed Rashid","Games Factory Talents","https://www.gamesfactorytalents.com/about-us","Switzerland","https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000005659001/Lead-Product-Manager?source=CareerSite","nura@gamesfactorytalents.com","Lead Product Manager","Production","Product Management","Product Management,Live Operations,Free to Play (F2P)","Hyper-casual,Casual","Unity,Unreal Engine (UE)","Mobile","","Manager","Full-time","Worldwide","Remote","0,25000","Our client, Magic Do As You Will, is a well-funded, venture-backed gaming startup of 18 and they are looking for a highly experienced Lead Product Manager with F2P casual or hyper-casual experience to help them build games that are unique, exciting and with lots of heart!
+You’ll have the opportunity to tackle groundbreaking projects and innovative games, reaching players worldwide.","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/ddd87524-28d8-4dcf-9ce8-dcd4a97ff677/Games_factory_logo_Full.png""}",rRAg9s17ENHHhkQRqwR4nf,true,2001:999:480:3a11:88a2:b1d6:54ad:700,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",https://publish.talents.games/,2024-05-08T21:19:24.075Z
+Nurashekin Binte,Mohamed Rashid,Games Factory Talents,https://www.gamesfactorytalents.com/about-us,Switzerland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000005659001/Lead-Product-Manager?source=CareerSite,nura@gamesfactorytalents.com,Lead Product Manager,Production,Product Management,"Product Management,Live Operations,Free to Play (F2P)","Hyper-casual,Casual","Unity,Unreal Engine (UE)",Mobile,,Manager,Full-time,Worldwide,Remote,"0,25000","Our client, is a well-funded, venture-backed gaming startup of 18 and they are looking for a highly experienced Lead Product Manager with F2P casual or hyper-casual experience to help them build games that are unique, exciting and with lots of heart!
 ","- 5+ years of experience in product for F2P mobile games, preferably casual, hybrid-casual or hyper-casual.
 - Love for the startup environment, working in small teams, iterating quickly, wearing multiple hats.
 - Proven track record of successfully developing, launching and managing digital products
@@ -192,4 +49,4 @@ Lead go-to-market.
 - Together with the Analytics team, monitor monetization, game economy, player engagement, and other significant metrics.
 - Put a strategy in action - Lead proofs-of-concept, working closely with multi-disciplinary development teams to create “product-market fit”.
 - Create constant live events that will drive further engagement and monetization.
-- Define in-game sales, offers, and promotions to maximize conversion rate and ARPPU.",,"{""filename"":""gft logo.png"",""type"":""file"",""size"":11093,""url"":""https://d33wubrfki0l68.cloudfront.net/b443f4a8-b7c9-4b05-97da-8f02fe032f18/gft%20logo.png""}","3jxFsczEcw2rxHEnXF62UD","true","2001:14bb:119:3896::191","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0","https://publish.talents.games/","2024-01-12T12:37:37.785Z"
+- Define in-game sales, offers, and promotions to maximize conversion rate and ARPPU.",,"{""filename"":""gft logo.png"",""type"":""file"",""size"":11093,""url"":""https://d33wubrfki0l68.cloudfront.net/b443f4a8-b7c9-4b05-97da-8f02fe032f18/gft%20logo.png""}",3jxFsczEcw2rxHEnXF62UD,true,2001:14bb:119:3896::191,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",https://publish.talents.games/,2024-01-12T12:37:37.785Z
