@@ -1071,7 +1071,7 @@ export default function GFApplicationForm(props: any) {
                   onClick={() => setAnotherRole(false)}
                   color="secondary"
                 >
-                  Subscribe Now
+                  Publish Now
                 </Button>
               )}
               {(!props.sendingStatus ||
