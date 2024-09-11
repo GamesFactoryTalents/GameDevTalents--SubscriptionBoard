@@ -391,7 +391,7 @@ const InfoPage = ({ id, info }: Props) => {
             color="primary"
             style={{borderRadius: "10px",width: "200px", backgroundColor: "#3f51b5",}}
           >
-            JOIN CAREERS AREA
+            JOIN CAREERS ZONE
           </Button>
           <Link
             href="/"
