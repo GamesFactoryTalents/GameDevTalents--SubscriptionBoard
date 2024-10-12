@@ -1,259 +1,92 @@
-firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at
-Juan,Fernandez,Supercell,https://supercell.com/en/,Finland,https://supercell.com/en/careers/live-ops-manager/1230546/,juan.fernandez@supercell.com,"Live Ops Manager, Live and New Games",Business & Management,"Live Ops Strategy ,Live Service Games,Game Performance ","Free to Play (F2P),Live Operations,Monetization Design,Economy Design,Analytics",,,Mobile,,Manager,Full-time,Worldwide,Onsite,"0,25000","Which button would you press?
+"firstName","lastName","companyName","linkCompany","roleLocation","linkJob","emailAddress","jobTitle","category","specialities","skills","gameGenres","gameEngines","gamePlatforms","artAndAnimationStyles","seniorityLevel","employmentOptions","country","workPreferences","salaryRange","jobDescription","requirements","responsibilities","benefits","logoFile","id","willAttendPGC","ip","user_agent","referrer","created_at"
+"Ankit","Dhillon","BAD Spiele Studio","https://www.badspiele.studio/about-us","Germany","https://define.co","ankit@badspiele.studio","JavaScript Game Developer ","Programming & Engineering","Game Development,Web Development","JavaScript (JS),HTML5,WebGL,Node.js","","","","","Middle","Full-time","Germany or Europe","Onsite,Remote,Hybrid","3500,5000","We are seeking an experienced JavaScript Game Developer to join our team and work on our proprietary JavaScript-based game engine. In this role, you’ll take on a key position in developing new games, improving our existing engine, and ensuring smooth gameplay. You will collaborate closely with the CEO and eventually take the lead on programming tasks, with the potential to grow into a lead developer or CTO role.
+","Strong proficiency in JavaScript and experience with game development.
+Familiarity with web-based technologies such as HTML5, WebGL, and JavaScript frameworks (e.g., Node.js, Three.js, Phaser).
+Experience with game engine development is a significant plus.
+Understanding of responsive UI for mobile and PC platforms.
+Ambition to grow into a lead programmer or even CTO role.
+","Work directly on the company’s proprietary JavaScript-based game engine.
+Improve the game engine and develop new games on the platform.
+Collaborate with the CEO to take over the programming tasks and eventually lead game development.
+Maintain and fix bugs within the game engine, ensuring smooth gameplay and engine performance.
+","Free gym, sauna, lunch, discounted food and drinks, mental health recreation fund (€300/month), flat hierarchy, and direct access to the CEO and Art Director. You will be an integral part of a small but highly ambitious team, where your contributions will have a direct impact on the product's development, allowing you to see the tangible results of your work.
 
-Come drive the growth of Supercell’s games through owning and executing live operations! You will have the unique opportunity to work on some of the world's biggest and most recognizable mobile games and directly shape how they are being operated for millions of players every day. 
+Equal Opportunity Statement: We are an equal-opportunity employer and encourage candidates of all genders and backgrounds to apply. We are particularly committed to increasing diversity in the gaming industry and welcome female candidates.
+","{""filename"":""BAD Spiele Studio Logo(Presskit-Ready).png"",""type"":""file"",""size"":2198318,""url"":""https://d33wubrfki0l68.cloudfront.net/7a5329a0-b56c-4b48-8355-18829a86c04f/BAD%20Spiele%20Studio%20Logo(Presskit-Ready).png""}","211g2ArXDJNNVJ3dW8gvm8","true","93.106.131.87","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15","https://publish.talents.games/","2024-10-12T08:47:18.033Z"
+"Ankit","Dhillon","BAD Spiele Studio","https://www.badspiele.studio/about-us","Germany","https://define.co","ankit@badspiele.studio","Pixel Artist/Animator","Art & Animation","Pixel Art,Animation","Aseprite","","","","Stylized","Middle","Full-time","Germany or Europe","Remote,Onsite,Hybrid","1500,3500","We are BAD Spiele Studio, an independent American-German game development studio based in Berlin, founded by experienced indie developers. 
 
-As a Live Ops Manager, you will deliver on goals for the growth of your game by channelling your razor-sharp focus on performance and operational excellence. Delivering fantastic player experiences and maximizing commercial success is a formula for you to balance. 
+Our mission is to push the boundaries of game design by creating captivating and immersive experiences.
 
-You will utilize game data, competitive research, and player feedback to optimize existing and formulate new engagement strategies and then collaborate with cross-functional teams to translate these into highly engaging features and events. Also, you'll analyze and report on engagement & monetization performance, from high-level KPIs to deep dives into specific initiatives.","At least 5 years of experience in free-to-play mobile games
-Demonstrated track record and experience in running and growing a live free-to-play game
-Sound product judgment, ability to formulate live ops strategy and present clear, measurable key results that will lead to achieving business goals
-Hands-on approach and impact-driven focus on constantly pushing game performance and delivering fantastic player experiences
-Deep understanding of economy and monetization design, as well as of engagement drivers in live service games
-Strong quantitative and analytical skills with an emphasis on metrics-driven decision making
-Comfortable taking calculated risks, learning and sharing the lessons learned
-Extensive knowledge of live operations and monetization trends within the free-to-play business model
-","Develop and own a live ops and monetization strategy that accounts for both audience expectations, as well as company’s business goals
-Drive the day-to-day execution of the strategy by owning the schedule, targets, and overall success of in-game sales, offers, and live events
-Own the roadmap of features and tools needed to grow, innovate and improve live ops of your game, and coordinate their development with relevant stakeholders
-Together with game analysts, conduct quantitative analysis to provide key insights into product performance and uncover opportunities for further engagement and monetization
-Conduct A/B and multivariate tests to optimize game retention, engagement and monetization metrics
-Bring to the team an understanding of best-in-class F2P live ops activities, feature design and monetization mechanics","Luring you in with glitter, glamour, and gems is not what we seek to do. We develop Supercell as an employer for you to do your best work and to call this the best experience in your professional life.
+Our dedicated and passionate team thrives on the dark romanticism that defines our titles.
+Currently, we are a close-knit team of 10, and we are looking to grow as we continue to build innovative and unforgettable gaming experiences.
 
-We want you to enjoy your time here fully, so we structure our compensation and benefits to serve this purpose. It starts with perceiving you as a human being, not a resource.
+We are looking for a skilled Pixel Artist/Animator to join our team. In this role, you will create and animate pixel art for characters, environments, and effects, contributing to the unique visual identity of our games. You’ll work closely with the CEO and Art Director to ensure your work fits within the established aesthetic and style of our projects. If you have a passion for pixel art and love bringing characters and worlds to life through animation, this is the perfect opportunity for you.
 
-Check out more details about our Compensation and Benefits: https://supercell.com/en/news/compensation-benefits/
-","{""filename"":""media_logo_supercell_black2x.png"",""type"":""file"",""size"":3779,""url"":""https://d33wubrfki0l68.cloudfront.net/c745feb5-06bd-496f-a46c-c95257ddb40d/media_logo_supercell_black2x.png""}",ZR_475_JOB,true,93.106.167.151,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-26T08:30:38.205Z
-Juan,Fernandez,Supercell,https://supercell.com/en/,Finland,https://supercell.com/en/careers/analytics-lead-clash-royale/1690810/,juan.fernandez@supercell.com,"Analytics Lead, Clash Royale or Hay Day",Data & Analytics,"Data Analytics,Leadership","Team Management,Analytics,Problem Solving",,,Mobile,,Lead,Full-time,Worldwide,Onsite,"0,25000","We are hiring two Analytics Leads, one for Clash Royale and one for Hay Day, each a genre-defining mobile game with millions of monthly players. Clash Royale recently turned 8 years old, and we feel we've only begun to realize its potential. Similarly, Hay Day, which is celebrating its 12th anniversary, continues to captivate players with its vibrant farming experience.
-We're obsessed with improving the player experience and willing to take risks to get there. We are now looking for Analytics Leads to be the driving forces in leveraging data to make better decisions and ultimately improve and grow both games.
-In these roles, you would lead a small but highly capable analytics team that works closely with the rest of the game team. We all sit in the same team space filled with people who are deeply passionate about making our games better every day.","Strong leadership skills with experience in managing and mentoring a team of analytics professionals.
-Exceptional analytical and problem-solving skills, with a proven ability to translate complex data into actionable insights.
-Bias for action to deliver performance results through data and insights.
-Excellent communication and interpersonal skills, capable of working effectively with cross-functional teams.
-Passion for gaming, with specific interest or experience in mobile games being a significant plus.","Drive the strategic and operational use of data to enhance decision-making and provide actionable insights.
-Lead and align the analytics team to focus on high-impact projects that significantly improve the games' performance.
-Ensure optimal staffing of the analytics team, facilitating professional growth and enabling team members to produce their best work.
-Collaborate with key game team stakeholders—including the General Manager, Live Ops & Monetization Lead, Marketing Lead, and Design Lead—to support and challenge their strategies and decisions.
-Actively participate in strategy formulation and refinement for the games.
-","Luring you in with glitter, glamour, and gems is not what we seek to do. We develop Supercell as an employer for you to do your best work and to call this the best experience in your professional life.
+This is an excellent opportunity for someone who thrives in a collaborative, creative environment, where your contributions will directly shape the final product.
 
-We want you to enjoy your time here fully, so we structure our compensation and benefits to serve this purpose. It starts with perceiving you as a human being, not a resource.
+Location: Berlin preferred, but remote within Germany or Europe is acceptable for highly talented candidates.
 
-Check out more details about our Compensation and Benefits: https://supercell.com/en/news/compensation-benefits/
-","{""filename"":""media_logo_supercell_black2x.png"",""type"":""file"",""size"":3779,""url"":""https://d33wubrfki0l68.cloudfront.net/e323be50-112e-44e8-b88e-77da6a695d5f/media_logo_supercell_black2x.png""}",ZR_476_JOB,true,93.106.167.151,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-26T08:24:03.665Z
-Juan,Fernandez,Supercell,https://supercell.com/en/,Finland,https://supercell.com/en/careers/monetization-manager-live-games/1398779/,juan.fernandez@supercell.com,"Monetization Manager, Live Games and New Games",Business & Management,"Monetization Strategy,Player Segmentation","AB Testing,Free to Play (F2P),Economy and Monetization Design,Games Monetization",,,Mobile,,Manager,Full-time,Worldwide,Onsite,"0,25000","Time to pull some levers! We are looking for Monetization Managers to join our game teams to drive growth. You get to own and execute on direct monetization blocks, all while providing unmatched player experiences. 
+Type: Full-time, 2-month work trial with permanent contract continuation.
+","Proficient in pixel art creation and animation (experience with Aseprite or similar software is a plus).
+Strong portfolio showcasing pixel art and animations.
+Ability to convert concept art into pixel art and create tilesets, character animations, and effects.
+No specific degree is required, portfolio quality is key.
+","Create pixel art for characters and environments, from low-res to high-res styles.
+Animate pixel art, including character movements, attack animations, and environmental effects.
+Work closely with the CEO/Art Director to develop and refine pixel art for various games.
+","Free gym, sauna, lunch, discounted food and drinks, mental health recreation fund (€300/month), flat hierarchy, and direct access to the CEO and Art Director. You will be an integral part of a small but highly ambitious team, where your contributions will have a direct impact on the product's development, allowing you to see the tangible results of your work.
 
-This is a unique opportunity to work on some of the biggest and most recognizable mobile games in the world and directly shape how they are being operated for and enjoyed by millions of players every day.
+Equal Opportunity Statement: We are an equal-opportunity employer and encourage candidates of all genders and backgrounds to apply. We are particularly committed to increasing diversity in the gaming industry and welcome female candidates.
+","{""filename"":""BAD Spiele Studio Logo(Presskit-Ready).png"",""type"":""file"",""size"":2198318,""url"":""https://d33wubrfki0l68.cloudfront.net/c68f71bc-dd12-4151-86fb-175d3e332b48/BAD%20Spiele%20Studio%20Logo(Presskit-Ready).png""}","ozEwwaB1VovAZWh5rAU2yn","true","93.106.131.87","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15","https://publish.talents.games/","2024-10-12T08:42:13.008Z"
+"Ankit","Dhillon","BAD Spiele Studio","https://www.badspiele.studio/about-us","Germany","https://define.co","ankit@badspiele.studio","3D Artist (Generalist) ","Art & Animation","Character Art,Environment Art,Props Art","3D,3D Modeling,Blender,Maya,3Ds Max","","","","Stylized","Middle","Full-time","Germany or Europe","Onsite,Remote,Hybrid","1500,3500","We are BAD Spiele Studio, an independent American-German game development studio based in Berlin, founded by experienced indie developers. 
 
-We believe commercial success and fantastic player experience must go hand-in-hand. As a member of a game team, you will deliver on goals for the growth of your game by channelling a razor-sharp focus on performance and operational excellence to ensure you find the right balance.
+Our mission is to push the boundaries of game design by creating captivating and immersive experiences.
 
-You will utilize game data, competitive research, and player feedback to optimize existing and formulate new monetization and pricing strategies, and then collaborate with cross-functional teams in order to translate these into player-facing features and offers. You will also analyze and report on engagement & monetization performance, from high-level KPIs to deep dives into specific initiatives.","At least 3 years of experience in free-to-play mobile games
-Extensive knowledge of monetization strategies and trends within the free-to-play business model
-Prior experience planning and operating in-app offers in a live game, with a strong track record of achieving targeted business goals
-Good understanding of economy and monetization design, as well as of engagement drivers in live service games.
-Passionate about games monetization, with keen interest in business models including in-app purchases, ad monetization, and subscriptions.
-Strong quantitative and analytical skills with an emphasis on metrics-driven decision making.
-Constantly looking for new experiments and ways to improve performance, with the ability to make data driven decisions and recommendations.
-Comfortable taking calculated risks, learning and sharing the lessons learned.
-","Own, plan and execute on all in-game and Supercell Store offers, constantly delivering to meet players’ expectations and needs while following company business goals.
-Develop new monetization strategies that align with the motivations and behaviors of millions of players, across all stages of their player journey.
-Define, set up, and test new player segmentations across various offer types to further improve player experience and level up offer performance.
-Track and evaluate results of your efforts on a daily, weekly, monthly and quarterly basis to ensure positive uplift in both the short and long term.
-Constantly A/B test new content and offers, analyzing if they resulted in the desired outcome and to inform future experiments.
-Identify new features and tools required to further improve monetization efforts of your game, and coordinate their development with relevant stakeholders.
-Collaborate with Live Ops Manager, Economy Managers, and Game Analysts to assure the monetization efforts for your game are contributing to long term success and have a positive impact on player experience.","We want you to enjoy your time here fully, so we structure our compensation and benefits to serve this purpose. It starts with perceiving you as a human being, not a resource.
+Our dedicated and passionate team thrives on the dark romanticism that defines our titles. Currently, we are a close-knit team of 10, and we are looking to grow as we continue to build innovative and unforgettable gaming experiences.
 
-Check out more details about our Compensation and Benefits: https://supercell.com/en/news/compensation-benefits/
-","{""filename"":""media_logo_supercell_black2x.png"",""type"":""file"",""size"":3779,""url"":""https://d33wubrfki0l68.cloudfront.net/8a83dd21-9568-431f-ac7c-0ab5840bc12f/media_logo_supercell_black2x.png""}",IDZR_477_JOB,true,93.106.167.151,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-26T08:16:44.247Z
-Juan,Fernandez,Supercell,https://supercell.com/en/,Finland,https://supercell.com/en/careers/head-data-analytics-insights/1665339/,juan.fernandez@supercell.com,"Head of Data, Analytics, and Insights",Data & Analytics,"Business Intelligence (BI),Data Science,Data Engineering","Team Management,Project Management,B2C Product Expertise,Leadership",,,Mobile,,Director,Full-time,Worldwide,Onsite,"0,25000","Supercell is searching for a seasoned, entrepreneurial, and highly collaborative leader to spearhead our Data, Analytics, and Insights efforts. You will steer and develop your team leading our work on game performance analytics, marketing and central team analytics, and research.
+We are seeking a talented 3D Artist (Generalist) to join our growing team. In this role, you will create 3D assets including characters, environments, and props, all aligned with our established stylized art direction. You will collaborate closely with the CEO and Art Director to learn our workflow and ensure that your work meets project standards. 
 
-In this pivotal role, you will craft and manage our comprehensive analytics and data operations and take ownership of our development initiatives in this field. With your team, you will ensure that we harness the power of data, using cutting-edge methodologies and tools to effectively bring insights effectively to our teams. Your approach to data will shape how we leverage insights, game metrics, player behavior, and market trends to enhance our performance, ultimately ensuring Supercell continues to excel within gaming.
+This is an exciting opportunity to work in a tight-knit indie studio where your contributions will have a visible impact on the final game.
 
-This role offers the unique opportunity to work with some of the most beloved mobile games. You will report directly to our COO and you will be a key player in Supercell’s journey to become a truly global games company.
-","A minimum of 15 years of experience with at least of the two areas within analytics, business intelligence, data science, data engineering and/or research/insights
-At least 5 years of experience leading and managing high-caliber data, analytics or data engineering organizations
-Prior expertise from B2C, preferably from gaming or technology related companies
-Exceptional project management skills, with the dedication and proven track record of owning projects from inception to realization.
-Strategic thinker with entrepreneurial spirit and the ability to balance out short and long-term business goals
-Strong Leadership and development skills with a team first and “enable and empower” mentality and capability
-The ability to work effectively and foster collaboration among your team, game development teams and other cross-disciplinary operations
-The confidence and capacity to represent Supercell as a data and analytics ambassador with high-profile external partners
-","Define and implement a forward-thinking data and analytics strategy that provides a foundation for long-term operational improvement and positive business impact
-Lead Supercell's data, analytics and research operations and develop the organizational setup to ensure close cross-team collaboration and focus on continuous improvement
-Lead the growth of data, analytics and insights practices to bolster our games' performance
-Take charge and support other leads in key strategic projects spanning various domains aiming to improve our operations and business
-Cultivate, guide, and empower your team of senior data, analytics and research professionals
-Foster a culture of data-driven decision making across Supercell","Luring you in with glitter, glamour, and gems is not what we seek to do. We develop Supercell as an employer for you to do your best work and to call this the best experience in your professional life.
+Location: Berlin preferred, but remote within Germany or Europe is acceptable for highly talented candidates.
 
-We want you to enjoy your time here fully, so we structure our compensation and benefits to serve this purpose. It starts with perceiving you as a human being, not a resource.
+Type: Full-time, 2-month work trial with permanent contract continuation.","Proficient in 2D software (e.g., Photoshop, Spine, or any other preferred tools).
+Strong portfolio showcasing diverse 2D work (stylized art is a plus).
+Excellent communication skills and ability to collaborate in a team.
+No specific degree is required, portfolio quality is key.
+Animation skills are a bonus, but not mandatory.
+","Create a variety of 2D art, including character design, environment art, concept art, and UI elements.
+Collaborate with the lead artist to reduce their workload by producing base art that will be refined and polished.
+Contribute to development of our game Last Spartan by producing art following established styles and guidelines.
+Work on stylized art projects, with a focus on vibrant, dynamic visuals similar to Clash of Clans or Hades.
 
-Check out more details about our Compensation and Benefits: https://supercell.com/en/news/compensation-benefits/
-","{""filename"":""media_logo_supercell_black2x.png"",""type"":""file"",""size"":3779,""url"":""https://d33wubrfki0l68.cloudfront.net/2c08ac81-c553-47e5-b2c3-04373a96f554/media_logo_supercell_black2x.png""}",IDZR_478_JOB,true,93.106.167.151,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-26T07:57:00.245Z
-Juan,Fernandez,Supercell,https://supercell.com/en/,Finland,https://supercell.com/en/careers/game-analyst-hay-day/1740977/,juan.fernandez@supercell.com,"Game Analyst, Hay Day",Data & Analytics,"Product Analytics,Data Analytics","R,Python,SQL,AB testing,Mobile Games",,,Mobile,,Senior,Full-time,Worldwide,Onsite,"0,25000","Hay Day is a beloved farming simulation game enjoyed by millions of players around the world. Although the game is celebrating its 12th anniversary, we believe there are still many opportunities to cultivate and grow the Hay Day experience! We know that fun can't be cultivated in a spreadsheet, but we understand that leveraging data to guide our decisions is as crucial as tending to crops and animals.
+","Free gym, sauna, lunch, discounted food and drinks, mental health recreation fund (€300/month), flat hierarchy, and direct access to the CEO and Art Director. You will be an integral part of a small but highly ambitious team, where your contributions will have a direct impact on the product's development, allowing you to see the tangible results of your work.
 
-This is your opportunity to join a passionate team dedicated to enhancing both the team and the game in our ongoing mission to delight our players. Dive deep, analyze, hypothesize, ignite discussions, and make a substantial impact!
+Equal Opportunity Statement: We are an equal-opportunity employer and encourage candidates of all genders and backgrounds to apply. We are particularly committed to increasing diversity in the gaming industry and welcome female candidates.
+","{""filename"":""BAD Spiele Studio Logo(Presskit-Ready).png"",""type"":""file"",""size"":2198318,""url"":""https://d33wubrfki0l68.cloudfront.net/e97c81d1-b896-4fdc-983d-196332d7ffa7/BAD%20Spiele%20Studio%20Logo(Presskit-Ready).png""}","d2vRxnzK1PYqvAzWsNtpr6","true","93.106.131.87","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15","https://publish.talents.games/","2024-10-12T08:35:57.209Z"
+"Ankit","Dhillon","BAD Spiele Studio","https://www.badspiele.studio/about-us","Germany","https://define.co","ankit@badspiele.studio","2D Artist (Generalist)","Art & Animation","Character Art,Environment Art,Concept Art","2D Art,Adobe Photoshop,Spine","","","","Stylized","Middle","Full-time"," Germany or Europe","Hybrid,Onsite,Remote","1500,3500","We are BAD Spiele Studio, an independent American-German game development studio based in Berlin, founded by experienced indie developers. 
 
-Surrounded by a team of exceptional professionals who are also wonderful people, you will have the chance to elevate both the game and your own career to new levels.
+Our mission is to push the boundaries of game design by creating captivating and immersive experiences.
 
-At Supercell, teamwork is at the core of everything we do. You'll collaborate with other data analysts and engineers while working closely with the team's live ops & monetization function, Game Designers, and a diverse array of stakeholders – all committed to excellence.
-","Several years of experience working as a product scientist or similar role in the games or adjacent industry
-Ability to engage effectively with a wide range of stakeholders
-Ability to own analytics work from formulation of hypotheses to communicating actionable insights
-Great communication skills, both written and spoken, especially for non-technical audience
-Coding skills with R or python, and SQL at a proficient level
-Proactive drive to improve our games and yourself, too
+Our dedicated and passionate team thrives on the dark romanticism that defines our titles.
+Currently, we are a close-knit team of 10, and we are looking to grow as we continue to build innovative and unforgettable gaming experiences.
 
-Nice-to-haves
+We are seeking a versatile and creative 2D Artist (Generalist) to join our team. This role will be instrumental in helping us bring our latest project, Last Spartan, to life. You will work closely with our lead artist to produce a variety of 2D assets, including character designs, environment art, concept art, and UI elements. 
 
-Prior experience working in a live service game team
-Experience running and evaluating frequent A/B tests
-Relevant background and advanced knowledge of statistics, visualisation, programming, or related skills","First and foremost, help make Hay Day even better
-Help stay on top of game performance and lead investigations into unexpected trends
-Ensure that key insights and learnings are captured from new feature and content releases, applying A/B testing and appropriate statistical methods where relevant
-Promote a hypothesis-driven insights culture within the team and Supercell at large, merging creative intuition with analytical prowess to achieve operational excellence","Luring you in with glitter, glamour, and gems is not what we seek to do. We develop Supercell as an employer for you to do your best work and to call this the best experience in your professional life.
-We want you to enjoy your time here fully, so we structure our compensation and benefits to serve this purpose. It starts with perceiving you as a human being, not a resource.
+This is an excellent opportunity for someone who thrives in a collaborative, creative environment, where your contributions will directly shape the final product.
 
-Check out more details about our Compensation and Benefits: https://supercell.com/en/news/compensation-benefits/","{""filename"":""media_logo_supercell_black2x.png"",""type"":""file"",""size"":3779,""url"":""https://d33wubrfki0l68.cloudfront.net/33294cbc-115f-491f-bb67-d39d91919668/media_logo_supercell_black2x.png""}",IDZR_479_JOB,true,93.106.167.151,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-26T07:47:13.910Z
-Victoria,Vercellana,Seepia Games,https://www.seepia.com/,Finland,https://forms.clickup.com/20449045/f/kg1rn-15648/2OG313NRCWIP6TCCTS,victoria.vercallana@seepia.com,Senior Game Artist,Art & Animation,3D Art ,"3D Game Art,2D Game Art",,,,,Senior,Full-time,Worldwide,Remote,"0,25000","We are looking for a Senior Game Artist to join our growing team! At Seepia, Artists are in charge of the visual aspect of the ad experience. They make sure our ads look and sound spectacular while staying true to the style and spirit of each client. Join us in pioneering this  exciting frontier of game advertising and help us push our projects to new heights. ","Who we think will do great in this role has:
-Excellent Photoshop skills: We're looking for both image editing and digital art skills
-Experience in creating VFX or animations (Spine or 3D)
-Solid knowledge of game assets: You should be familiar with standard game industry jargon and know what kind of building blocks games are made of
-Efficient communication skills: Our typical projects are around 2 weeks in duration and we expect our artists to fluently communicate with the project manager and complete their tasks on time
-Stylistic flexibility: Our clients come in all styles from cute and cartoony to painterly realism or even complete abstraction - you should be able to adjust to each project and stay true to the style of the client
-An amazing online portfolio or showreel: We are especially interested in seeing game screen mockups, in-game art assets, VFX, and animations
-Ability to communicate both in written and spoken English
+Location: Berlin preferred, but remote within Germany or Europe is acceptable for highly talented candidates.
 
-We’d love if you have some of these:
-Game industry experience
-3D skills 
-UI/UX design skills
-Vectoring skills
-Graphic design skills
-","What you’ll do:
-Help our sales team bring their vision to life through your art
-Collaborate with our designers and creating beautiful and intuitive layouts
-Work together with our developers in making some of the best playable ads in the world
-Share tasks with our artists on gorgeous high profile game projects","What we offer:
-Healthy work-life balance and flexible work hours - structure your work around your life, not the other way around
-Option to work either remotely or in our beautiful office in Lappeenranta, right next to Lake Saimaa (relocation assistance can be provided)
-A laid-back, supportive and friendly team of professionals and game enthusiasts :)","{""filename"":""LinkedIn Company Logo.png"",""type"":""file"",""size"":127122,""url"":""https://d33wubrfki0l68.cloudfront.net/44996532-2032-4dbe-af23-a24b4e81aa8f/LinkedIn%20Company%20Logo.png""}",ZR_474_JOB,true,72.28.222.236,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",https://publish.talents.games/,2024-09-18T20:39:00.855Z
-Victoria,Vercellana,Seepia Games,https://www.seepia.com/,Finland,https://forms.clickup.com/f/kg1rn-7201/MJZV93RBNH4SAH7TOY,victoria.vercallana@seepia.com,Senior Game Developer,Programming & Engineering,Game Development,"JavaScript Game Development,HTML",,,,,Senior,Full-time,Worldwide,Remote,"0,25000","We are looking for a Senior HTML Game Developer to join our rapidly growing team. At Seepia, Game Developers design and build new systems from scratch and optimize features to be both performant and moddable. You will work on short projects in a small team with art, design, QA and management experts to make our playable ads come to life.","Who we think will do great in this role has:
-5+ years of game programming experience
-Strong working knowledge of modern Javascript and HTML5
-Experience building the front-end of applications with appealing visual design
-Knowledge and practical experience of game production
-Is a self-motivated team player with and time-management skills
-Ability  to communicate both in written and spoken English
-Ability to work in a proactive and flexible environment
+Type: Full-time, 2-month work trial with permanent contract continuation.","Proficient in 2D software (e.g., Photoshop, Spine, or any other preferred tools).
+Strong portfolio showcasing diverse 2D work (stylized art is a plus).
+Excellent communication skills and ability to collaborate in a team.
+No specific degree is required, portfolio quality is key.
+Animation skills are a bonus, but not mandatory.
+","Create a variety of 2D art, including character design, environment art, concept art, and UI elements.
+Collaborate with the lead artist to reduce their workload by producing base art that will be refined and polished.
+Contribute to development of our game Last Spartan by producing art following established styles and guidelines.
+Work on stylized art projects, with a focus on vibrant, dynamic visuals similar to Clash of Clans or Hades.
+","Free gym, sauna, lunch, discounted food and drinks, mental health recreation fund (€300/month), flat hierarchy, and direct access to the CEO and Art Director. You will be an integral part of a small but highly ambitious team, where your contributions will have a direct impact on the product's development, allowing you to see the tangible results of your work.
 
-We’d love if you have some of these:
-Experience in game industry and with mobile games
-Experience with Unity, high-level scripting languages, version-control, CMS systems, client/server networking
-Experience with Photoshop, Illustrator, other graphic design and layout tools
-Passion to work in all parts of software development life cycle
-Genuine interest in interactive advertising and games","What you’ll do:
-Develop well performing ads and games using HTML5 / Typescript
-Support the team with your technical knowledge from initial designs to final delivery
-Create your own schedules and manage your tasks
-Identify, communicate and resolve performance and scalability issues
-Mentor junior members of our team","What we offer:
-Healthy work-life balance and flexible work hours - structure your work around your life, not the other way around
-Option to work either remotely or in our beautiful office in Lappeenranta, right next to Lake Saimaa (relocation assistance can be provided)
-A laid-back, supportive and friendly team of professionals and game enthusiasts :)","{""filename"":""LinkedIn Company Logo.png"",""type"":""file"",""size"":127122,""url"":""https://d33wubrfki0l68.cloudfront.net/0e30fe20-681d-49e6-9047-6dee4868ddf1/LinkedIn%20Company%20Logo.png""}",ZR_473_JOB,true,72.28.222.236,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",https://publish.talents.games/,2024-09-18T20:35:39.449Z
-Nora,Puhakainen,Nitro Games,https://careers.nitrogames.com/,Finland,https://careers.nitrogames.com/p/55190-tech-lead-for-warframe-mobile,nora.puhakainen@nitrogames.fi,Tech Lead ,Programming & Engineering,"Game Development,End-to-End Software Development Lifecycle,Gameplay Development","C++,Lua,Vulkan Renderer,Perforce",,,Mobile,,Lead,Full-time,Worldwide,"Onsite,Hybrid","6500,8500","Are you a highly skilled and motivated Tech Lead with a passion for gaming? Join our dynamic team at Nitro Games and work with exciting and well-known IPs! We are looking for an experienced professional to tackle complex technical challenges and ensure our projects' successful and timely delivery. As a Tech Lead, you will be crucial in designing and coding new features, optimizing performance, setting up build pipelines, and collaborating with various teams to bring our innovative ideas to life. If you thrive in a collaborative environment and deeply love to play games on various platforms , this is the perfect opportunity!
-","+15 years of experience in Tech
-
-Strong knowledge of C++ design and programming 
-
-Proven experience in a senior/lead role on multiple game projects, with at least some of them using a Proprietary C++ engine
-
-Strong knowledge of gameplay programming
-
-Ability to quickly get familiar with existing codebase
-
-Experience using Windows/Mac
-
-Knowledge of shader languages and render pipelines
-
-Understanding and appreciation of optimized code
-
-Understanding of CI/CD pipeline
-
-Strong experience of working with LUA
-
-Experience implementing native ios/android features
-
-Strong knowledge of Jira and Confluence
-
-In-depth knowledge of game development concepts, algorithms, and software design principles.
-
-Excellent problem-solving skills and ability to analyze and optimize code for performance
-
-Love for games, including interest in free-to-play mobile games
-
-Knowledge of Warframe is considered a positive","Ability to independently design and code entire new features in a performant manner according to established coding conventions.
-
-Effectively communicate technical solutions and approaches in verbal and written form.
-
-Able to work well in a collaborative team environment and within an iterative design process.
-
-Debugging, troubleshooting complex issues, and optimizing code for speed, memory, and overall performance.
-
-Follow the end-to-end software development lifecycle, from design and coding to testing and deployment.
-
-Develop high-quality, efficient, and maintainable code by project requirements and coding standards.
-
-Independent dialogue and collaboration with the client.
-
-Setting up and maintaining build pipelines for both iOS and Android devices.
-
-Implement platform native SDKs such as Singular etc.
-
-Collaborate with different teams.
-
-Ability to travel occasionally and participate in business calls over timezones.","At Nitro Games, we pride ourselves on fostering a world-class, self-directed team that values work-life balance and supports family life. We offer the flexibility to work remotely, hybrid, or from our offices in Kotka or Helsinki, with full relocation support and language classes available for people moving to Finland.
-
-Our benefits package includes comprehensive healthcare and cultural benefits like retreats and parties, ensuring your well-being both inside and outside of work. Our unique self-development program allows you to dedicate work hours to personal and professional growth, ensuring you stay at the cutting edge of your field. Additionally, take advantage of our generous stock option plan, a performance-based bonus system tied to EBIT, and extra paid holidays to relax and recharge!
-
-The salary range is between 6500€ and 8500€ per month. The monthly salary can be negotiated to match your experience, skillset, and range of responsibilities in the role.","{""filename"":""Nitro logo white.png"",""type"":""file"",""size"":27034,""url"":""https://d33wubrfki0l68.cloudfront.net/f1b3418c-f167-4e27-b799-2af4f1cab8be/Nitro%20logo%20white.png""}",ZR_471_JOB,false,193.210.166.45,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-09-11T20:22:04.754Z
-Oleg,Paliy,GFT,https://gft.com,Finland,https://gamesfactorytalents.zohorecruit.eu/jobs/Careers/18387000008481001/Senior-Technical-Artist-with-Graphics-Programming-Expertise?source=CareerSite,oleg@ggc.com,Senior Technical Artist with Graphics Programming Expertise,Programming & Engineering,"Graphics Development,Game Development, Technical Art","Unity,Shaders,Real-Time Game Development,Blender 3D,AI",Not relevant,Unity,"PC,Console,Mobile",,Senior,Full-time,Finland,Remote,"5000,8000","Are you a seasoned developer with a flair for art and a passion for AI technology?
-
-We are seeking a Senior Technical Artist with graphics programming skills to join a very experienced game development team in Helsinki. 
-
-Join the dynamic and innovative team, where you will have the opportunity to shape the future of game creation by blending your technical skills with your artistic vision.
-
-This is an exciting role for someone with at least 3 years of game development experience in using Unity and a passion for visual effects and graphics.
-
-Location requirement: for this role you have to be based in Finland.","3+ years of experience in game development with a focus on graphics programming and shader development,
-Proficient in Unity and C# with an understanding of real-time 3D game development,
-Experience with 3D tools like Blender for tweaking and refining game assets,
-Interest in AI technology and its application in game development.","Develop and fine-tune shaders to create stunning visual effects that are dynamic and responsive to AI-driven commands.
-Collaborate closely with a very senior team of engineers and artists to push the boundaries of no-code game creation. 
-Work with AI technologies to create seamless, visually appealing 3D game environments.
-Use your artistic eye to ensure that all assets and visual elements meet the stylistic requirements of the game.","Flexible Work Environment: Enjoy the benefits of a fully remote work setup with occasional in-person meetings in Helsinki.
-Cutting-Edge Technology: Work with the latest AI and graphics tools to create revolutionary gaming experiences.
-Collaborative Culture: Join a small, dedicated team where your contributions are highly valued and impactful.
-Growth Opportunities: Be part of a growing startup that's leading the charge in democratizing game development, offering everyone the chance to become a game creator.
-","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/11e95f38-46ef-4161-b3b3-a00f2ad05fac/Games_factory_logo_Full.png""}",ZR_468_JOB,false,93.106.185.152,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-08-14T20:46:35.070Z
-Oleg,Paliy,GFT,https://gft.com,Finland,https://zrec.eu/DeD5Q?source=CareerSite,oleg@ggc.com,Senior 3D Artist (Generalist),Art & Animation,"3D Art ,Concept Art, Character Art","Autodesk Maya,Adobe Creative Cloud,UV Mapping,3D Texturing,Rigging",AR/Location Based,Unity,"VR,AR",,Senior,Full-time,Finland,Hybrid,"3000,5000","An adventurous game studio in Helsinki is seeking a Senior 3D Artist (Generalist) with a passion for crafting immersive, movement-based gaming worlds.
-
-If you’re an experienced artist with at least 3 years of experience within the games industry and eager to contribute to visually appealing games this is your chance to bring innovative game concepts to life and leave your creative mark! 
-
-Location Requirements:
-Must be based in Finland, preferably in the Helsinki Metropolitan area.
-This role requires you to be in the Helsinki office at least 3 days per week.
-","3+ years of professional 3D art experience in the games industry,
-Proficiency in 3D software such as Maya,
-Skilled in Adobe Creative Cloud, including Illustrator, Photoshop, and Substance Painter,
-Experience with game engines like Unity,
-Strong attention to detail and excellent communication skills,
-Ability to manage multiple projects independently,
-Ability to create concepts and iterate based on feedback.
-","Create high-quality 3D models that align with diverse game art styles.
-Implement shading, UV mapping, texturing, lighting, rigging, and animations.
-Collaborate with other team members to bring concepts to life.
-Optimise models for performance and refine assets based on feedback.
-Contribute to multiple projects simultaneously","Creative Freedom: Work in an environment that values innovation and creativity,
-Collaborative Culture: Join a team that prioritises teamwork, respect, and mutual support,
-Fun-Focused: Contribute to creating engaging and enjoyable gaming experiences,
-Growth Opportunities: Be part of a studio where your input drives the evolution of our games.","{""filename"":""Games_factory_logo_Full.png"",""type"":""file"",""size"":11067,""url"":""https://d33wubrfki0l68.cloudfront.net/35175038-5b13-42fb-baf8-fc3a88c8d4e9/Games_factory_logo_Full.png""}",ZR_467_JOB,false,93.106.185.152,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.gamesfactorytalents.com/,2024-08-14T20:42:16.018Z
+Equal Opportunity Statement: We are an equal-opportunity employer and encourage candidates of all genders and backgrounds to apply. We are particularly committed to increasing diversity in the gaming industry and welcome female candidates.
+","{""filename"":""BAD Spiele Studio Logo(Presskit-Ready).png"",""type"":""file"",""size"":2198318,""url"":""https://d33wubrfki0l68.cloudfront.net/26631db1-309a-49a3-86d4-8f5db37b9757/BAD%20Spiele%20Studio%20Logo(Presskit-Ready).png""}","bwgcitqLFPDrFP2Fx3EaoJ","true","93.106.131.87","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15","https://publish.talents.games/","2024-10-12T08:28:23.203Z"
