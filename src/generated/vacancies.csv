@@ -1,4 +1,60 @@
 firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at
+Andrea,Ponce Carrera ,Devoted Studios,https://devotedstudios.com,Germany,https://apply.workable.com/devoted-studios-1/j/DC010F5ABD/,a.ponce@devotedstudios.com,Technical Lead,Programming & Engineering,"Fullstack Development ,Web Development,Leadership","Symfony,Node.js,Vue.js,JavaScript,PHP",,,,,Lead,Full-time,Worldwide,Remote,"0,25000","Devoted CG is a new platform in Early Access that will transform how companies find freelance talent for game asset creation.  Our mission is to create equal opportunities for all talent globally to work on the games of their dreams. We are looking for an experienced games industry professional to work with us on rapidly growing this platform across the entertainment industry and beyond. 
+
+As the Technical Lead at Devoted CG, you will play a pivotal role in shaping and executing the technological strategy that drives our platform's growth and success. Your expertise in game development, technical leadership, and innovation will be instrumental in enhancing our platform's capabilities, scalability, and user experience.
+
+The Role: 
+
+Leadership and Team Management: Proven leadership skills with experience in building and leading high-performing development teams. This includes recruiting, mentoring, and managing developers, as well as fostering a collaborative and innovative team culture.
+
+Technical expertise in a variety of areas, such as software development, cloud computing, microservices, and data science: Extensive experience with Symfony, Vue.js 3, and Node.js, including a deep understanding of their core concepts, best practices, and ecosystem. Proficiency in PHP for Symfony and JavaScript for Vue and Node.js is essential. Experience in backend API architecture and development is a significant plus.
+
+Operating a live product 
+Full Stack Development Experience: Strong background in full stack development, covering both backend (Symfony and Node.js) and frontend (Vue.js). Experienced with related technologies like HTML, CSS, and JavaScript frameworks/libraries.
+
+Architecture Design Skills: Ability to design scalable, maintainable, and secure web applications using Symfony, Node.js, and Vue.js, while following industry standards and best practices.
+
+Project Management: Experience with project management methods (like Agile and Scrum) and tools. Skilled in planning, prioritizing, and completing development projects on time, ensuring high-quality results.
+
+Strategic thinking ability: Strong strategic thinker with the ability to align technology initiatives with business goals. Skilled at driving innovation and gaining a competitive edge using Symfony, Node.js, and Vue.js technologies.
+
+Problem-solving and Decision-making: Excellent problem-solving skills and the ability to make quick, informed decisions, especially in the fast-paced and dynamic world of software development.
+
+Communication and Collaboration: Strong communication skills with the ability to explain technical concepts to non-technical people. Able to work well with cross-functional teams like product management, design, and marketing.
+
+Continuous Learning and Adaptability: Commitment to staying current with the latest advancements in Symfony, Node.js, and Vue.js technologies. Willingness to adapt to changing industry trends and best practices.
+
+Quality Assurance and Security: Ensuring the codebase's quality and reliability, including implementing security measures to safeguard against potential vulnerabilities. Given our platform deals with IPs and confidential information, protecting our clients and vendors from any breaches is essential.
+
+Broad vision
+
+Business acumen
+
+Ability to work effectively with a variety of stakeholders
+","Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.
+7+ years of experience in building and leading high-performing development teams, including recruiting, mentoring, and management.
+7+ years of proficiency in Symfony, Vue.js 3, and Node.js
+Strong background in full stack development, covering both backend (Symfony and Node.js) and frontend (Vue.js).
+Experience in designing scalable, maintainable, and secure web applications.
+Proven ability to plan, prioritize, and execute development projects while meeting deadlines.
+Strong strategic thinking ability with 7+ years of experience aligning technology initiatives with business goals.
+Excellent problem-solving skills and the ability to make informed decisions quickly.
+Strong communication skills 
+Broad vision and understanding of business objectives.
+Ability to work effectively with a variety of stakeholders.
+","Hands-On Coding (70%): Focus primarily on hands-on coding, developing and implementing technical solutions that drive the company’s technology strategy forward.
+Team Management and Consulting (20%): Dedicate a portion of your time to managing and consulting with the technology team, providing guidance, troubleshooting challenges, and fostering collaboration to ensure projects stay on track.
+Aligning with CCO (10%): Collaborate closely with the Chief Commercial Officer (CCO) to ensure that all technical aspects are aligned with commercial objectives, translating complex technical terms into actionable business strategies.
+Technology Strategy: Developing and implementing a comprehensive technology strategy aligned with the company's overall objectives and goals.
+Technology Infrastructure: Overseeing the design, implementation, and maintenance of the company's technological infrastructure, including hardware, software, networks, and data centers.
+Leadership: Leading and growing a skilled technology team, including software developers, engineers, data scientists, and IT experts.
+Cross-functional collaboration: Collaborating with other executives and departments to ensure that technology initiatives align with business needs and priorities.
+Security and Compliance: Ensuring that the company's technology systems and data are secure from external threats and compliant with relevant regulations and industry standards.
+Technology Trends Monitoring: Keeping abreast of emerging technologies and industry trends, and advising senior management on their potential impact on the business.
+Risk Management: Spotting and dealing with tech-related risks that might affect our work, reputation, or finances.","Strong and enthusiastic team – you will have the opportunity for knowledge sharing, learning, and professional self-development
+Interesting and challenging tasks – solve diverse and challenging issues, communicate with people within the company as well as with our partners
+Convenient working conditions – remote work, opportunity to build your own working day with flexible working hours
+А chance to work in a highly professional and dynamic team working with a wide range of international game production projects, attractive remuneration package, and opportunities to develop professionally.","{""filename"":""397599078_836967031768270_1882137054729863005_n-2.jpg"",""type"":""file"",""size"":75093,""url"":""https://d33wubrfki0l68.cloudfront.net/1ff1973a-6b11-4055-b655-340e2f4c5d13/397599078_836967031768270_1882137054729863005_n-2.jpg""}",ZR_491_JOB,false,93.106.13.8,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",https://publish.talents.games/,2024-10-17T20:50:27.218Z
 Vik,L,InnoGames,https://jobs.eu.lever.co/innogames/de937206-5200-46d9-bbe1-f83c0f7bf862?lever-origin=applied&lever-source%5B%5D=GamesFactoryTalents,Germany,https://jobs.eu.lever.co/innogames/de937206-5200-46d9-bbe1-f83c0f7bf862?lever-origin=applied&lever-source%5B%5D=GamesFactoryTalents,viktoriya.levitskaya@innogames.com,Senior VFX Artist ,Art & Animation,Visual Effects (VFX),"Houdini,Blender Geometry Nodes",,Unity,,,Senior,Full-time,Worldwide,Hybrid,"0,25000","We are looking for a Senior VFX Artist to join our in-house art team working on the new mobile game Heroes of History. 
 
 Bring your passion for VFX art, and support our team in creating and implementing awesome effects for our game.
