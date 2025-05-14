@@ -86,21 +86,80 @@ Nice to haves:
 - Private Medical Insurance in KSA
 - Annual Return Flight Allowance
 ","{""filename"":""red horizontal logo.png"",""type"":""file"",""size"":151324,""url"":""https://d33wubrfki0l68.cloudfront.net/fe8c62b9-a561-48b5-9a05-d295bd11bdce/red%20horizontal%20logo.png""}",ZR_540_JOB,true,80.58.159.75,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",https://publish.talents.games/,2025-05-13T14:38:36.657Z
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Aleksandra,Korbolewska,Sandsoft,https://www.sandsoft.com/,Spain,https://career.sandsoft.com/jobs/5436073-game-data-analyst,aleksandra.korbolewska@sandsoft.com,Game Data Analyst,Data & Analytics,"Data Analytics,Game Analytics,Data Visualisation","Game Analytics,Game Insights,Data Visualization","Hyper-casual,RPG,Strategy",Unity,Mobile,,Middle,Full-time,Worldwide,Onsite,"0,0","About Sandsoft:
+
+Headquartered in Riyadh, Saudi Arabia, Sandsoft is a global video game developer, publisher and investor with a focus on engaging and entertaining players worldwide.
+
+Our vision is to be the leading mobile-first games publisher & developer out the MENA region.
+
+Our international team is composed of passionate and brave game makers with vast experience in developing, publishing and leading highly successful AAA mobile, console and desktop games.
+
+Through a passion for games, Sandsoft aims at bringing closer continents, cultures, and people.
+
+About the role:
+
+We are looking for a Game Data Analyst responsible for analysing and interpreting data to drive insights into player behaviour and game performance. The ideal candidate will have a strong understanding of game analytics, experience in using data to make strategic decision and be able to effectively communicate insights to stakeholders.
+
+If you have the ability to deep dive into the data through BI tools and advanced analytics as well as explain outcomes and insights efficiently, there is a fantastic journey for you in Sandsoft.
+
+Location: onsite in Barcelona or Riyadh.","What will you do:
+
+- Lead the in-game analysis including user journey, store analysis, sink&sources, balance, etc.
+- Analyse your games against similar games in the market.
+- Work with stakeholders to define and prioritize data analysis needs.
+- Stay up-to-date on the latest trends in game analytics.
+- Contribute on customer retention, engagement and monetization improvement through generation analysis reports and insights.","What do you need:
+
+- Bachelor's degree in data science, statistics, or a related field
+- 3+ years of experience in data analysis.
+- Strong gaming experience understanding different game categories and genres, as well as game characteristics such as battle passes, live operations and so on.
+- Strong understanding of data analysis techniques
+- Excellent communication and presentation skills
+- Ability to work independently and as part of a team
+- Proficiency in data analysis software, such as Tableau, Power BI, or Google Data Studio","- Private medical insurance
+- Gym membership","{""filename"":""red horizontal logo.png"",""type"":""file"",""size"":151324,""url"":""https://d33wubrfki0l68.cloudfront.net/34502e8b-6daa-481e-955a-be373e12e16b/red%20horizontal%20logo.png""}",ZR_542_JOB,true,80.58.159.75,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",https://publish.talents.games/,2025-05-14T09:20:00.721Z
+Aleksandra,Korbolewska,Sandsoft,https://www.sandsoft.com/,Spain,https://career.sandsoft.com/jobs/5721955-devops-automation-engineer,aleksandra.korbolewska@sandsoft.com,DevOps & Automation Engineer,Programming & Engineering,"Cloud Architecture,DevOps Engineering,SysOps Engineering","AWS,Cloud platforms,Jenkins,Kubernetes,Terraform","Hyper-casual,RPG,Strategy",Unity,Mobile,,Middle,Full-time,Worldwide,Onsite,"0,0","About Sandsoft
+
+Headquartered in Riyadh, Saudi Arabia, Sandsoft is a global video game developer, publisher and investor with a focus on engaging and entertaining players worldwide.
+
+Our vision is to be the leading mobile-first games publisher & developer out the MENA region.
+
+Our international team is composed of passionate and brave game makers with vast experience in developing, publishing and leading highly successful AAA mobile, console and desktop games including FIFA, Candy Crush, Need for Speed, Angry Birds, World of Tanks and more!
+
+Through a passion for games, Sandsoft Games aims at bringing closer continents, cultures, and people.
+
+About the role
+
+As a DevOps & Automation Engineer at Sandsoft, you will play a critical role in supporting our game development teams by architecting, automating, and managing the infrastructure and performing essential system administration tasks that power our heavy-load, real-time gaming applications. You will design and implement robust, secure, and scalable CI/CD pipelines, oversee day-to-day operational administration, and ensure that our systems operate at peak performance even under extreme loads. Your work will directly contribute to the smooth delivery of engaging gaming experiences for millions of players worldwide.","Key Responsibilities
+
+- Design, implement, and maintain infrastructure-as-code (IaC) using tools like Terraform, Ansible, or similar modern alternatives.
+- Develop automation scripts and tools to streamline configuration management and deployment processes.
+- Create and manage GitHub pipelines to support continuous integration, testing, and deployment.
+- Implement automated testing, security scans, and vulnerability assessments within the CI/CD framework.
+- Manage containerized applications using Kubernetes and Docker, with a focus on multi-cloud deployments (AWS, GCP, and Azure).
+- Optimize resource allocation and scalability for heavy-load gaming applications, ensuring high availability with auto-scaling, load balancing, and failover mechanisms.
+- Set up and maintain observability stacks using modern tools (e.g., ELK/EFK, Prometheus, Grafana, OpenTelemetry, Sentry).
+- Integrate security best practices across the deployment lifecycle, including secret management, secure coding standards, and container security.
+- Collaborate with cross-functional teams to ensure compliance with industry standards and evolving best practices.
+- Work closely with development teams to support and enhance their workflows.
+- Maintain comprehensive documentation of automation processes, infrastructure designs, and operational procedure
+","Requirements
+
+- 3+ years in DevOps, automation, or cloud engineering.
+- Strong analytical-thinking and Problem Solving capabilities with a passion for innovating, optimizing and debugging processes.
+- Proficiency in high-level programming languages (e.g., Python) and scripting languages (e.g., PowerShell, Bash).
+- Experience with Docker and Kubernetes, including managing multi-cloud container orchestration environments.
+- Experience with Terraform for designing, deploying, and managing cloud infrastructure.
+- Experience in creating, managing, and securing CI/CD pipelines using platforms like GitHub or GitLab.
+- Hands-on experience with major public cloud providers (AWS, GCP, Azure), including designing architectures for high-load and latency-sensitive applications.
+
+Preferred Qualifications
+
+- Familiarity with relational databases (PostgreSQL, MySQL) and caching mechanisms like Redis, including replication and clustering.
+- Knowledge of message brokers (Kafka, RabbitMQ) for distributed systems.
+- Understanding of secret management tools (HashiCorp Vault) and service mesh technologies (Consul, Istio).
+","- Private Medical Insurance
+- Gym membership
+","{""filename"":""red horizontal logo.png"",""type"":""file"",""size"":151324,""url"":""https://d33wubrfki0l68.cloudfront.net/59ea5972-15d9-40c3-94c7-2beeff589ad5/red%20horizontal%20logo.png""}",ZR_541_JOB,true,80.58.159.75,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",https://publish.talents.games/,2025-05-14T09:12:54.367Z
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
