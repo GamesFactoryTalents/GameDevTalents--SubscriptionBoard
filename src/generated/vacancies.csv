@@ -1,4 +1,93 @@
 firstName,lastName,companyName,linkCompany,roleLocation,linkJob,emailAddress,jobTitle,category,specialities,skills,gameGenres,gameEngines,gamePlatforms,artAndAnimationStyles,seniorityLevel,employmentOptions,country,workPreferences,salaryRange,jobDescription,requirements,responsibilities,benefits,logoFile,id,willAttendPGC,ip,user_agent,referrer,created_at
+Steve,Pearce,Sing King Karaoke Ltd.,https://singking.com/,United Kingdom,https://singking.com/,steve@singkingkaraoke.com,Producer - Mobile Games,Production,Game Production,"Scrum,Agile,Unity",Music,Unity,Mobile,,Middle,Full-time,United Kingdom,Hybrid,"0,5000","ABOUT THE ROLE
+The Producer at Sing King is responsible for project execution, coordination and delivery across Sing King’s Game portfolio. The Producer works cross-functionally across the business to drive product delivery and to deliver against business objectives and reports into the Senior Product Manager.
+
+NOTE: This is a Hybrid position in London working in the office, please only apply if you can meet this requirement.","
+WHAT YOU’LL BRING
+Mobile gaming expertise - You’ll have prior experience in mobile gaming and have shipped at least one title from concept through to launch and live operations, as well as one major update. 
+Execution Excellence - A solid understanding of Agile/Scrum and the ability to manage cross-functional projects from start to finish. You can write well-structured tasks and stories, and are comfortable using project tracking tools such as Asana and Jira.
+Communication & Clarity -  You’re a confident communicator at all levels, and  keep everyone aligned through good comms, reliable documentation and proactive updates.
+Adaptability & Ownership - You thrive in a lean, fast-moving environment with evolving priorities - Owning outcomes with confidence and are reliable and accountable.  You’re open to feedback, have a curious nature and take pride in seeing tasks through to completion.
+
+BONUS POINTS
+Project experience in karaoke/music apps or rhythm games
+Experience working in small companies and startup environments
+Familiarity with Confluence, Notion or similar documentation tools
+A keen interest in karaoke/singing/music, user behaviour or making things players love
+
+
+NOTE: This is a Hybrid position in London working in the office, please only apply if you can meet this requirement.","WHAT YOU’LL DO
+Own the plan, pace, and structure of delivery ensuring fast, aligned execution across all disciplines (code, designers, artists, QA, etc). You’ll manage the agile process and rituals (e.g sprint planning, standups, retrospectives) and ensure goals, timelines, and dependencies across teams are clearly communicated and adjusted to meet delivery.
+Turn product intent into team action enabling fast, focused execution across both new ideas and live game features. You’ll help validate these ideas quickly by supporting design, prototyping and experimentation efforts, and you’ll be responsible for writing up user stories and tasks as part of structured backlog planning 
+Coordinate across stakeholders to keep goals, blockers and communication flowing smoothly. You’ll communicate priorities, changes, and expectations clearly and keep tools (e.g. JIRA, Asana) and documentation up-to-date.  You’ll be responsible for keeping everyone on the same page. 
+Actively contribute to the continuous iteration of our Games, helping validate what works, rapidly identifying what doesn’t and enabling fast feedback cycles, change management and thoughtful prioritisation. You’ll anticipate and identify problems early and be proactive in finding solutions. Through this structured approach, you’ll support Product in driving the broader roadmap.
+","ABOUT US
+
+Sing King is on a mission to delight millions of singers around the world through our portfolio of games and singing experiences across multiple platforms. 
+
+Our successful flagship YouTube channel welcomes over 14 million subscribers and 25 million unique viewers each month, and with our latest Mobile Game release, we are continuing to build innovative and exciting products that spread joy to singers wherever and whenever they sing.
+
+We are a team of music lovers, game enthusiasts and entrepreneurial spirits. We are passionate about our vibrant and growing community of global singing fans. This is a unique opportunity to play a key role in the growth of an ambitious, nimble and fast-growing game and music entertainment business. Join us!
+
+
+HOW WE WORK
+We’re a small team, so we move fast and experiment often
+We believe in creative exchange and collaborative ownership
+We prioritise ideas that make our players feel something - joy, energy, expression
+We operate a hybrid working policy at Sing King and expect a balance of office and home working for this role - our office is based in Farringdon, London.
+We offer a competitive salary and benefits package
+
+We’re committed to building a diverse and inclusive team where everyone feels they belong, and we welcome applications from people of all backgrounds, experiences, and identities. If this role excites you, we encourage you to apply even if your experience doesn’t align perfectly with every requirement. To ensure our recruitment process is accessible to all, please let us know if you require any adjustments (for example, interview location and format, accessibility requirements, or materials in an alternative format).
+","{""filename"":""SK_logo_notext.png"",""type"":""file"",""size"":23451,""url"":""https://d33wubrfki0l68.cloudfront.net/e5c3b484-5d6f-4a94-aa96-fd2c100ac938/SK_logo_notext.png""}",9cZfCA1Z6c56k1bVB2xHuV,false,86.11.18.19,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",https://publish.talents.games/,2025-10-06T10:40:56.140Z
+Steve,Pearce,Sing King Karaoke Ltd.,https://singking.com/,United Kingdom,https://jobs.gamesindustry.biz/job/full-stack-unity-developer-senior-lead-42212,steve@singkingkaraoke.com,Full Stack Unity Developer (Senior/Lead),Programming & Engineering,"Mobile Development,Fullstack Development ,Game Development","Unity,Firebase,Google Cloud Platform,Braincloud",Music,Unity,Mobile,,Lead,Full-time,United Kingdom,Hybrid,"0,9000","ABOUT THE ROLE
+We’re looking for a Senior/Lead Full-Stack Unity Developer with 5+ years experience to become the technical foundation of our mobile games team.
+This is a rare opportunity to help shape the way we build, from defining architecture and workflows to mentoring teammates and setting quality standards. You’ll work alongside the Product team on both prototypes and live titles, helping us move quickly, test ideas confidently, and bring joyful singing experiences to life on mobile.
+You’ll be joining early - not just to write great code, but to help create the systems, tools, and engineering culture that help us learn fast and scale well.
+
+NOTE: This is a Hybrid Role in office in London - please only apply if you can meet this requirement
+","WHAT YOU’LL BRING
+Unity Expertise - You’ve spent 5+ years working in Unity, shipped at least one live mobile game, and have deep fluency with Unity’s tools and systems (addressables, custom inspectors, ScriptableObjects, etc.). You know how to scale and maintain codebases that balance speed with performance.
+Full-Stack Capability - You’re comfortable across frontend and backend. Whether it’s integrating with REST APIs, working with Firebase or PlayFab, or handling UI/state/data in Unity, you know how to build robust, connected game experiences.
+Prototyping & Velocity - You move fast and prototype often. You’ve built gameplay systems, UI flows, and feature tests that help teams learn quickly. You care deeply about developer tooling and workflows that accelerate iteration without cutting corners.
+Leadership & Mentorship - You’ve mentored junior devs or led small teams before. You’re excited to guide, unblock, and grow others. You provide thoughtful code reviews, communicate clearly, and raise the technical bar for those around you.
+Culture & Collaboration - You’re independent, solutions-oriented, and thrive in small, creative teams. You bring ideas to life by collaborating with designers and artists, and enjoy moving between gameplay, systems and live ops - where the impact is needed.
+
+
+BONUS POINTS
+Experience in music, rhythm, or singing games
+Cross-platform development (TV, WebGL, console)
+Familiarity with CI/CD pipelines, analytics tools, or Unity Cloud Build
+Backend or database experience (Firebase, PlayFab, Node.js)
+
+
+NOTE: This is a Hybrid Role in office in London - please only apply if you can meet this requirement","WHAT YOU’LL DO
+Lead Unity architecture and development across all Sing King mobile games
+Build and iterate gameplay prototypes with Game Design and Product
+Implement production systems: UI, logic, data flow, and performance optimisations
+Connect Unity clients to backend APIs and live ops features
+Define and uphold best practices for code quality, scalability, and maintainability
+Mentor and support junior Unity developers
+Improve tools and workflows to increase build speed and iteration
+Contribute to overall technical decision-making across projects
+","ABOUT US
+
+Sing King is on a mission to delight millions of singers around the world through our portfolio of games and singing experiences across multiple platforms. 
+
+Our successful flagship YouTube channel welcomes over 13.5 million subscribers and 25 million unique viewers each month, and along with our latest Mobile Game release we are continuing to build innovative and exciting products that spread joy to singers wherever and whenever they sing.
+
+We are a team of music lovers, game enthusiasts and entrepreneurial spirits. We are passionate about our vibrant and growing community of global singing fans. This is a unique opportunity to play a key role in the growth of an ambitious, nimble and fast-growing game and music entertainment business. Join us!
+
+HOW WE WORK
+We’re a small team, so we move fast and experiment often
+We believe in creative exchange and collaborative ownership
+We prioritise ideas that make our players feel something - joy, energy, expression
+We operate a hybrid working policy at Sing King and expect a balance of office and home working for this role - our office is based in Farringdon, London.
+We offer a competitive salary and benefits package
+
+We’re committed to building a diverse and inclusive team. We strive to create an environment where everyone feels they belong, and we welcome applications from people of all backgrounds, experiences, and identities. If this role excites you, we encourage you to apply, even if your experience doesn’t align perfectly with every requirement.
+We are committed to making our recruitment process accessible to all. Please let us know if you require any adjustments (for example, interview location, format, or materials in an alternative format)
+
+","{""filename"":""SK_logo_notext.png"",""type"":""file"",""size"":23451,""url"":""https://d33wubrfki0l68.cloudfront.net/b032bbfa-2565-4c41-a016-00cf7848f250/SK_logo_notext.png""}",weuKPziYzK8FydgzXkhvXC,false,86.11.18.19,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",https://publish.talents.games/,2025-10-06T10:35:06.766Z
 Dylan,Umali,HyprMX,https://hyprmx.com/,Sweden,https://vervegroup.recruitee.com/o/business-development-director-sweden,dumali@hyprmx.com,Business Development Director (Sweden),Business & Management,"Sales,Business Development","Digital Media,Marketing Strategy",,,,,Director,Full-time,Worldwide,"Onsite,Hybrid","0,25000","Verve has created a more efficient and privacy-focused way to buy and monetize advertising. Verve is an ecosystem of demand and supply technologies fusing data, media, and technology together to deliver results and growth to both advertisers and publishers–no matter the screen or location, no matter who, what, or where a customer is. With 30 offices across the globe and with an eye on servicing forward-thinking advertising customers, Verve’s solutions are trusted by more than 90 of the United States’ top 100 advertisers, 4,000 publishers globally, and the world’s top demand-side platforms. Learn more at www.verve.com.
 
 Who You Are
